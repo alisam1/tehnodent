@@ -1,0 +1,57 @@
+{
+  "name": "TechnoDent",
+  "version": "1.0.1",
+  "private": true,
+  "description": "TechnoDent",
+  "devDependencies": {
+    "autoprefixer": "8.3.x",
+    "browser-sync": "^2.24.4",
+    "del": "^4.1.1",
+    "gulp": "3.9.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "7.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "4.0.x",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-webp": "^3.0.0",
+    "postcss-html": "^0.23.7",
+    "postcss-markdown": "^0.23.7",
+    "postcss-syntax": "^0.9.1",
+    "posthtml": "^0.11.3",
+    "posthtml-include": "^1.2.0",
+    "run-sequence": "^2.2.1",
+    "stylelint": "^9.2.1"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "11.0.0"
+  },
+  "dependencies": {
+    "ajv": "^6.5.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.10.0",
+    "normalize.css": "^8.0.0"
+  }
+}

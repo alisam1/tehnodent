@@ -1,7 +1,47 @@
 .main-contacts
 {
   width: 100%;
-  height: 745px;
+  height: 675px;
   background-image: url("../img/bg_contacts.png");
   background-size: cover;
+}
+
+.main__content
+{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+  .main-contacts
+  {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/bg_contacts.png");
+    background-size: cover;
+  }
+
+  .main-contacts .main__content
+  {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  .main-contacts
+  {
+    height: auto;
+  }
+
+  .main-contacts .main__content
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
 }

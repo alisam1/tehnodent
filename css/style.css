@@ -816,7 +816,7 @@ template {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .breadcrumbs__list {
-    margin-left: 15px; } }
+    margin-left: -20px; } }
 
 .sidebar {
   width: 30%; }

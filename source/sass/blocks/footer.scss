@@ -28,6 +28,25 @@
   padding-bottom: 20px;
 }
 
+.footer__item a
+{
+  font-family: $font-family;
+  color: #959595;
+  font-size: 12px;
+  line-height: 28px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.footer__item a:hover
+{
+  font-family: $font-family-medium;
+  color: #fff;
+  font-size: 12px;
+  line-height: 28px;
+  padding-bottom: 20px;
+}
+
 .footer__item--title
 {
   font-family: $font-family;

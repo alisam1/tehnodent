@@ -1028,7 +1028,7 @@ template {
     padding-left: 0; } }
 
 .sidebar {
-  width: 30%; }
+  width: 280px; }
 
 .sidebar__title {
   font-family: "Geometria-Bold";
@@ -1177,7 +1177,7 @@ template {
   width: 265px;
   height: 320px;
   border-radius: 6px;
-  margin-right: 40px;
+  margin-right: 30px;
   margin-bottom: 32px; }
 
 .card {

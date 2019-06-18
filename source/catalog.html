@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>TechnoDent</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script>
   </head>
   <body>
 
@@ -12,7 +14,7 @@
     <div class="main-header__all">
 
     <div class="main-header__logo">
-      <div class="main-header__img"><img src="img/logo.png" alt="Logo"></div>
+      <div class="main-header__img"><img src="img/logo.svg" alt="Logo"></div>
       <div class="main-header__text"><b>Техно</b>дент</div>
     </div>
 
@@ -28,20 +30,24 @@
           <li class="menu__item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
+    </div>
 
+    <div class="main-header__tablet">
       <nav class="menu__tablet">
         <div class="header">
         <input class="nav-burger__checkbox" type="checkbox" id="burger">
         <label class="nav-burger" for="burger">Меню</label>
 
         <nav class="nav">
-            <li class="menu__item"><a href="#">Главная</a></li>
-            <li class="menu__item"><a href="#">О компании</a></li>
-            <li class="menu__item"><a href="#">Продукция</a></li>
-            <li class="menu__item"><a href="#">Каталоги и брошюры</a></li>
-            <li class="menu__item"><a href="#">Обучение</a></li>
-            <li class="menu__item"><a href="#">Новости</a></li>
-            <li class="menu__item"><a href="#">Контакты</a></li>
+          <ul class="menu__list menu__list--tablet">
+            <li class="menu__item menu__item--tablet"><a href="#">Главная</a></li>
+            <li class="menu__item menu__item--tablet"><a href="#">О компании</a></li>
+            <li class="menu__item menu__item--tablet"><a href="#">Продукция</a></li>
+            <li class="menu__item menu__item--tablet"><a href="#">Каталоги и брошюры</a></li>
+            <li class="menu__item menu__item--tablet"><a href="#">Обучение</a></li>
+            <li class="menu__item menu__item--tablet"><a href="#">Новости</a></li>
+            <li class="menu__item menu__item--tablet"><a href="#">Контакты</a></li>
+          </ul>
         </nav>
     </div>
       </nav>
@@ -57,8 +63,8 @@
       </div>
 
     <div class="main-header__search">
-      <div class="main-header__img main-header__img--search"><img src="img/logo_2.png" alt="Logo_2"></div>
-      <div class="main-header__search-img"><img src="img/search.png" alt="Search"></div>
+      <div class="main-header__img main-header__img--search"><img src="img/logo_2.svg" alt="Logo_2"></div>
+      <div class="main-header__search-img"><img src="img/search.svg" alt="Search"></div>
     </div>
 
    </div>
@@ -172,9 +178,9 @@
            <div class="card__text">
              <h4 class="card__title">Radiance</h4>
              <div class="card__links">
-               <p class="link"><a href="#">Подкатегория 1</a></p>
-               <p class="link"><a href="#">Подкатегория 1</a></p>
-               <p class="link"><a href="#">Подкатегория 1</a></p>
+               <a class="link" href="#">Подкатегория 1</a>
+               <a class="link" href="#">Подкатегория 1</a>
+               <a class="link" href="#">Подкатегория 1</a>
              </div>
            </div>
          </div>
@@ -187,9 +193,9 @@
            <div class="card__text">
              <h4 class="card__title">Дуги Tanzo</h4>
              <div class="card__links">
-               <p class="link"><a href="#">Подкатегория 1</a></p>
-               <p class="link"><a href="#">Подкатегория 1</a></p>
-               <p class="link"><a href="#">Подкатегория 1</a></p>
+               <a class="link" href="#">Подкатегория 1</a>
+               <a class="link" href="#">Подкатегория 1</a>
+               <a class="link" href="#">Подкатегория 1</a>
              </div>
            </div>
          </div>
@@ -201,9 +207,9 @@
            <div class="card__text card__text--ring">
              <h4 class="card__title">Ортодонтические кольца</h4>
              <div class="card__links">
-               <p class="link"><a href="#">Подкатегория 1</a></p>
-               <p class="link"><a href="#">Подкатегория 1</a></p>
-               <p class="link"><a href="#">Подкатегория 1</a></p>
+               <a class="link" href="#">Подкатегория 1</a>
+               <a class="link" href="#">Подкатегория 1</a>
+               <a class="link" href="#">Подкатегория 1</a>
              </div>
            </div>
          </div>
@@ -215,9 +221,9 @@
            <div class="card__text">
              <h4 class="card__title">Mini Master</h4>
              <div class="card__links">
-               <p class="link"><a href="#">Подкатегория 1</a></p>
-               <p class="link"><a href="#">Подкатегория 1</a></p>
-               <p class="link"><a href="#">Подкатегория 1</a></p>
+               <a class="link" href="#">Подкатегория 1</a>
+               <a class="link" href="#">Подкатегория 1</a>
+               <a class="link" href="#">Подкатегория 1</a>
              </div>
            </div>
          </div>
@@ -229,9 +235,9 @@
            <div class="card__text">
              <h4 class="card__title">Корректор по II классу</h4>
              <div class="card__links">
-               <p class="link"><a href="#">Подкатегория 1</a></p>
-               <p class="link"><a href="#">Подкатегория 1</a></p>
-               <p class="link"><a href="#">Подкатегория 1</a></p>
+               <a class="link" href="#">Подкатегория 1</a>
+               <a class="link" href="#">Подкатегория 1</a>
+               <a class="link" href="#">Подкатегория 1</a>
              </div>
            </div>
          </div>
@@ -243,9 +249,9 @@
            <div class="card__text">
              <h4 class="card__title">Empower2</h4>
              <div class="card__links">
-               <p class="link"><a href="#">Подкатегория 1</a></p>
-               <p class="link"><a href="#">Подкатегория 1</a></p>
-               <p class="link"><a href="#">Подкатегория 1</a></p>
+               <a class="link" href="#">Подкатегория 1</a>
+               <a class="link" href="#">Подкатегория 1</a>
+               <a class="link" href="#">Подкатегория 1</a>
              </div>
            </div>
          </div>
@@ -257,7 +263,7 @@
     <section class="question">
       <div class="container">
          <h3 class="question__title">Остались вопросы?</h3>
-         <p class="question__info">Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+         <p class="question__info">Lorem ipsum dolor sit amet, consectetur</p>
 
         <div class="question__form">
 

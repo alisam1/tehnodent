@@ -6,9 +6,10 @@
 .sidebar__title
 {
   font-family: $font-family-bold;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 72px;
   color: #00abc5;
+  margin-top: -15px;
 }
 
 .sidebar__title::before
@@ -18,25 +19,25 @@
   background-image: url("../img/line_prod.png");
   width: 205px;
   height: 1px;
-  margin-top: 80px;
+  margin-top: 66px;
 }
 
 .sidebar__menu
 {
   padding-left: 0;
-  padding-top: 30px;
+  padding-top: 0px;
 }
 
 .sidebar__submenu ul
 {
   list-style-type: none;
   width: 150px;
-  padding-left: 70px;
+  padding-left: 35px;
 }
 
 .sidebar__item
 {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .sidebar__item a
@@ -50,6 +51,14 @@
 
 .sidebar__item a:hover
 {
+  font-family: $font-family;
+  color: #00abc5;
+  border-bottom: 1px solid #00abc5;
+}
+
+.sidebar__item a:active
+{
+  font-family: $font-family;
   color: #00abc5;
   border-bottom: 1px solid #00abc5;
 }
@@ -62,9 +71,9 @@
 	position: relative;
 	display: block;
 	background: #fff;
-  font-family: $font-family;
-  font-size: 16px;
-  line-height: 25px;
+  font-family: $font-family-medium;
+  font-size: 12px;
+  line-height: auto;
   color: #4f4f6f;
   text-transform: uppercase;
   text-decoration: none;
@@ -72,14 +81,14 @@
 
 .sidebar__menu label:hover
 {
-  font-family: $font-family;
+  font-family: $font-family-bold;
   color: #00abc5;
   cursor: pointer;
 }
 
 .sidebar__menu label:active
 {
-  font-family: $font-family;
+  font-family: $font-family-bold;
   color: #00abc5;
   cursor: pointer;
 }
@@ -87,13 +96,14 @@
 .sidebar__submenu
 {
   list-style-type: none;
-  padding-bottom: 20px;
-  width: 300px;
+  padding-bottom: 18px;
+  width: 230px;
 }
 
 
 .sidebar__menu ul {
 	display: none;
+  margin-top: -5px;
 }
 
 .sidebar__submenu ul,
@@ -117,7 +127,7 @@
 	display: block;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
 
   .sidebar__title {
     font-family: "Geometria-Bold";
@@ -134,7 +144,7 @@
   background-image: url("../img/line_prod.png");
   width: 180px;
   height: 1px;
-  margin-top: 80px;
+  margin-top: 65px;
 }
 
   .sidebar__submenu {

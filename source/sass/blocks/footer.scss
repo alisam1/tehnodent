@@ -8,15 +8,17 @@
 
 .footer
 {
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 65px;
 }
 
 .footer__list
 {
   list-style-type: none;
+  padding: 0;
 }
 
 .footer__item
@@ -25,7 +27,7 @@
   color: #959595;
   font-size: 12px;
   line-height: 28px;
-  padding-bottom: 20px;
+  padding-bottom: 2px;
 }
 
 .footer__item a
@@ -63,11 +65,11 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #979797;
-  padding-top: 75px;
+  padding-top: 40px;
   padding-bottom: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
 
   .footer
   {
@@ -89,12 +91,15 @@
 
   .main-footer
   {
-    height: 500px;
+    height: 450px;
   }
 
   .footer
   {
+    width: 80%;
     flex-direction: column;
+    padding-top: 15px;
+    margin: 0 auto;
   }
 
   .footer__list--mobile

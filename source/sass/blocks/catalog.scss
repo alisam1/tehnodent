@@ -6,30 +6,31 @@
 
 .catalog
 {
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 40px;
 }
 
 .catalog__card
 {
-  width: 250px;
+  width: 265px;
   height: 320px;
-  border-radius: 5px;
-  margin-right: 20px;
-  margin-bottom: 60px;
+  border-radius: 6px;
+  margin-right: 40px;
+  margin-bottom: 32px;
 }
 
 .card
 {
   box-shadow: 0px 0px 19px 4px rgba(204, 204, 223, 0.14);
+  border-radius: 6px;
 }
 
 .card:hover
 {
   box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
+  border-radius: 6px;
 }
 
 .catalog__card:nth-child(3)
@@ -44,9 +45,9 @@
 
 .card__img
 {
-  height: 165px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  height: 160px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   background-color: #f0f5f8;
   text-align: center;
 }
@@ -56,17 +57,18 @@
 {
   content: "";
   position: absolute;
-  background-image: url("../img/sale_icon.png");
+  background-image: url("../img/sale_icon.svg");
   width: 32px;
   height:32px;
-  margin-top: 110px;
+  margin-top: 103px;
+  margin-left: 23px;
 }
 
 .card__img--mrx::before
 {
   content: "";
   position: absolute;
-  background-image: url("../img/mrx.png");
+  background-image: url("../img/mrx.svg");
   width: 43px;
   height:9px;
   margin-left: -35px;
@@ -77,7 +79,7 @@
 {
   content: "";
   position: absolute;
-  background-image: url("../img/mini.png");
+  background-image: url("../img/mini.svg");
   width: 64px;
   height:24px;
   margin-left: -65px;
@@ -88,7 +90,7 @@
 {
   content: "";
   position: absolute;
-  background-image: url("../img/power.png");
+  background-image: url("../img/power.svg");
   width: 43px;
   height:14px;
   margin-left: -25px;
@@ -100,7 +102,7 @@
 {
   content: "";
   position: absolute;
-  background-image: url("../img/euro.png");
+  background-image: url("../img/empower.svg");
   width: 55px;
   height:14px;
   margin-left: -40px;
@@ -121,22 +123,23 @@
 
 .card__text
 {
-  width: 92%;
+  width: 215px;
   margin: 0 auto;
 }
 
 .card__text--ring
 {
-  width: 95%;
+  width: 220px;
   margin: 0 auto;
 }
 
 .card__title
 {
   font-family: $font-family-bold;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 17px;
+  line-height: auto;
   color: #4f4f6f;
+  letter-spacing: -0.02em;
 }
 
 .card__links::before
@@ -146,6 +149,7 @@
   background-image: url("../img/line_bottom.png");
   width: 48px;
   height:1px;
+  margin-top: -20px;
 }
 
 .card__links
@@ -153,31 +157,37 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 35px;
 }
 
-.link a
+.card__links a
 {
   font-family: $font-family-bold;
   font-size: 12px;
   line-height: 20px;
   color: #9fa4af;
   text-decoration: none;
-  padding-right: 20px;
+  padding-right: 12px;
+  padding-bottom: 10px;
 }
 
-.link a:hover
+.card__links a:hover
 {
   color: #00abc5;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+  .catalog {
+    width: 70%;
+  }
 
   .catalog__card {
     width: 250px;
     height: 320px;
     border-radius: 5px;
     margin-right: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 .catalog__card:nth-child(3)
@@ -204,17 +214,17 @@
   {
     width: 270px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
 
   .catalog__card:nth-child(3)
   {
-    margin-right: 15px;
+    margin: 0 auto;
   }
 
   .catalog__card:nth-child(6)
   {
-    margin-right: 15px;
+    margin: 0 auto;
 
   }
 }

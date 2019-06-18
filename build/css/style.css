@@ -737,8 +737,8 @@ template {
   .main-header__img--search {
     display: none; }
   .main-header__info {
-    min-width: 130px;
-    width: 130px; } }
+    min-width: 110px;
+    width: 110px; } }
 
 .main-contacts {
   width: 100%;
@@ -1150,7 +1150,9 @@ template {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .sidebar {
-    display: none; } }
+    display: block;
+    width: 240px;
+    margin: 0 auto; } }
 
 .main__content {
   display: -webkit-box;
@@ -1342,6 +1344,11 @@ template {
     margin-left: 0px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .main__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .catalog {
     width: 80%;
     margin: 0 auto; }

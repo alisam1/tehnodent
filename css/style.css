@@ -292,7 +292,7 @@ template {
   width: 1px;
   height: 56px;
   margin-left: -20px;
-  margin-top: -10px; }
+  margin-top: -12px; }
 
 .menu__tablet {
   display: none; }
@@ -436,7 +436,7 @@ template {
   background-image: url("../img/line.png");
   width: 1px;
   height: 56px;
-  margin-top: -20px;
+  margin-top: -18px;
   margin-left: -10px; }
 
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
@@ -1122,6 +1122,10 @@ template {
 .sidebar__submenu input[type=checkbox]:not(:checked) + label:nth-of-type(n) + ul {
   display: block; }
 
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+  .sidebar {
+    width: 280px; } }
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .sidebar {
     width: 200px; }
@@ -1298,6 +1302,12 @@ template {
 .card__links a:hover {
   color: #00abc5; }
 
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+  .catalog__content {
+    width: 85%; }
+  .catalog__card {
+    margin-right: 30px; } }
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .catalog {
     width: auto; }
@@ -1321,7 +1331,15 @@ template {
   .catalog__card:nth-child(3) {
     margin-right: 10px; }
   .catalog__card:nth-child(6) {
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  .card__img--sale::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/sale_icon.svg");
+    width: 32px;
+    height: 32px;
+    margin-top: 103px;
+    margin-left: 0px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .catalog {
@@ -1334,7 +1352,15 @@ template {
   .catalog__card:nth-child(3) {
     margin: 0 auto; }
   .catalog__card:nth-child(6) {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .card__img--sale::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/sale_icon.svg");
+    width: 32px;
+    height: 32px;
+    margin-top: 103px;
+    margin-left: 0px; } }
 
 .question {
   width: 100%;

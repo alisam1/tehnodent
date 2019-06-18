@@ -7,8 +7,10 @@
 
   .main-header__tablet
   {
-    display: block;
-  }
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
 
 .header {
   height: 55px;
@@ -127,7 +129,7 @@
   .main-header__tablet
   {
     display: block;
-    margin-left: 10px;
+    margin-left: 0px;
   }
 
   .header {

@@ -285,13 +285,14 @@ template {
   padding-top: 3px;
   margin-left: -10px; }
 
-.main-header__info::before {
+.main-header__city::before {
   content: "";
   position: absolute;
   background-image: url("../img/line.png");
   width: 1px;
   height: 56px;
-  margin-left: -450px; }
+  margin-left: -20px;
+  margin-top: -10px; }
 
 .menu__tablet {
   display: none; }
@@ -484,12 +485,15 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .main-header__info::before {
+    display: none; }
+  .main-header__city::before {
     content: "";
     position: absolute;
     background-image: url("../img/line.png");
     width: 1px;
     height: 56px;
-    margin-left: -5px; }
+    margin-left: -20px;
+    margin-top: -15px; }
   .main-header__city::after {
     content: "";
     position: absolute;
@@ -572,12 +576,15 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .main-header__info::before {
+    display: none; }
+  .main-header__city::before {
     content: "";
     position: absolute;
     background-image: url("../img/line.png");
     width: 1px;
     height: 56px;
-    margin-left: -10px; }
+    margin-left: -20px;
+    margin-top: -15px; }
   .main-header__city::after {
     content: "";
     position: absolute;
@@ -640,7 +647,17 @@ template {
     width: 1px;
     height: 56px;
     margin-top: 0px;
-    margin-left: 140px; }
+    margin-left: 120px; }
+  .main-header__info::before {
+    display: none; }
+  .main-header__city::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/line.png");
+    width: 1px;
+    height: 56px;
+    margin-left: -20px;
+    margin-top: -15px; }
   .main-header__text {
     padding-left: 0; }
   .menu {
@@ -708,7 +725,7 @@ template {
     display: none; }
   .menu__tablet {
     display: block;
-    width: 80px; }
+    width: 100px; }
   .main-header__search-img {
     display: none; }
   .main-header__city {
@@ -773,7 +790,15 @@ template {
   .main-header__menu {
     display: none; }
   .main-header__tablet {
-    display: block; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .header {
     height: 55px;
     background-color: inherit;
@@ -868,7 +893,7 @@ template {
     display: none; }
   .main-header__tablet {
     display: block;
-    margin-left: 10px; }
+    margin-left: 0px; }
   .header {
     height: 55px;
     background-color: inherit;

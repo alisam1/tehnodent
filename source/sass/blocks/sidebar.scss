@@ -127,6 +127,14 @@
 	display: block;
 }
 
+
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+
+  .sidebar
+  {
+    width: 280px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 
   .sidebar

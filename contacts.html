@@ -7,34 +7,18 @@
   </head>
   <body>
 
-  <header class="main-header">
+    <header class="main-header">
 
-    <div class="main-header__all">
+      <div class="main-header__all">
 
-    <div class="main-header__logo">
-      <div class="main-header__img"><img src="img/logo.png" alt="Logo"></div>
-      <div class="main-header__text"><b>Техно</b>дент</div>
-    </div>
+      <div class="main-header__logo">
+        <div class="main-header__img"><img src="img/logo.svg" alt="Logo"></div>
+        <div class="main-header__text"><b>Техно</b>дент</div>
+      </div>
 
-    <div class="main-header__menu">
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="#">Главная</a></li>
-          <li class="menu__item"><a href="#">О компании</a></li>
-          <li class="menu__item"><a href="#">Продукция</a></li>
-          <li class="menu__item"><a href="#">Каталоги и брошюры</a></li>
-          <li class="menu__item"><a href="#">Обучение</a></li>
-          <li class="menu__item"><a href="#">Новости</a></li>
-          <li class="menu__item"><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <nav class="menu__tablet">
-        <div class="header">
-        <input class="nav-burger__checkbox" type="checkbox" id="burger">
-        <label class="nav-burger" for="burger">Меню</label>
-
-        <nav class="nav">
+      <div class="main-header__menu">
+        <nav class="menu">
+          <ul class="menu__list">
             <li class="menu__item"><a href="#">Главная</a></li>
             <li class="menu__item"><a href="#">О компании</a></li>
             <li class="menu__item"><a href="#">Продукция</a></li>
@@ -42,28 +26,48 @@
             <li class="menu__item"><a href="#">Обучение</a></li>
             <li class="menu__item"><a href="#">Новости</a></li>
             <li class="menu__item"><a href="#">Контакты</a></li>
+          </ul>
         </nav>
-    </div>
-      </nav>
-
       </div>
 
+      <div class="main-header__tablet">
+        <nav class="menu__tablet">
+          <div class="header">
+          <input class="nav-burger__checkbox" type="checkbox" id="burger">
+          <label class="nav-burger" for="burger">Меню</label>
 
-      <div class="main-header__info">
-        <p class="main-header__city">Санкт-Петербург</p>
-        <p class="main-header__phone"><a href="tel:8800600500">8 800 600 500</a></p>
-        <p class="main-header__phone main-header__phone--desktop"><a href="tel:8800600500"><img src="img/phone_icon.png" alt="Phone"></a></p>
-        <button class="main-header__button"><a href="#">Скачать каталог</a></button>
+          <nav class="nav">
+            <ul class="menu__list menu__list--tablet">
+              <li class="menu__item menu__item--tablet"><a href="#">Главная</a></li>
+              <li class="menu__item menu__item--tablet"><a href="#">О компании</a></li>
+              <li class="menu__item menu__item--tablet"><a href="#">Продукция</a></li>
+              <li class="menu__item menu__item--tablet"><a href="#">Каталоги и брошюры</a></li>
+              <li class="menu__item menu__item--tablet"><a href="#">Обучение</a></li>
+              <li class="menu__item menu__item--tablet"><a href="#">Новости</a></li>
+              <li class="menu__item menu__item--tablet"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+      </div>
+        </nav>
+
+        </div>
+
+
+        <div class="main-header__info">
+          <p class="main-header__city">Санкт-Петербург</p>
+          <p class="main-header__phone"><a href="tel:8800600500">8 800 600 500</a></p>
+          <p class="main-header__phone main-header__phone--desktop"><a href="tel:8800600500"><img src="img/phone_icon.png" alt="Phone"></a></p>
+          <button class="main-header__button"><a href="#">Скачать каталог</a></button>
+        </div>
+
+      <div class="main-header__search">
+        <div class="main-header__img main-header__img--search"><img src="img/logo_2.svg" alt="Logo_2"></div>
+        <div class="main-header__search-img"><img src="img/search.svg" alt="Search"></div>
       </div>
 
-    <div class="main-header__search">
-      <div class="main-header__img main-header__img--search"><img src="img/logo_2.png" alt="Logo_2"></div>
-      <div class="main-header__search-img"><img src="img/search.png" alt="Search"></div>
-    </div>
+     </div>
 
-   </div>
-
-  </header>
+    </header>
 
   <main class="main main-contacts">
 
@@ -82,7 +86,7 @@
       <h3 class="contacts__title">Контакты</h3>
       <div class="contacts__all">
       <div class="contacts__card">
-        <div class="card card-contacts">
+        <div class="card card-contacts" onclick="openimage('map-spb');" return="" true="">
             <ul class="card__list card__list--city">
               <li class="card__item card__item--title">Санкт-Петербург</li>
               <li class="card__item">Набережная канала </li>
@@ -101,13 +105,13 @@
             </ul>
         </div>
 
-        <div class="card card-contacts">
+        <div class="card card-contacts" onclick="openimage('map-msk');" return="" false="">
 
           <ul class="card__list card__list--city">
             <li class="card__item card__item--title">Москва</li>
-            <li class="card__item">Набережная канала </li>
-            <li class="card__item">Грибоедова,</li>
-            <li class="card__item">д. 5, оф. 413, 414 </li>
+            <li class="card__item">БЦ "Центросоюз"</li>
+            <li class="card__item">ул. Гиляровского,</li>
+            <li class="card__item">д. 57, стр. 1, оф. 524</li>
           </ul>
           <ul class="card__list card__list--hours">
             <li class="card__item">ВРЕМЯ РАБОТЫ: </li>
@@ -115,9 +119,8 @@
             <li class="card__item">сб., вс - выходной</li>
           </ul>
           <ul class="card__list card__list--phone">
-            <li class="card__item">(812) 314-3578</li>
-            <li class="card__item">314-3176</li>
-            <li class="card__item">314-5268</li>
+            <li class="card__item">(499) 689-5038</li>
+            <li class="card__item">+7 (915) 162-3232 </li>
           </ul>
 
         </div>
@@ -126,7 +129,8 @@
 
       <div class="contacts__map">
         <div class="map-img">
-          <img src="img/map.png" alt="Map">
+          <div class="maps" id="map-spb"></div>
+          <div class="maps" id="map-msk"></div>
         </div>
       </div>
 
@@ -175,6 +179,8 @@
           <li class="footer__item">© 2013-2019</li>
         </ul>
 
+       <div class="footer__main">
+
         <ul class="footer__list">
           <li class="footer__item"><a href="#">О нас</a></li>
           <li class="footer__item"><a href="#">Галерея</a></li>
@@ -190,16 +196,18 @@
         </ul>
 
         <ul class="footer__list">
-          <li class="footer__item">(812)314-3578</li>
-          <li class="footer__item">314-3176</li>
-          <li class="footer__item">314-5268</li>
-          <li class="footer__item">technodentspb@mail.ru</li>
+          <li class="footer__item"><a href="tel:88123143578">(812)314-3578</a></li>
+          <li class="footer__item"><a href="tel:88123143176">314-3176</a></li>
+          <li class="footer__item"><a href="tel:88123145268">314-5268</a></li>
+          <li class="footer__item"><a href="mailto:technodentspb@mail.ru">technodentspb@mail.ru</a></li>
         </ul>
 
         <ul class="footer__list footer__list--mobile">
           <li class="footer__item"><a href="#">Статьи</a></li>
           <li class="footer__item"><a href="#">Реквизиты</a></li>
         </ul>
+
+      </div>
 
         </div>
 
@@ -209,5 +217,56 @@
 
   </footer>
 
+  <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+  <script type="text/javascript">
+
+          ymaps.ready(init);
+          function init() {
+              var  myMapSpb = new ymaps.Map('map-spb', {
+                      center: [59.939762, 30.327654],
+                      zoom: 16
+                  });
+
+      				var myPlacemarkSpb = new ymaps.Placemark(
+      				[59.939762, 30.327654] , {
+                          hintContent: 'Филиал в г.Санкт-Петербурге'
+                      }, {
+                          iconImageHref: 'https://c.radikal.ru/c31/1906/b0/ea9e8d82e630.png',
+                          iconImageSize: [30, 30],
+                          iconImageOffset: [-6, -10]
+                          });
+
+
+  				  myMapSpb.geoObjects.add(myPlacemarkSpb);
+
+            var myMapMsk = new ymaps.Map('map-msk', {
+                    center: [55.786956, 37.632386],
+                    zoom: 16
+                });
+
+            var myPlacemarkMsk = new ymaps.myPlacemark(
+            [55.786956, 37.632386] , {
+                        hintContent: 'Филиал в г.Москве'
+                    }, {
+                        iconImageHref: 'https://c.radikal.ru/c31/1906/b0/ea9e8d82e630.png',
+                        iconImageSize: [30, 30],
+                        iconImageOffset: [-6, -10]
+                        });
+
+            myMapMsk.geoObjects.add(myPlacemarkMsk);
+          }
+
+
+          function openimage(id) {
+          var all = document.querySelectorAll(".maps");
+          for (var i = 0; i < all.length; i++) {
+            if (all[i].id == id) {
+              all[i].style.display = (all[i].style.display == 'none')? 'block' : 'none';
+            } else {
+              all[i].style.display = 'none';
+            }
+          }
+        }
+      </script>
   </body>
 </html>

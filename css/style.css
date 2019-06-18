@@ -1529,7 +1529,7 @@ template {
 .card__list--city::before {
   content: "";
   position: absolute;
-  background-image: url("../img/pin_icon.png");
+  background-image: url("../img/pin_icon.svg");
   width: 11px;
   height: 16px;
   margin-left: -30px;
@@ -1538,7 +1538,7 @@ template {
 .card__list--hours::before {
   content: "";
   position: absolute;
-  background-image: url("../img/clock_icon.png");
+  background-image: url("../img/clock_icon.svg");
   width: 14px;
   height: 14px;
   margin-left: -30px;
@@ -1547,7 +1547,7 @@ template {
 .card__list--phone::before {
   content: "";
   position: absolute;
-  background-image: url("../img/phone_icon_1.png");
+  background-image: url("../img/call_icon.svg");
   width: 14px;
   height: 14px;
   margin-left: -30px;
@@ -1563,7 +1563,18 @@ template {
   color: #008da9; }
 
 .map-img {
-  margin-top: 15px; }
+  margin-top: 17px; }
+
+#map-spb {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto; }
+
+#map-msk {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  display: none; }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts {
@@ -1607,7 +1618,10 @@ template {
   .map-img {
     text-align: center; }
   .map-img img {
-    width: 300px; } }
+    width: 300px; }
+  #map-spb {
+    width: 300px;
+    margin: 0 auto; } }
 
 .messages {
   width: 20%; }
@@ -1734,6 +1748,19 @@ template {
           justify-content: space-between;
   padding-top: 65px; }
 
+.footer__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%; }
+
 .footer__list {
   list-style-type: none;
   padding: 0; }
@@ -1795,6 +1822,13 @@ template {
             flex-direction: column;
     padding-top: 15px;
     margin: 0 auto; }
+  .footer__main {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .footer__list--mobile {
     display: none; }
   .footer__item {

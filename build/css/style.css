@@ -1675,7 +1675,7 @@ template {
 .form-messages__form {
   width: 80%;
   margin: 0 auto;
-  padding-top: 30px; }
+  padding-top: 45px; }
 
 .form-messages__form input[type="text"], .form-messages__form input[type="tel"] {
   width: 200px;

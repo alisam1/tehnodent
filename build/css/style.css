@@ -1522,6 +1522,15 @@ template {
   line-height: 30px;
   color: #00abc5; }
 
+.contacts__title::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/contacts_bottom.svg");
+  width: 830px;
+  height: 1px;
+  margin-top: 40px;
+  margin-left: -95px; }
+
 .card-contacts {
   width: 240px;
   height: 235px;
@@ -1594,6 +1603,14 @@ template {
             flex-direction: column; }
   .contacts__title {
     margin-left: 80px; }
+  .contacts__title::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/contacts_bottom.svg");
+    width: 600px;
+    height: 1px;
+    margin-top: 35px;
+    margin-left: -95px; }
   .contacts__all {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1629,6 +1646,8 @@ template {
             flex-direction: column; }
   .contacts__title {
     text-align: center; }
+  .contacts__title::after {
+    display: none; }
   .contacts__all {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1652,6 +1671,15 @@ template {
   font-size: 20px;
   line-height: 30px;
   color: #00abc5; }
+
+.messages__title::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/message_bottom.svg");
+  width: 260px;
+  height: 1px;
+  margin-top: 40px;
+  margin-left: -145px; }
 
 .card-messages {
   width: 270px;
@@ -1753,6 +1781,8 @@ template {
     width: 100%; }
   .messages__title {
     text-align: center; }
+  .contacts__title::after {
+    display: none; }
   .card-messages {
     margin: 0 auto;
     margin-bottom: 30px; } }

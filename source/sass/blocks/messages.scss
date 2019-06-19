@@ -11,6 +11,17 @@
   color: #00abc5;
 }
 
+.messages__title::after
+{
+  content: "";
+  position: absolute;
+  background-image: url("../img/message_bottom.svg");
+  width: 260px;
+  height: 1px;
+  margin-top: 40px;
+  margin-left: -145px;
+}
+
 .card-messages
 {
   width: 270px;
@@ -142,6 +153,11 @@
   .messages__title
   {
     text-align: center;
+  }
+
+  .contacts__title::after
+  {
+    display: none;
   }
 
   .card-messages

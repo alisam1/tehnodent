@@ -21,6 +21,16 @@
   color: #00abc5;
 }
 
+.contacts__title::after
+{
+  content: "";
+  position: absolute;
+  background-image: url("../img/contacts_bottom.svg");
+  width: 830px;
+  height: 1px;
+  margin-top: 40px;
+  margin-left: -95px;
+}
 
 .card-contacts
 {
@@ -121,6 +131,17 @@
     margin-left: 80px;
   }
 
+  .contacts__title::after
+  {
+    content: "";
+    position: absolute;
+    background-image: url("../img/contacts_bottom.svg");
+    width: 600px;
+    height: 1px;
+    margin-top: 35px;
+    margin-left: -95px;
+  }
+
   .contacts__all
   {
     flex-direction: column;
@@ -161,6 +182,12 @@
   {
     text-align: center;
   }
+
+
+    .contacts__title::after
+    {
+      display: none;
+    }
 
   .contacts__all
   {

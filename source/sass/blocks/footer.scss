@@ -26,6 +26,7 @@
 {
   list-style-type: none;
   padding: 0;
+  width: 220px;
 }
 
 .footer__item
@@ -51,9 +52,7 @@
 {
   font-family: $font-family-medium;
   color: #fff;
-  font-size: 12px;
-  line-height: 28px;
-  padding-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .footer__item--title

@@ -1,6 +1,6 @@
 .messages
 {
-  width: 20%
+  width: auto;
 }
 
 .messages__title
@@ -24,8 +24,10 @@
 {
   width: 80%;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  position: relative;
+  top: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   font-family: $font-family;
   font-size: 12px;
   color: #959595;
@@ -35,6 +37,7 @@
 {
   width: 80%;
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 .form-messages__form input[type="text"], .form-messages__form input[type="tel"]
@@ -42,7 +45,7 @@
   width: 200px;
   background-color: #f9f9f9;
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-radius: 6px;
   padding-left: 20px;
   padding-right: 0px;

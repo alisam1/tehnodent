@@ -609,14 +609,15 @@
     width: 90px;
   }
 
-  .main-header__info::before
+  .main-header__phone::before
   {
       content: "";
       position: absolute;
       background-image: url("../img/line.png");
       width: 1px;
       height: 56px;
-      margin-left: -130px;
+      margin-left: -20px;
+      margin-top: -15px;
 
   }
 
@@ -628,7 +629,7 @@
         width: 1px;
         height: 56px;
         margin-top: 0px;
-        margin-left: 110px;
+        margin-left: 60px;
   }
 
   .main-header__phone a {

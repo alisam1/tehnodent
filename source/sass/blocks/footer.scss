@@ -8,7 +8,7 @@
 
 .footer
 {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,11 +26,11 @@
 {
   list-style-type: none;
   padding: 0;
-  width: 220px;
 }
 
 .footer__item
 {
+  width: 265px;
   font-family: $font-family;
   color: #959595;
   font-size: 12px;
@@ -90,6 +90,11 @@
 
 }
 
+.footer__item
+{
+  width: auto;
+}
+
 
 }
 
@@ -121,6 +126,7 @@
 
   .footer__item {
     padding-bottom: 0px;
+    width: auto;
 
 }
 }

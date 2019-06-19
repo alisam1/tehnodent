@@ -1763,7 +1763,7 @@ template {
   background-color: #000; }
 
 .footer {
-  width: 95%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1791,10 +1791,10 @@ template {
 
 .footer__list {
   list-style-type: none;
-  padding: 0;
-  width: 220px; }
+  padding: 0; }
 
 .footer__item {
+  width: 265px;
   font-family: "Geometria";
   color: #959595;
   font-size: 12px;
@@ -1837,7 +1837,9 @@ template {
     margin: 0 auto; }
   .footer__list {
     list-style-type: none;
-    padding-left: 0; } }
+    padding-left: 0; }
+  .footer__item {
+    width: auto; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .main-footer {
@@ -1860,7 +1862,8 @@ template {
   .footer__list--mobile {
     display: none; }
   .footer__item {
-    padding-bottom: 0px; } }
+    padding-bottom: 0px;
+    width: auto; } }
 
 @font-face {
   font-family: "Geometria";

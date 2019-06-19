@@ -217,11 +217,10 @@
 
   </footer>
 
-  <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.0/?lang=ru_RU&load=package.standard" type="text/javascript"></script>
   <script type="text/javascript">
 
-          ymaps.ready(init);
-          function init() {
+          ymaps.ready(function () {
               var  myMapSpb = new ymaps.Map('map-spb', {
                       center: [59.939762, 30.327654],
                       zoom: 16
@@ -254,7 +253,7 @@
                         });
 
             myMapMsk.geoObjects.add(myPlacemarkMsk);
-          }
+          });
 
 
           function openimage(id) {

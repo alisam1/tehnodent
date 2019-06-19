@@ -1734,6 +1734,10 @@ template {
   .messages {
     width: 75%;
     margin: 0 auto; }
+  .form-messages__form {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 25px; }
   .messages__all {
     width: 100%;
     margin: 0 auto;

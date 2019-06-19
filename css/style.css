@@ -1781,7 +1781,7 @@ template {
     width: 100%; }
   .messages__title {
     text-align: center; }
-  .contacts__title::after {
+  .messages__title::after {
     display: none; }
   .card-messages {
     margin: 0 auto;

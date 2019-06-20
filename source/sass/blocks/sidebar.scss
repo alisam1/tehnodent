@@ -3,6 +3,12 @@
   width: 280px;
 }
 
+.sidebar-product
+{
+  width: 160px;
+  margin-left: 50px;
+}
+
 .sidebar__title
 {
   font-family: $font-family-bold;
@@ -10,6 +16,15 @@
   line-height: 72px;
   color: #00abc5;
   margin-top: -15px;
+  &--product
+  {
+    font-family: $font-family-medium;
+    font-size: 15px;
+    line-height: 61px;
+    letter-spacing: -0.04em;
+    color: #4f4f6f;
+    margin-top: -22px;
+  }
 }
 
 .sidebar__title::before
@@ -28,6 +43,11 @@
   padding-top: 0px;
 }
 
+.sidebar-product .sidebar__menu
+{
+  margin-top: 40px;
+}
+
 .sidebar__submenu ul
 {
   list-style-type: none;
@@ -40,6 +60,11 @@
   padding-top: 15px;
 }
 
+.sidebar__item--product
+{
+  padding-top: 5px;
+}
+
 .sidebar__item a
 {
   font-family: $font-family;
@@ -47,6 +72,12 @@
   line-height: auto;
   color: #4f4f6f;
   text-decoration: none;
+}
+
+.sidebar__item--product a
+{
+  font-size: 10px;
+  color: #b3b3b3;
 }
 
 .sidebar__item a:hover
@@ -79,6 +110,18 @@
   text-decoration: none;
 }
 
+.sidebar__menu--product label, .sidebar-menu--product a {
+	position: relative;
+	display: block;
+	background: #fff;
+  font-family: $font-family-medium;
+  font-size: 10px;
+  line-height: auto;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .sidebar__menu label:hover
 {
   font-family: $font-family-bold;
@@ -91,6 +134,13 @@
   font-family: $font-family-bold;
   color: #00abc5;
   cursor: pointer;
+}
+
+.sidebar__menu--product .sidebar__submenu
+{
+  list-style-type: none;
+  padding-bottom: 18px;
+  width: 180px;
 }
 
 .sidebar__submenu
@@ -119,6 +169,7 @@
   font-size: 12px;
   line-height: 25px;
   color: #00abc5;
+  padding-top: 10px;
 }
 
 

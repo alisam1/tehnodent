@@ -1997,9 +1997,9 @@ template {
 /* увеличенная картинка */
 #magnify {
   display: none;
-  /* position: absolute; upd: 24.10.2016 */
   position: absolute;
-  left: 50%;
+  top: 30%;
+  left: 35%;
   max-width: 600px;
   height: auto;
   z-index: 9999; }
@@ -2007,7 +2007,6 @@ template {
 #magnify img {
   width: 100%; }
 
-/* затемняющий фон */
 #overlay {
   display: none;
   background: #000;
@@ -2019,7 +2018,6 @@ template {
   opacity: 0.5;
   z-index: 9990; }
 
-/* кнопка закрытия */
 #close-popup {
   width: 30px;
   height: 30px;

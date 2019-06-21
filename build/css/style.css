@@ -2234,11 +2234,11 @@ img.thumbnail {
 
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
   .footer__item {
-    width: 255px; } }
+    width: 230px; } }
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   .footer__item {
-    width: 240px; } }
+    width: 230px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer {

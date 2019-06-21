@@ -7,8 +7,6 @@ var player;
 
 onYouTubeIframeAPIReady = function () {
     player = new YT.Player('player', {
-        height: '281',
-        width: '646',
         videoId: 'ORcsHhMEqpQ',
         playerVars: {
             'autoplay': 0,
@@ -23,9 +21,6 @@ onYouTubeIframeAPIReady = function () {
 
 var p = document.getElementById ("player");
 $(p).hide();
-
-var t = document.getElementById ("thumbnail");
-t.src = "img/video.png";
 
 onPlayerStateChange = function (event) {
     if (event.data == YT.PlayerState.ENDED) {

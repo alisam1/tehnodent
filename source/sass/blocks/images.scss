@@ -95,3 +95,20 @@
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .images
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.image__block
+{
+  margin-bottom: 20px;
+}
+}

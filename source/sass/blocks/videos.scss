@@ -7,6 +7,12 @@
   margin-bottom: 40px;
 }
 
+#player
+{
+  width: 646px;
+  height: 281px;
+}
+
 .start-video {
     position: absolute;
     padding: 12px;
@@ -32,6 +38,7 @@ div.thumbnail_container
     height: 281px;
     overflow: hidden;
     background-color: #fff;
+    background-image: url("../img/video.png");
 }
 
 img.thumbnail
@@ -102,4 +109,50 @@ img.thumbnail
     background-color: inherit;
     color: #b7b7b7;
   }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+.videos
+{
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#player
+{
+  width: 570px;
+}
+
+div.thumbnail_container
+{
+    width: 570px;
+    height: 248px;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: url("../img/video_tablet.png");
+}
+
+.start-video {
+    position: absolute;
+    padding: 12px;
+    margin-top: -160px;
+    margin-left: 250px;
+  }
+
+  .videos__info
+  {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.videos__card
+{
+  width: 230px;
+}
 }

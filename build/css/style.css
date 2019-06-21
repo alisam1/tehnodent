@@ -1036,7 +1036,9 @@ template {
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 0; } }
+    padding-left: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 .sidebar {
   width: 280px; }
@@ -1934,6 +1936,38 @@ template {
     height: 1px;
     margin-top: 340px; } }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 300px;
+    margin: 0 auto; }
+  .product::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/product_bottom.svg");
+    width: 300px;
+    height: 1px;
+    margin-top: 270px; }
+  .product__image img {
+    width: 300px;
+    margin: 0 auto; }
+  .product__info {
+    width: 300px;
+    padding-right: 0; }
+  .product__title {
+    width: 300px; }
+  .product__text {
+    width: 300px; } }
+
 .characteristic {
   width: 870px;
   display: -webkit-box;
@@ -1990,6 +2024,11 @@ template {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding-bottom: 30px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .characteristic {
+    width: 90%;
+    margin: 0 auto; } }
 
 .images {
   width: 870px;
@@ -2105,6 +2144,18 @@ template {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
   .image__block {
+    margin-bottom: 20px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .images {
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .image__block {
+    margin: 0 auto;
     margin-bottom: 20px; } }
 
 .videos {
@@ -2254,6 +2305,36 @@ img.thumbnail {
     margin-top: 10px; }
   .videos__card {
     width: 230px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .videos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .videos__block {
+    width: 300px;
+    margin: 0 auto; }
+  #player {
+    width: 300px; }
+  div.thumbnail_container {
+    width: 300px;
+    height: 131px;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: url("../img/video_mobile.png"); }
+  .start-video {
+    position: absolute;
+    padding: 12px;
+    margin-top: -110px;
+    margin-left: 110px; }
+  .videos__info {
+    width: auto;
+    margin: 0 auto; } }
 
 .main-footer {
   width: 100%;

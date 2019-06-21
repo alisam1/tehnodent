@@ -59,3 +59,11 @@
     padding-bottom: 30px;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .characteristic
+  {
+    width:90%;
+    margin: 0 auto;
+  }
+}

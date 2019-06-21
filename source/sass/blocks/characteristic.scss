@@ -56,7 +56,7 @@
     width: 90%;
     margin: 0 auto;
     justify-content: space-around;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 }
 
@@ -65,5 +65,21 @@
   {
     width:90%;
     margin: 0 auto;
+  }
+
+  .characteristic__all
+  {
+    width: auto;
+  }
+
+  .characteristic__card
+  {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .characteristic__description
+  {
+    width: 200px;
   }
 }

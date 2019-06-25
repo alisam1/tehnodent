@@ -1,0 +1,79 @@
+.promo
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.promo__catalog
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.promo__title
+{
+    font-family: $font-family-bold;
+    font-size: 20px;
+    font-family: "Geometria";
+    color: rgb(0, 171, 197);
+    font-weight: bold;
+    line-height:72px;
+    letter-spacing: -0.04em;
+    margin-top: -20px;
+    margin-left: -5px       
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .promo
+{
+    display: flex;
+    flex-direction: column;
+}
+
+    .promo__catalog
+    {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 70px;
+        justify-content: center;
+    }
+
+    .promo__title
+    {
+        margin-left: 20px;
+    }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .promo
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+}
+
+    .promo__catalog
+    {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 70px;
+        justify-content: space-around;
+    }
+
+    .promo__title
+    {
+       width: 85%;
+       margin: 0 auto;
+    }
+
+}

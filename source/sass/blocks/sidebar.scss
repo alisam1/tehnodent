@@ -16,6 +16,7 @@
   line-height: 72px;
   color: #00abc5;
   margin-top: -15px;
+  position: relative;
   &--product
   {
     font-family: $font-family-medium;
@@ -34,7 +35,7 @@
   background-image: url("../img/line_prod.png");
   width: 205px;
   height: 1px;
-  margin-top: 66px;
+  top: 66px;
 }
 
 .sidebar__menu

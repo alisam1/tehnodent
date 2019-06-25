@@ -19,6 +19,7 @@
   font-size: 20px;
   line-height: 30px;
   color: #00abc5;
+  position: relative;
 }
 
 .contacts__title::after
@@ -28,8 +29,8 @@
   background-image: url("../img/contacts_bottom.svg");
   width: 830px;
   height: 1px;
-  margin-top: 40px;
-  margin-left: -95px;
+  top: 40px;
+  left: 0px;
 }
 
 .card-contacts

@@ -203,7 +203,7 @@
   background-image: url("../img/line_bottom.png");
   width: 48px;
   height:1px;
-  margin-top: -20px;
+  top: -20px;
 }
 
 .card__links
@@ -212,6 +212,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 35px;
+  position: relative;
 }
 
 .card__links a

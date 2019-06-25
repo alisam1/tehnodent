@@ -9,6 +9,7 @@
   font-size: 20px;
   line-height: 30px;
   color: #00abc5;
+  position: relative;
 }
 
 .messages__title::after
@@ -16,10 +17,10 @@
   content: "";
   position: absolute;
   background-image: url("../img/message_bottom.svg");
-  width: 260px;
+  width: 100%;
   height: 1px;
-  margin-top: 40px;
-  margin-left: -145px;
+  top: 40px;
+  left: 0;
 }
 
 .card-messages

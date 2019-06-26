@@ -1,6 +1,6 @@
 .main-header
 {
-  width: 100%;
+  width: 89%;
   height: 80px;
   margin: 0 auto;
   display: flex;
@@ -59,8 +59,8 @@
   list-style-type: none;
   justify-content: flex-start;
   align-items:center;
-  padding-top: 3px;
-  margin-left: -10px;
+  padding-top: 5px;
+  margin-left: -5px;
 
 }
 
@@ -116,6 +116,7 @@
   justify-content: space-around;
   align-items: center;
   border-left: 1px solid #00abc5;
+  padding-top: 5px;
 }
 
 .main-header__city
@@ -124,7 +125,7 @@
   font-size: 11px;
   line-height: 28px;
   color: #4f4f6f;
-  padding-left: 12px;
+  padding-left: 0px;
 }
 
 .main-header__phone
@@ -217,6 +218,11 @@
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
+
+  .main-header
+{
+  width: 100%;
+}
 
   .main-header__all
   {
@@ -316,6 +322,12 @@
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
+
+  
+  .main-header
+{
+  width: 100%;
+}
 
 
   .main-header__all

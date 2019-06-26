@@ -46,27 +46,47 @@
 
 .question__form input[type="text"], .question__form input[type="tel"]
 {
-  width: 215px;
+  width: 200px;
   height: 40px;
   border-width: 1px;
   border-color: rgb(77, 219, 231);
   border-style: solid;
   border-radius: 10px;
   background-color: rgb(77, 219, 231);
-  opacity: 0.6;
-  margin-right: 20px;
   color: #fff;
-}
-
-.question__form input::-webkit-input-placeholder {
   font-family: $font-family-medium;
-  font-size: 13px;
-  line-height: 22px;
-  color: #fff;
+  margin-right: 20px;
   padding-left: 15px;
-  z-index: 15;
 }
 
+::-webkit-input-placeholder {
+  font-family: $font-family-medium;
+  font-size: 12px;
+  color:#fff; 
+  opacity:1;
+}/* webkit */
+::-moz-placeholder          
+{
+  font-family: $font-family-medium;
+  font-size: 12px;
+  color:#fff; 
+  opacity:1;
+}/* Firefox 19+ */
+:-moz-placeholder           
+{
+  font-family: $font-family-medium;
+  font-size: 14px;
+  color:#fff; 
+  opacity:1;
+}/* Firefox 18- */
+:-ms-input-placeholder     
+{
+  font-family: $font-family-medium;
+  font-size: 12px;
+  color:#fff; 
+  opacity:1;
+
+}/* IE */
 
 .question__form input[type="submit"]
 {

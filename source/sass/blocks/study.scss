@@ -167,67 +167,67 @@
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
 
-        .study__title
+    .study__title
         {
-            width: 85%;
-            margin: 0 auto;
+        width: 85%;
+        margin: 0 auto;
         }
-        .study__all
+    .study__all
         {
-            flex-direction: column;
-        }
-
-        .study__calendar
-        {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-            padding-bottom: 100px;
+        flex-direction: column;
         }
 
-        .study__calendar img 
+    .study__calendar
         {
-            width: 280px;
-            margin: 0 auto;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 100px;
         }
 
-        .study__block
+    .study__calendar img 
         {
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            flex-wrap: wrap;
-            width: 100%;
+        width: 280px;
+        margin: 0 auto;
+        }
+
+    .study__block
+        {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
             
         }
 
-        .study__card
+    .study__card
         {
-            margin: 0 auto;
+        margin: 0 auto;
         }
 
-        .study__card:nth-child(1)
+    .study__card:nth-child(1)
             {
-                position: relative;
-                left: 0px;
+        position: relative;
+        left: 0px;
             }
 
-            .study__card:nth-child(3)
+        .study__card:nth-child(3)
             {
-                position: relative;
-                bottom: 20px;
-                left: 0px;
+        position: relative;
+        bottom: 20px;
+        left: 0px;
             }
 
-            .study__card .study__text
+     .study__card .study__text
             {
-            margin-left: 0;
+        margin-left: 0;
             }
 
-            .study__card .study__text:hover
+    .study__card .study__text:hover
             {
-            margin-left: 0;   
+         margin-left: 0;   
             }
 
     .study__card img 

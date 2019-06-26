@@ -66,19 +66,19 @@
   margin-top: -12px;
   padding-left: 15px;
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom:15px;
 }
 
 .menu__item--tablet a:hover
-{
-  width: 100%;
-  color: #4f4f6f;
+  {
+  color: #fff;
   font-size: 12px;
   line-height: 26px;
   padding-left: 15px;
   padding-top: 5px;
-  padding-bottom: 10px;
-}
+  padding-bottom: 15px;
+  background-color: #00dde7;
+  }
 .menu__item--tablet:not(:first-of-type) {
   border-top: none;
 }
@@ -188,18 +188,18 @@
   margin-top: -12px;
   padding-left: 15px;
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   }
 
   .menu__item--tablet a:hover
   {
-  width: 100%;
-  color: #4f4f6f;
+  color: #fff;
   font-size: 12px;
   line-height: 26px;
   padding-left: 15px;
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  background-color: #00dde7;
   }
   .menu__item--tablet:not(:first-of-type) {
   border-top: none;

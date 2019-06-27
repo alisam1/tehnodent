@@ -2742,7 +2742,7 @@ img.thumbnail {
   color: #808899; }
 
 .webinar__video {
-  padding-left: 100px; }
+  padding-left: 0px; }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .webinar__info {
@@ -2819,19 +2819,22 @@ img.thumbnail {
   padding: 0; }
 
 .footer__item {
-  width: 265px;
   font-family: "Geometria";
   color: #959595;
   font-size: 12px;
   line-height: 28px;
-  padding-bottom: 2px; }
+  padding-bottom: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.footer__list--nolink .footer__item {
+  padding-bottom: 10px; }
 
 .footer__item a {
   font-family: "Geometria";
   color: #959595;
   font-size: 12px;
   line-height: 28px;
-  padding-bottom: 20px;
   text-decoration: none; }
 
 .footer__item a:hover {
@@ -2839,6 +2842,15 @@ img.thumbnail {
   color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+.footer__item a::after {
+  display: block;
+  content: attr(title);
+  font-family: "Geometria-Medium";
+  color: #fff;
+  overflow: hidden;
+  visibility: hidden;
+  margin-top: -20px; }
 
 .footer__item--title {
   font-family: "Geometria";
@@ -2856,14 +2868,6 @@ img.thumbnail {
   padding-top: 40px;
   padding-bottom: 0; }
 
-@media screen and (min-width: 1440px) and (max-width: 1600px) {
-  .footer__item {
-    width: 230px; } }
-
-@media screen and (min-width: 1280px) and (max-width: 1439px) {
-  .footer__item {
-    width: 230px; } }
-
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer {
     width: 90%;
@@ -2876,7 +2880,7 @@ img.thumbnail {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .main-footer {
-    height: 450px; }
+    height: auto; }
   .footer {
     width: 80%;
     -webkit-box-orient: vertical;

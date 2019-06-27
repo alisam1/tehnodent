@@ -15,7 +15,7 @@
       
           <div class="main-header__logo">
             <div class="main-header__img"><img src="img/logo.svg" alt="Logo"></div>
-            <div class="main-header__text"><b>Техно</b>дент</div>gulp
+            <div class="main-header__text"><b>Техно</b>дент</div>
           </div>
       
           <div class="main-header__menu">
@@ -57,7 +57,7 @@
       
             <div class="main-header__info">
               <p class="main-header__city">Санкт-Петербург</p>
-              <p class="main-header__phone"><a href="tel:8800600500">8 800 600 500</a></p>npm install --save run-sequence
+              <p class="main-header__phone"><a href="tel:8800600500">8 800 600 500</a></p>
               <p class="main-header__phone main-header__phone--desktop"><a href="tel:8800600500"><img src="img/phone_icon.png" alt="Phone"></a></p>
               <button class="main-header__button"><a href="#">Скачать каталог</a></button>
             </div>
@@ -98,11 +98,11 @@
 
     <div class="event__bottom">
 
-            <div class="your-class">
-                    <div>your content</div>
-                    <div>your content</div>
-                    <div>your content</div>
-                  </div>
+            <div class="multiple-items">
+                    <div><img src="img/event_1.png" alt=""></div>
+                    <div><img src="img/event_1.png" alt=""></div>
+                    <div><img src="img/event_1.png" alt=""></div>
+            </div>
     </div>
     
     </div>
@@ -160,8 +160,17 @@
     </footer>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.multiple-items').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3
+        });
+      });
+    </script>
   </body>
 </html>

@@ -10,7 +10,6 @@
 
 .main-header__all
 {
-  width: 80%;
   height: 80%;
   margin: 0 auto;
   display: flex;
@@ -549,5 +548,9 @@
     width: auto;
   }
 
+  .main-header__search {
 
+    display: none;
+
+}
   }

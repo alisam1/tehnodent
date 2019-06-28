@@ -70,14 +70,23 @@
         </header>
 
   <main class="main">
-
-    <div class="breadcrumbs container">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">Главная</li>
-        <li class="breadcrumbs__item"> > </li>
-        <li class="breadcrumbs__item"><a href="#">Продукция</a></li>
-      </ul>
-    </div>
+   <div class="main__slider">
+      <div class="flicker-example" data-block-text="false">
+          <ul>
+          <li data-background="img/card_1.png">
+          <div class="flick-title">Flickerplate прилагает усилия для работы</div>
+          <div class="flick-sub-text">Слайдер автоматический и работает достаточно плавно</div>
+          </li>
+          <li data-background="img/card_2.png">
+          <div class="flick-title">Работа с Javascript или CSS</div>
+          <div class="flick-sub-text">Адаптивность слайдера позволит сделать кроссбраузерным Ваш сайт</div>
+          </li>
+          <li data-background="img/card_3.png">
+          <div class="flick-title">Поддержка сенсорных дисплеев с помощью jQuery Touch</div>
+          <div class="flick-sub-text">Различные варианты управления слайдером помогут Вам легче справляться с задачами.</div>
+          </li>gul
+          </ul>
+   </div>
 
 
 
@@ -133,5 +142,15 @@
       </div>
   
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+         
+        $('.flicker-example').flicker();
+        });
+        </script>
   </body>
 </html>

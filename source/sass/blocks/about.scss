@@ -1,0 +1,109 @@
+.about__title
+{
+    font-family: $font-family-bold;
+    font-size: 20px;
+    font-family: "Geometria";
+    color: rgb(0, 171, 197);
+    font-weight: bold;
+    line-height:72px;
+    letter-spacing: -0.04em;
+    margin-top: -20px;
+    margin-left: -5px;
+    letter-spacing: -0.04em;       
+}
+
+.about__image img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.about__all
+{
+    margin-bottom: 100px;
+}
+
+.about__top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about__bottom
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.about__top, .about__bottom
+{
+    margin-bottom: 40px;
+}
+
+.about__text
+{
+   width: 520px;
+   font-family: $font-family;
+   font-size: 12px;
+   line-height: 22px;
+   color: #808899;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .about__title
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+    .about__top, .about__bottom
+    {
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+ 
+   }
+ 
+   
+ @media screen and (min-width: 320px) and (max-width: 767px) {
+
+  
+    .about__title
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about__all
+{
+    margin-bottom: 50px;
+}
+
+    .about__top, .about__bottom
+    {
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .about__info
+    {
+        padding-bottom: 30px;
+    }
+
+    .about__text
+{
+   width: 280px;
+}
+
+
+ }
+

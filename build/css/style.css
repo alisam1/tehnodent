@@ -2940,7 +2940,7 @@ img.thumbnail {
   .slick-prev:before {
     content: none; }
     [dir="rtl"] .slick-prev:before {
-      content: "->"; }
+      content: none; }
 
 .slick-next {
   right: -25px; }
@@ -2948,9 +2948,9 @@ img.thumbnail {
     left: -25px;
     right: auto; }
   .slick-next:before {
-    content: "->"; }
+    content: none; }
     [dir="rtl"] .slick-next:before {
-      content: "../img/right_arrow.png"; }
+      content: none; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -3097,6 +3097,91 @@ img.thumbnail {
   .event__img img {
     width: 80%;
     margin: 0 auto; } }
+
+.about__title {
+  font-family: "Geometria-Bold";
+  font-size: 20px;
+  font-family: "Geometria";
+  color: #00abc5;
+  font-weight: bold;
+  line-height: 72px;
+  letter-spacing: -0.04em;
+  margin-top: -20px;
+  margin-left: -5px;
+  letter-spacing: -0.04em; }
+
+.about__image img {
+  max-width: 100%;
+  height: auto; }
+
+.about__all {
+  margin-bottom: 100px; }
+
+.about__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.about__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.about__top, .about__bottom {
+  margin-bottom: 40px; }
+
+.about__text {
+  width: 520px;
+  font-family: "Geometria";
+  font-size: 12px;
+  line-height: 22px;
+  color: #808899; }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about__title {
+    width: 80%;
+    margin: 0 auto; }
+  .about__top, .about__bottom {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 40px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .about__title {
+    width: 80%;
+    margin: 0 auto; }
+  .about__all {
+    margin-bottom: 50px; }
+  .about__top, .about__bottom {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 40px; }
+  .about__info {
+    padding-bottom: 30px; }
+  .about__text {
+    width: 280px; } }
 
 .main-footer {
   width: 100%;

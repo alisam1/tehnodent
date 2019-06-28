@@ -9,9 +9,19 @@
   margin-left: -10px;
 }
 
+.characteristic-advantages
+{
+  width: auto;
+}
+
 .characteristic__card
 {
   width: 240px;
+}
+
+.characteristic-advantages .characteristic__card
+{
+  width: 360px;
 }
 
 .characteristic__all

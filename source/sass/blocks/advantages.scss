@@ -1,0 +1,48 @@
+
+
+.advantages__title
+{
+    font-family: $font-family-bold;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: -0.04em;
+    color: #4f4f6f;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.advantages__title span
+{
+    display: block;
+    font-family: $font-family-medium;
+    font-size: 11px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #7d7d7d;
+    text-align: center;
+}
+
+.advantages__title span::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/ad_line.png");
+    width:24px;
+    height: 1px;
+    margin-top: 10px;
+    margin-left: -35px;
+}
+
+.advantages__title span::after
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/ad_line.png");
+    width:24px;
+    height: 1px;
+    margin-top: 10px;
+    margin-left: 10px; 
+}

@@ -65,6 +65,8 @@
 .slick-slide {
     float: left;
     height: 100%;
+    text-align: center;
+    display: inline-block;
     min-height: 1px;
     [dir="rtl"] & {
         float: right;
@@ -99,3 +101,11 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
+
+@media screen and (max-width: 768px){	
+	.projetos{padding-top: 7%; width: 70%;}
+  .projetos h1{padding-bottom: 10%;}
+}	
+

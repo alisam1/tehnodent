@@ -167,33 +167,39 @@
     <script src="js/slick.min.js"></script>
     <script>
         $('.multiple-items').slick({
-          infinite: true,
-          dots: false,
           slidesToShow: 4,
-          slidesToScroll: 4,
-          responsive: [
-          {
-            breakpoint: 865,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows:true,
+        dots: false,
+        adaptiveHeight: true,
+        
+      
+       // slider responsivo 
+        responsive: [
+        {
+            breakpoint: 1121,
             settings: {
-            arrows: true,
-            centerMode: true,
-            centerPadding: '20px',
-            slidesToShow: 2,
-            slidesToScroll: 2
+                slidesToShow: 2,
+                arrows:true,
+                autoplay: false,
+                adaptiveHeight: true,
             }
-          },
-          {
-            breakpoint: 320,
+        },
+
+        {
+            breakpoint: 768,
             settings: {
-              arrows: true,
-              centerMode: true,
-              centerPadding: '20px',
-              slidesToShow: 1,
-              slidesToScroll: 1
+                slidesToShow: 1,
+                arrows:true,
+                autoplay:false,
+                adaptiveHeight: true,
             }
-          },
-        ] 
-        });
+        }
+        ]  
+         
+    });
+
     </script>
   </body>
 </html>

@@ -6,6 +6,32 @@
     margin-bottom: 50px;
 }
 
+.event__title
+{
+    font-family: $font-family-bold;
+    font-size: 20px;
+    font-family: "Geometria";
+    color: rgb(0, 171, 197);
+    font-weight: bold;
+    line-height:72px;
+    letter-spacing: -0.04em;
+    margin-top: -20px;
+    margin-left: -5px;
+    letter-spacing: -0.04em;       
+}
+
+.event__title span
+{
+    font-family: $font-family-bold;
+    font-size: 20px;
+    font-family: "Geometria";
+    color: #d7d7d7;
+    font-weight: bold;
+    line-height:72px;
+    letter-spacing: -0.04em;  
+    padding-left: 10px;
+}
+
 .event__description
 {
    width: 520px;
@@ -17,7 +43,7 @@
 
 .event__bottom 
 {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .multiple-items img
@@ -37,6 +63,13 @@
        margin: 0 auto;
        padding-bottom: 50px;
    }
+
+.event__title
+{
+    width: 95%;
+    margin: 0 auto;
+}
+
   }
 
   
@@ -45,6 +78,13 @@
    {
        flex-direction: column;
    }
+
+   .event__title
+{
+    width:80%;
+    margin: 0 auto;
+}
+
 
    .event__info
    {

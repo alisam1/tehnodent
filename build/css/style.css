@@ -2836,6 +2836,7 @@ img.thumbnail {
   text-align: center;
   display: inline-block;
   min-height: 1px;
+  padding: 0 15px;
   display: none; }
   [dir="rtl"] .slick-slide {
     float: right; }
@@ -2937,7 +2938,7 @@ img.thumbnail {
     left: auto;
     right: -25px; }
   .slick-prev:before {
-    content: "../img/right_arrow.png"; }
+    content: none; }
     [dir="rtl"] .slick-prev:before {
       content: "->"; }
 
@@ -2994,7 +2995,7 @@ img.thumbnail {
         position: absolute;
         top: 0;
         left: 0;
-        content: "•";
+        content: none;
         width: 20px;
         height: 20px;
         font-family: "slick";

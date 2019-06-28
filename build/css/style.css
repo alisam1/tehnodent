@@ -935,7 +935,7 @@ template {
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .breadcrumbs__list {
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -945,7 +945,7 @@ template {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .breadcrumbs__list {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -3071,7 +3071,7 @@ img.thumbnail {
     margin: 0 auto;
     padding-bottom: 50px; }
   .event__title {
-    width: 95%;
+    width: 80%;
     margin: 0 auto; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -3087,7 +3087,7 @@ img.thumbnail {
     width: 80%;
     margin: 0 auto; }
   .event__description {
-    width: 280px;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 30px; }
   .event__img {

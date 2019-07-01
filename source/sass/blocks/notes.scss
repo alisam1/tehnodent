@@ -69,3 +69,33 @@
   text-align:center;
   margin-top: 30px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .notes__title
+  {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  .notes {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/question_bg.png");
+    background-size: cover;
+    margin-top: -16px;
+    padding-bottom: 30px;
+}
+
+.notes__title
+{
+  padding-top: 30px;
+}
+
+.notes__description {
+
+  width: 60%;
+}
+
+}

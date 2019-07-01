@@ -71,28 +71,41 @@
 
   <main class="main main-index">
    <div class="main__slider">
-      <div class="flicker-example" data-block-text="false">
-          <ul>
-          <li data-background="img/slide_1.png">
-          <div class="flick-content container">
-          <div class="flick-title">Асиметрии и перекрестный прикус</div>
-          <div class="flick-sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+    <div class="one-time">
+      <div class="slide_1">
+        <div class="slide__content">
+        <div class="slide__img"><img src="img/slide_img_1.png" alt=""></div>
+        <div class="slider__all">
+            <p class="slider__info">Семинар</p>
+            <h3 class="slider__title">Асиметрии и перекрестный прикус</h3>
+            <p class="slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <button class="slider__button">Записаться</button>
           </div>
-          </li>
-          <li data-background="img/slide_1.png">
-          <div class="flick-content container">
-          <div class="flick-title">Работа с Javascript или CSS</div>
-          <div class="flick-sub-text">Адаптивность слайдера позволит сделать кроссбраузерным Ваш сайт</div>
         </div>
-          </li>
-          <li data-background="img/slide_1.png">
-          <div class="flick-content container">
-          <div class="flick-title">Поддержка сенсорных дисплеев с помощью jQuery Touch</div>
-          <div class="flick-sub-text">Различные варианты управления слайдером помогут Вам легче справляться с задачами.</div>
+      </div>
+      <div class="slide_1">
+          <div class="slide__content">
+          <div class="slide__img"><img src="img/slide_img_1.png" alt=""></div>
+          <div class="slider__all">
+              <p class="slider__info">Семинар</p>
+              <h3 class="slider__title">Асиметрии и перекрестный прикус</h3>
+              <p class="slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <button class="slider__button">Записаться</button>
+            </div>
+          </div>
         </div>
-          </li>
-          </ul>
-   </div>
+        <div class="slide_1">
+            <div class="slide__content">
+            <div class="slide__img"><img src="img/slide_img_1.png" alt=""></div>
+            <div class="slider__all">
+                <p class="slider__info">Семинар</p>
+                <h3 class="slider__title">Асиметрии и перекрестный прикус</h3>
+                <p class="slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <button class="slider__button">Записаться</button>
+              </div>
+            </div>
+          </div>
+  </div>
 </div>
 
 <section class="advantages container">
@@ -230,13 +243,17 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
-    <script src="js/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
+    <script src="js/slick.min.js"></script>
     <script>
-        $(document).ready(function(){
-         
-        $('.flicker-example').flicker();
-        });
-        </script>
+        $('.one-time').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true
+
+    });
+
+    </script>
   </body>
 </html>

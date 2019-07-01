@@ -99,6 +99,11 @@
         border: 1px solid transparent;
     }
 }
+
+.main__slider .slick-slide
+{
+    padding: 0;
+}
 .slick-arrow.slick-hidden {
     display: none;
 }

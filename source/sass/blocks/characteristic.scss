@@ -22,6 +22,9 @@
 .characteristic-advantages .characteristic__card
 {
   width: 360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .characteristic__all
@@ -30,6 +33,13 @@
   margin-left: 80px;
 }
 
+.characteristic-advantages .characteristic__all
+{
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .characteristic__all::before
 {

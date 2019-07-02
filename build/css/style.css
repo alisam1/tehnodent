@@ -4005,6 +4005,8 @@ img.thumbnail {
     margin: 0 auto;
     margin-bottom: 30px; }
   .news__button {
+    margin-top: 30px; }
+  .news__button:hover {
     margin-top: 30px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {

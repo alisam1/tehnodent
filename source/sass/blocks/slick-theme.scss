@@ -90,7 +90,7 @@ $slick-opacity-not-active: 0.25 !default;
     position: absolute;
     display: block;
     height: 21px;
-    width: 22px;
+    width: 21px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
@@ -341,3 +341,24 @@ $slick-opacity-not-active: 0.25 !default;
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+.main__slider .slick-dots {
+
+    left: 8%;
+    bottom: 80px;
+    text-align: center;
+}
+}
+
+
+@media screen and (max-width: 767px){	
+	
+.main__slider .slick-dots
+{
+    left: 33%;
+    bottom: 20px;
+    text-align: center;
+}
+}	

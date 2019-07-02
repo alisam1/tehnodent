@@ -3261,7 +3261,7 @@ img.thumbnail {
       color: black;
       opacity: 0.75; }
 
-.main__slider .slick-dots {
+.main__slider .appendDots {
   width: 120px;
   position: absolute;
   bottom: 120px;
@@ -3270,9 +3270,8 @@ img.thumbnail {
   text-align: left;
   padding: 0;
   margin: 0;
-  left: 265px;
   cursor: pointer; }
-  .main__slider .slick-dots button {
+  .main__slider .appendDots button {
     border: 0;
     background: #fff;
     border-radius: 50%;
@@ -3285,23 +3284,21 @@ img.thumbnail {
     font-size: 0px;
     padding: 5px;
     cursor: pointer; }
-    .main__slider .slick-dots button:hover, .main__slider .slick-dots button:focus {
+    .main__slider .appendDots button:hover, .main__slider .appendDots button:focus {
       outline: none;
       background: #000; }
-      .main__slider .slick-dots button:hover:before, .main__slider .slick-dots button:focus:before {
+      .main__slider .appendDots button:hover:before, .main__slider .appendDots button:focus:before {
         opacity: 1; }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .main__slider .slick-dots {
-    left: 8%;
-    bottom: 80px;
+  .main__slider .appendDots {
     text-align: center; } }
 
 @media screen and (max-width: 767px) {
-  .main__slider .slick-dots {
-    left: 33%;
-    bottom: 20px;
-    text-align: center; }
+  .main__slider .appendDots {
+    text-align: center;
+    bottom: auto;
+    margin-left: 90px; }
   .main__slider .slick-next {
     position: absolute;
     display: block;

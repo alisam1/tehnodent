@@ -307,7 +307,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
 }
 
-.main__slider .slick-dots
+.main__slider .appendDots
 {
     width: 120px;
     position: absolute;
@@ -317,7 +317,6 @@ $slick-opacity-not-active: 0.25 !default;
     text-align: left;
     padding: 0;
     margin: 0;
-    left: 265px;
     cursor: pointer;
     button {
         border: 0;
@@ -344,10 +343,8 @@ $slick-opacity-not-active: 0.25 !default;
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 
-    .main__slider .slick-dots {
+    .main__slider .appendDots{
 
-    left: 8%;
-    bottom: 80px;
     text-align: center;
 }
 }
@@ -355,11 +352,10 @@ $slick-opacity-not-active: 0.25 !default;
 
 @media screen and (max-width: 767px){	
 	
-    .main__slider .slick-dots
-{
-    left: 33%;
-    bottom: 20px;
+    .main__slider  .appendDots{
     text-align: center;
+    bottom: auto;
+    margin-left: 90px;
 }
 
 .main__slider .slick-next {

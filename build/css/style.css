@@ -4043,6 +4043,10 @@ img.thumbnail {
   .news__lead {
     margin-top: 0; }
   .news__button {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .news__button:hover {
+    margin-top: 30px;
     margin-bottom: 30px; } }
 
 .main-footer {

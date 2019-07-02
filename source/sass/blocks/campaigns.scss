@@ -1,0 +1,23 @@
+.campaigns
+{
+    width: 100%;
+    height: auto;
+    background-image: url("../img/action_bg.png");
+    background-size: cover;
+    position: relative;
+    top: 20px;
+}
+
+
+.campaigns__title
+{
+    font-family: $font-family-bold;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: -0.04em;
+    color: #4f4f6f;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}

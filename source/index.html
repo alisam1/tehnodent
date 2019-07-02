@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1" name="viewport">
     <title>TechnoDent</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -80,7 +81,6 @@
             <h3 class="slider__title">Асиметрии и перекрестный прикус</h3>
             <p class="slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             <button class="slider__button">Записаться</button>
-            <div class="slider__dots"></div>
           </div>
         </div>
       </div>
@@ -92,7 +92,6 @@
               <h3 class="slider__title">Асиметрии и перекрестный прикус</h3>
               <p class="slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               <button class="slider__button">Записаться</button>
-              <div class="slider__dots"></div>
             </div>
           </div>
         </div>
@@ -104,7 +103,6 @@
                 <h3 class="slider__title">Асиметрии и перекрестный прикус</h3>
                 <p class="slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <button class="slider__button">Записаться</button>
-                <div class="slider__dots"></div>
               </div>
             </div>
           </div>
@@ -153,6 +151,50 @@
 
     </div>
 
+</section>
+
+<section class="campaigns">
+  <div class="container">
+  <h3 class="campaigns__title">Акции</h3>
+      <div class="promo__catalog promo__catalog--campaigns">
+          <div class="catalog__card">
+              <div class="card">
+                <div class="card__img"><img src="img/card_1.png" alt="Card_5"></div>
+                <div class="card__text">
+                  <h4 class="card__title">Скидка 20%  на  брекеты Radiance</h4>
+                  <div class="card__description">Easily create tasks for you rself or assign one to  o ne to </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__card">
+                <div class="card">
+                  <div class="card__img"><img src="img/card_1.png" alt="Card_5"></div>
+                  <div class="card__text">
+                    <h4 class="card__title">Скидка 20%  на  брекеты Radiance</h4>
+                    <div class="card__description">Easily create tasks for you rself or assign one to  o ne to </div>
+                  </div>
+                </div>
+              </div>
+            <div class="catalog__card">
+                  <div class="card">
+                    <div class="card__img"><img src="img/card_1.png" alt="Card_5"></div>
+                    <div class="card__text">
+                      <h4 class="card__title">Скидка 20%  на  брекеты Radiance</h4>
+                      <div class="card__description">Easily create tasks for you rself or assign one to  o ne to </div>
+                    </div>
+                  </div>
+                </div>
+            <div class="catalog__card">
+                    <div class="card">
+                      <div class="card__img"><img src="img/card_1.png" alt="Card_5"></div>
+                      <div class="card__text">
+                        <h4 class="card__title">Скидка 20%  на  брекеты Radiance</h4>
+                        <div class="card__description">Easily create tasks for you rself or assign one to  o ne to </div>
+                      </div>
+                    </div>
+                  </div>
+      </div>
+  </div>
 </section>
 
 <section class="notes">
@@ -250,6 +292,7 @@
     <script>
         $('.one-time').slick({
           dots: true,
+          dotsClass: 'slick-dots',
           infinite: true,
           speed: 300,
           slidesToShow: 1,

@@ -716,6 +716,11 @@ template {
   letter-spacing: 0em;
   color: #fff; }
 
+.slider__dots {
+  width: 490px;
+  bottom: 120px;
+  margin-left: 50px; }
+
 .slider__button {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -2552,6 +2557,8 @@ img.thumbnail {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 10px; }
+  .promo__catalog--campaigns {
+    padding-bottom: 40px; }
 
 .promo__title {
   font-family: "Geometria-Bold";
@@ -3847,6 +3854,9 @@ img.thumbnail {
   margin-top: 30px; }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .notes {
+    position: relative;
+    bottom: 15px; }
   .notes__title {
     padding-top: 50px; } }
 
@@ -3857,7 +3867,9 @@ img.thumbnail {
     background-image: url("../img/question_bg.png");
     background-size: cover;
     margin-top: -16px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    position: relative;
+    bottom: 45px; }
   .notes__title {
     padding-top: 30px; }
   .notes__description {
@@ -4033,24 +4045,7 @@ img.thumbnail {
   margin-top: 60px; }
 
 .news__button:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 20px;
-  border: 1px solid #000;
-  background-color: transparent;
-  font-family: "Geometria-Bold";
-  font-size: 12px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #4f4f6f;
-  text-align: center;
-  margin-top: 60px; }
+  border: 1px solid #000; }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .news {
@@ -4110,6 +4105,25 @@ img.thumbnail {
   .news__button:hover {
     margin-top: 30px;
     margin-bottom: 30px; } }
+
+.campaigns {
+  width: 100%;
+  height: auto;
+  background-image: url("../img/action_bg.png");
+  background-size: cover;
+  position: relative;
+  top: 20px; }
+
+.campaigns__title {
+  font-family: "Geometria-Bold";
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: -0.04em;
+  color: #4f4f6f;
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 40px; }
 
 .main-footer {
   width: 100%;

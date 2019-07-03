@@ -1276,6 +1276,8 @@ template {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .catalog--categories {
+    margin-top: 35px; }
 
 .catalog__card {
   width: 265px;
@@ -4136,6 +4138,25 @@ img.thumbnail {
   text-align: center;
   padding-bottom: 10px;
   padding-top: 40px; }
+
+.categories__title {
+  font-family: "Geometria-Bold";
+  font-size: 20px;
+  line-height: 30px;
+  color: #00abc5;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-top: 0; }
+
+.categories__title::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/contacts_bottom.svg");
+  width: 830px;
+  height: 1px;
+  top: 52px;
+  left: 0px; }
 
 .main-footer {
   width: 100%;

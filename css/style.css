@@ -1253,6 +1253,13 @@ template {
     width: 180px;
     height: 1px;
     margin-top: 65px; }
+  .sidebar__title--categories::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/line_prod.png");
+    width: 205px;
+    height: 1px;
+    top: 10px; }
   .sidebar__submenu {
     list-style-type: none;
     padding-bottom: 20px;
@@ -1473,6 +1480,11 @@ template {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-left: 35px; }
+  .catalog__content--categories {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .catalog__card {
     width: 250px;
     height: 320px;
@@ -4157,6 +4169,25 @@ img.thumbnail {
   height: 1px;
   top: 52px;
   left: 0px; }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .categories__title {
+    margin-left: 0px;
+    position: relative; }
+  .categories__title::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/contacts_bottom.svg");
+    width: 600px;
+    height: 1px;
+    top: 60px;
+    left: 0px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .categories__title {
+    text-align: center; }
+  .categories__title::after {
+    display: none; } }
 
 .main-footer {
   width: 100%;

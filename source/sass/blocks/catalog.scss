@@ -263,6 +263,11 @@
       margin-left: 35px;
   }
 
+  .catalog__content--categories
+  {
+    flex-direction: column;
+  }
+
   .catalog__card {
     width: 250px;
     height: 320px;

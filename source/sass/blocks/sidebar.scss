@@ -38,6 +38,7 @@
   top: 66px;
 }
 
+
 .sidebar__menu
 {
   padding-left: 0;
@@ -216,6 +217,16 @@
   width: 180px;
   height: 1px;
   margin-top: 65px;
+}
+
+.sidebar__title--categories::before
+{
+  content: "";
+  position: absolute;
+  background-image: url("../img/line_prod.png");
+  width: 205px;
+  height: 1px;
+  top: 10px;
 }
 
   .sidebar__submenu {

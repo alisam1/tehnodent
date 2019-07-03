@@ -1,0 +1,22 @@
+.categories__title
+{
+  font-family: $font-family-bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #00abc5;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.categories__title::after
+{
+  content: "";
+  position: absolute;
+  background-image: url("../img/contacts_bottom.svg");
+  width: 830px;
+  height: 1px;
+  top: 52px;
+  left: 0px;
+}

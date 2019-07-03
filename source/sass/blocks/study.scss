@@ -22,6 +22,12 @@
  margin-left: 20px;
  margin-right: 10px;
 }
+
+.study__calendar--actions 
+{
+ margin-left: 0px;
+ margin-right: 10px;
+}
 .study__block
 {
     position: relative;
@@ -139,7 +145,7 @@
 
         .study__title
         {
-            width: 95%;
+            width: 80%;
             margin: 0 auto;
         }
         .study__all
@@ -172,7 +178,7 @@
 
     .study__title
         {
-        width: 85%;
+        width: 80%;
         margin: 0 auto;
         }
     .study__all

@@ -95,10 +95,30 @@
     background-size: cover;
 }
 
+.actions__block .news__img 
+{
+    flex: 0 0 35%;
+    max-width: 35%;
+    background-repeat: no-repeat;
+    background-position: 72% 50%;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
 .news__info
 {
     flex: 0 0 65%;
     max-width: 65%;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.actions__block .news__info
+{
+    flex: 0 0 60%;
+    max-width: 60%;
     padding-left: 20px;
     padding-bottom: 30px;
 }
@@ -120,6 +140,7 @@
     letter-spacing: 0em;
     color: #9fa4af;
     margin-top: -20px;
+    position: relative;
 }
 
 
@@ -132,6 +153,17 @@
     height: 1px;
     margin-top: 40px;
     margin-left: -150px;
+}
+
+.actions__block .news__data::after
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/data_line.png");
+    width:70px;
+    height: 1px;
+    top: 0px;
+    left: 155px;
 }
 
 .news__text

@@ -1,0 +1,92 @@
+.actions__block
+{
+    width: 50%;
+    margin-top: 25px;
+}
+
+.actions__block .news__card 
+{
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+
+    .actions__block
+    {
+        margin: 0 auto;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .actions__block .news__card
+    {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .news__button
+    {
+        margin-top: 30px;
+    }
+
+    .news__button:hover
+    {
+        margin-top: 30px;
+    }
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .actions__block
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .actions__block .news__card
+    {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .news__card:nth-child(2) {
+        margin-right: auto;
+    }
+
+    .actions__block .news__img
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        min-height: 150px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .actions__block .news__info
+    {
+        padding: 25px 15px;
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    .news__lead
+    {
+        margin-top: 0;
+    }
+
+    .news__button
+    { 
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .news__button:hover
+    {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+  }

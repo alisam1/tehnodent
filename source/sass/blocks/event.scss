@@ -32,6 +32,11 @@
     padding-left: 10px;
 }
 
+.event__info--news
+{
+    width: 50%;
+}
+
 .event__description
 {
    width: 520px;
@@ -39,6 +44,17 @@
    font-size: 12px;
    line-height: 22px;
    color: #808899;
+   margin-top: 0;
+   &--news 
+   {
+       width: 80%;
+
+   }
+}
+
+.event__img--news
+{
+    width: 50%;
 }
 
 .event__bottom 
@@ -83,6 +99,18 @@
 {
     width:80%;
     margin: 0 auto;
+}
+
+.event__title--news
+{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.event__title--news span
+{
+    font-size: 14px;
+    line-height: 24px;
 }
 
 

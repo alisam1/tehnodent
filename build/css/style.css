@@ -3397,12 +3397,21 @@ img.thumbnail {
   letter-spacing: -0.04em;
   padding-left: 10px; }
 
+.event__info--news {
+  width: 50%; }
+
 .event__description {
   width: 520px;
   font-family: "Geometria";
   font-size: 12px;
   line-height: 22px;
-  color: #808899; }
+  color: #808899;
+  margin-top: 0; }
+  .event__description--news {
+    width: 80%; }
+
+.event__img--news {
+  width: 50%; }
 
 .event__bottom {
   margin-bottom: 80px; }
@@ -3435,6 +3444,12 @@ img.thumbnail {
   .event__title {
     width: 80%;
     margin: 0 auto; }
+  .event__title--news {
+    font-size: 18px;
+    line-height: 28px; }
+  .event__title--news span {
+    font-size: 14px;
+    line-height: 24px; }
   .event__info {
     width: 80%;
     margin: 0 auto; }

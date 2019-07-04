@@ -633,13 +633,19 @@ template {
 
 .main-contacts {
   width: 100%;
-  height: 675px;
+  height: auto;
   background-image: url("../img/bg_contacts.png");
   background-size: cover; }
 
 .main-promo {
   width: 100%;
-  height: 875px;
+  height: auto;
+  background-image: url("../img/bg_contacts.png");
+  background-size: cover; }
+
+.main-actions {
+  width: 100%;
+  height: auto;
   background-image: url("../img/bg_contacts.png");
   background-size: cover; }
 
@@ -1698,7 +1704,8 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: -20px; }
+  margin-top: -20px;
+  padding-bottom: 65px; }
 
 .contacts__all {
   display: -webkit-box;
@@ -2570,7 +2577,8 @@ img.thumbnail {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 10px; }
+  margin-top: 10px;
+  padding-bottom: 50px; }
   .promo__catalog--campaigns {
     padding-bottom: 40px; }
 
@@ -2686,6 +2694,9 @@ img.thumbnail {
     font-size: 30px;
     width: 80%; } }
 
+.study-actions {
+  margin-top: -215px; }
+
 .study__title {
   font-family: "Geometria-Bold";
   font-size: 20px;
@@ -2705,7 +2716,7 @@ img.thumbnail {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 40px;
-  margin-bottom: 65px; }
+  padding-bottom: 50px; }
 
 .study__calendar {
   margin-left: 20px;
@@ -2713,7 +2724,10 @@ img.thumbnail {
 
 .study__calendar--actions {
   margin-left: 0px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  width: 490px;
+  height: 400px;
+  background-color: #fff; }
 
 .study__block {
   position: relative;
@@ -2856,11 +2870,18 @@ img.thumbnail {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    .study__all--actions {
+      margin-top: 25px; }
   .study__calendar {
     width: 80%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 100px; }
+    .study__calendar--actions {
+      height: auto;
+      background-color: #fff;
+      opacity: 0.5;
+      width: 100%; }
   .study__calendar img {
     width: 280px;
     margin: 0 auto; }
@@ -4158,6 +4179,8 @@ img.thumbnail {
     max-width: 80%; }
   .news__lead {
     margin-top: 0; }
+  .actions__block .news__data {
+    font-size: 11px; }
   .news__button {
     margin-top: 30px;
     margin-bottom: 30px; }
@@ -4224,7 +4247,7 @@ img.thumbnail {
 
 .actions__block {
   width: 50%;
-  margin-top: 25px; }
+  margin-top: 0px; }
 
 .actions__block .news__card {
   margin-right: 0;
@@ -4281,6 +4304,36 @@ img.thumbnail {
   .news__button:hover {
     margin-top: 30px;
     margin-bottom: 30px; } }
+
+.data-today {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.data-today__day {
+  font-family: "Geometria-Bold";
+  font-size: 212px;
+  line-height: 224px;
+  letter-spacing: -0.04em;
+  color: #e5f6f9; }
+
+.data-today__month {
+  font-family: "Geometria-Bold";
+  font-size: 212px;
+  line-height: 224px;
+  letter-spacing: -0.04em;
+  color: #e5f6f9; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .data-today__day, .data-today__month {
+    font-size: 150px; } }
 
 .main-footer {
   width: 100%;

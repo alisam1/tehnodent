@@ -1,7 +1,7 @@
 .main-contacts
 {
   width: 100%;
-  height: 675px;
+  height: auto;
   background-image: url("../img/bg_contacts.png");
   background-size: cover;
 }
@@ -9,7 +9,15 @@
 .main-promo
 {
   width: 100%;
-  height: 875px;
+  height: auto;
+  background-image: url("../img/bg_contacts.png");
+  background-size: cover;
+}
+
+.main-actions
+{
+  width: 100%;
+  height: auto;
   background-image: url("../img/bg_contacts.png");
   background-size: cover;
 }

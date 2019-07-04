@@ -1,3 +1,8 @@
+.study-actions 
+{
+    margin-top: -215px;
+}
+
 .study__title
 {
     font-family: $font-family-bold;
@@ -14,7 +19,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 40px;
-    margin-bottom: 65px;
+    padding-bottom: 50px;
 }
 
 .study__calendar
@@ -27,6 +32,9 @@
 {
  margin-left: 0px;
  margin-right: 10px;
+ width: 490px;
+ height: 400px;
+ background-color: #fff;
 }
 .study__block
 {
@@ -184,6 +192,10 @@
     .study__all
         {
         flex-direction: column;
+        &--actions 
+        {
+            margin-top: 25px;
+        }
         }
 
     .study__calendar
@@ -192,7 +204,14 @@
         margin: 0 auto;
         text-align: center;
         padding-bottom: 100px;
+        &--actions 
+        {
+            height: auto;
+            background-color: #fff;
+            opacity: 0.5;
+            width: 100%;        
         }
+    }
 
     .study__calendar img 
         {

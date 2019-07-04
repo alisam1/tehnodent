@@ -1,0 +1,33 @@
+.data-today 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.data-today__day
+{
+    font-family: $font-family-bold;
+    font-size: 212px;
+    line-height: 224px;
+    letter-spacing: -0.04em;
+    color: #e5f6f9;
+}
+
+
+.data-today__month
+{
+    font-family: $font-family-bold;
+    font-size: 212px;
+    line-height: 224px;
+    letter-spacing: -0.04em;
+    color: #e5f6f9;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .data-today__day, .data-today__month
+    {
+        font-size: 150px;
+    }
+}

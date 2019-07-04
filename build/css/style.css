@@ -2694,7 +2694,7 @@ img.thumbnail {
     font-size: 30px;
     width: 80%; } }
 
-.study-actions {
+.study-perform {
   margin-top: -215px; }
 
 .study__title {
@@ -2723,6 +2723,10 @@ img.thumbnail {
   margin-right: 10px; }
 
 .study__calendar--actions {
+  margin-left: 0px;
+  margin-right: 10px; }
+
+.study__calendar--perform {
   margin-left: 0px;
   margin-right: 10px;
   width: 490px;
@@ -2870,14 +2874,14 @@ img.thumbnail {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .study__all--actions {
+    .study__all--perform {
       margin-top: 25px; }
   .study__calendar {
     width: 80%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 100px; }
-    .study__calendar--actions {
+    .study__calendar--perform {
       height: auto;
       background-color: #fff;
       opacity: 0.5;
@@ -4247,7 +4251,7 @@ img.thumbnail {
 
 .actions__block {
   width: 50%;
-  margin-top: 0px; }
+  margin-top: 15px; }
 
 .actions__block .news__card {
   margin-right: 0;

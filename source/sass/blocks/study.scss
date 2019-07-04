@@ -1,4 +1,4 @@
-.study-actions 
+.study-perform
 {
     margin-top: -215px;
 }
@@ -28,7 +28,13 @@
  margin-right: 10px;
 }
 
-.study__calendar--actions 
+.study__calendar--actions
+{
+ margin-left: 0px;
+ margin-right: 10px;
+}
+
+.study__calendar--perform
 {
  margin-left: 0px;
  margin-right: 10px;
@@ -192,7 +198,7 @@
     .study__all
         {
         flex-direction: column;
-        &--actions 
+        &--perform
         {
             margin-top: 25px;
         }
@@ -204,7 +210,7 @@
         margin: 0 auto;
         text-align: center;
         padding-bottom: 100px;
-        &--actions 
+        &--perform 
         {
             height: auto;
             background-color: #fff;

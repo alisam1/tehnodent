@@ -4339,6 +4339,140 @@ img.thumbnail {
   .data-today__day, .data-today__month {
     font-size: 150px; } }
 
+.articles__title {
+  font-family: "Geometria-Bold";
+  font-size: 20px;
+  line-height: 30px;
+  color: #55c4da;
+  margin-top: -5px; }
+
+.articles__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%; }
+
+.articles__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22);
+          box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22);
+  background-color: #fff;
+  margin-bottom: 30px; }
+
+.news__card:hover {
+  -webkit-box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
+          box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
+  border-radius: 10px; }
+
+.articles__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-bottom: 30px; }
+
+.articles__lead {
+  font-family: "Geometria-Bold";
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.04em;
+  color: #4f4f6f; }
+
+.articles__text {
+  font-family: "Geometria";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #9fa4af; }
+
+.articles__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  border: 1px solid #00abc5;
+  background-color: transparent;
+  font-family: "Geometria-Bold";
+  font-size: 12px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #4f4f6f;
+  text-align: center;
+  margin-top: 60px; }
+
+.articles__button:hover {
+  border: 1px solid #000; }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .articles__title {
+    width: 80%;
+    margin: 0 auto; }
+  .articles__block {
+    margin: 0 auto;
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .articles__card {
+    margin: 0 auto;
+    margin-bottom: 30px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .articles__title {
+    width: 80%;
+    margin: 0 auto; }
+  .articles__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 0 auto; }
+  .articles__card {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .articles__info {
+    padding: 25px 15px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+    max-width: 80%; }
+  .articles__lead {
+    margin-top: 0; } }
+
 .main-footer {
   width: 100%;
   height: 285px;

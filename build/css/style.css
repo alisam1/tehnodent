@@ -4479,13 +4479,15 @@ img.thumbnail {
     margin: 0 auto;
     margin-bottom: 20px; }
   .articles__info {
-    padding: 25px 15px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 80%;
             flex: 0 0 80%;
     max-width: 80%; }
+  .articles__card--article .article__info {
+    padding: 0;
+    padding-top: 10px; }
   .articles__lead {
-    margin-top: 0; } }
+    margin-top: 20px; } }
 
 .main-footer {
   width: 100%;

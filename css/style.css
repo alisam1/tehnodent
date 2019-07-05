@@ -2406,6 +2406,10 @@ template {
   margin-top: -270px;
   margin-left: 400px; }
 
+.start-clip {
+  margin-top: -220px;
+  margin-left: 320px; }
+
 div.thumbnail_container {
   width: 646px;
   height: 281px;
@@ -2419,6 +2423,13 @@ div.thumbnail__webinar {
   overflow: hidden;
   background-color: #fff;
   background-image: url("../img/webinar_video.png"); }
+
+div.thumbnail__clip {
+  width: 780px;
+  height: 339px;
+  overflow: hidden;
+  background-color: #fff;
+  background-image: url("../img/video_clip.png"); }
 
 img.thumbnail {
   margin-top: 0px;
@@ -2504,6 +2515,12 @@ img.thumbnail {
     overflow: hidden;
     background-color: #fff;
     background-image: url("../img/video_tablet.png"); }
+  div.thumbnail__clip {
+    width: 545px;
+    height: 237px;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: url("../img/tablet_clip.png"); }
   .start-video {
     position: absolute;
     padding: 12px;
@@ -2547,11 +2564,24 @@ img.thumbnail {
     background-color: #fff;
     background-image: url("../img/video_mobile.png");
     margin-left: -10px; }
+  div.thumbnail__clip {
+    width: 180px;
+    height: 78px;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: url("../img/mobile_clip.png"); }
   .start-video {
     position: absolute;
     padding: 12px;
     margin-top: -110px;
     margin-left: 90px; }
+  .start-clip {
+    position: absolute;
+    padding: 12px;
+    margin-top: -65px;
+    margin-left: 60px; }
+  .start-clip img {
+    width: 30px; }
   .videos__info {
     width: auto;
     margin: 0 auto; } }
@@ -4425,6 +4455,9 @@ img.thumbnail {
   line-height: 34px;
   letter-spacing: -0.04em;
   color: #4f4f6f; }
+
+.articles__video {
+  margin-bottom: 30px; }
 
 .articles__text {
   font-family: "Geometria";

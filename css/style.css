@@ -4070,6 +4070,9 @@ img.thumbnail {
   color: #9fa4af;
   margin-top: -20px;
   position: relative; }
+  .news__data--lecture {
+    padding-top: 20px;
+    margin-bottom: 30px; }
 
 .news__data::after {
   content: "";
@@ -4078,6 +4081,15 @@ img.thumbnail {
   width: 70px;
   height: 1px;
   margin-top: 40px;
+  margin-left: -150px; }
+
+.news__data--lecture::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/data_line.png");
+  width: 70px;
+  height: 1px;
+  margin-top: 30px;
   margin-left: -150px; }
 
 .actions__block .news__data::after {

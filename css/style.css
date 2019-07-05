@@ -4383,6 +4383,8 @@ img.thumbnail {
           box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22);
   background-color: #fff;
   margin-bottom: 30px; }
+  .articles__card--article {
+    padding-top: 20px; }
 
 .articles__block .news__card {
   margin-right: 0;
@@ -4402,7 +4404,7 @@ img.thumbnail {
       -ms-flex: 0 0 90%;
           flex: 0 0 90%;
   max-width: 90%;
-  padding-left: 20px;
+  padding-left: 35px;
   padding-bottom: 30px; }
 
 .articles__lead {
@@ -4477,13 +4479,15 @@ img.thumbnail {
     margin: 0 auto;
     margin-bottom: 20px; }
   .articles__info {
-    padding: 25px 15px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 80%;
             flex: 0 0 80%;
     max-width: 80%; }
+  .articles__card--article .article__info {
+    padding: 0;
+    padding-top: 10px; }
   .articles__lead {
-    margin-top: 0; } }
+    margin-top: 20px; } }
 
 .main-footer {
   width: 100%;

@@ -199,7 +199,7 @@ template {
 
 .wrap {
   position: absolute;
-  top: 5.5%;
+  top: 38px;
   right: 10%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);

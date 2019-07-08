@@ -5,6 +5,8 @@
     <meta content="width=device-width, user-scalable=no, initial-scale=1" name="viewport">
     <title>TechnoDent</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
   </head>
   <body>
 
@@ -68,7 +70,14 @@
       
           <div class="main-header__search">
             <div class="main-header__img main-header__img--search"><img src="img/logo_2.svg" alt="Logo_2"></div>
-            <div class="main-header__search-img"><img src="img/search.svg" alt="Search"></div>
+            <div class="main-header__search-img">
+              <div class="wrap">
+                <form>
+                <input type="text" class="input" placeholder="Поиск по сайту">
+              </form>
+              <button class="icon"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+          </div>
           </div>
       
          </div>
@@ -308,6 +317,15 @@
           appendDots: $('.appendDots'),
 
     });
+
+    $(document).ready(function(){
+  
+  $(".fa-search").click(function(){
+    $(".wrap, .input").toggleClass("active");
+    $("input[type='text']").focus();
+  });
+  
+});
 
     </script>
   </body>

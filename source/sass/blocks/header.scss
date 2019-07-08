@@ -1,3 +1,58 @@
+.wrap{
+  position: absolute;
+  top: 5.5%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  width: 0px;
+  height: 55px;
+  background: #fff;
+  line-height: 55px;
+  padding-right: 55px;
+  border-radius: 5px;
+  transition: left 0.5s ease;
+}
+
+.input{
+  border: 0;
+  background: transparent;
+  width: 0%;
+  outline: none;
+  font-family: $font-family;
+  font-size: 12px;
+  line-height: 25px;
+  color: #4f4f6f;
+  position: relative;
+}
+
+.wrap .fa{
+  color: #dcdce2;
+  position: absolute;
+  right: 17px;
+  top: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.wrap.active{
+  width:250px;
+  padding-left: 25px;
+  transition: right 0.5s ease;
+  box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
+  left: 80%;
+}
+
+.input.active{
+  width: 98%;
+  padding-left: 5px;
+}
+
+input::placeholder {
+  font-family: $font-family;
+  font-size: 12px;
+  line-height: 25px;
+  color: #4f4f6f;
+}
+
 .main-header
 {
   width: 100%;

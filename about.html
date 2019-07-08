@@ -5,6 +5,7 @@
     <meta content="width=device-width, user-scalable=no, initial-scale=1" name="viewport">
     <title>TechnoDent</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -39,13 +40,21 @@
       
               <nav class="nav">
                 <ul class="menu__list menu__list--tablet">
-                  <li class="menu__item menu__item--tablet"><a href="#">Главная</a></li>
-                  <li class="menu__item menu__item--tablet"><a href="#">О компании</a></li>
-                  <li class="menu__item menu__item--tablet"><a href="#">Продукция</a></li>
-                  <li class="menu__item menu__item--tablet"><a href="#">Каталоги и брошюры</a></li>
-                  <li class="menu__item menu__item--tablet"><a href="#">Обучение</a></li>
-                  <li class="menu__item menu__item--tablet"><a href="#">Новости</a></li>
-                  <li class="menu__item menu__item--tablet"><a href="#">Контакты</a></li>
+                  <li class="menu__item menu__item--tablet"><a href="./" title="Главная">Главная</a></li>
+                  <li class="menu__item menu__item--tablet"><a href="./about.html" title="О компании">О компании</a></li>
+                  <li class="menu__item menu__item--tablet"><a href="./catalog.html" title="Продукция">Продукция</a></li>
+                  <li class="menu__item menu__item--tablet"><a href="./books.html" title="Каталоги и брошюры">Каталоги и брошюры</a></li>
+                  <li class="menu__item menu__item--tablet"><a href="./study.html" title="Обучение">Обучение</a></li>
+                  <li class="menu__item menu__item--tablet"><a href="./news.html" title="Новости">Новости</a></li>
+                  <li class="menu__item menu__item--tablet"><a href="./contacts.html" title="Контакты">Контакты</a></li>
+                  <li class="menu__item menu__item--tablet">
+                    <div class="search-tablet">
+                      <form action="" method="get">
+                          <input name="search" placeholder="Поиск по сайту" type="search">
+                          <button class="search-tablet__button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+                    </div>
+                  </li>
                 </ul>
               </nav>
           </div>
@@ -55,7 +64,12 @@
       
       
             <div class="main-header__info">
-              <p class="main-header__city">Санкт-Петербург</p>
+              <p class="main-header__city">
+                	<select class="select__city" name="example" size="1">
+                      <option value="Санкт-Петербург">Санкт-Петербург</option>
+                      <option value="Москва">Москва</option>
+                    </select>
+              </p>
               <p class="main-header__phone"><a href="tel:8800600500">8 800 600 500</a></p>
               <p class="main-header__phone main-header__phone--desktop"><a href="tel:8800600500"><img src="img/phone_icon.png" alt="Phone"></a></p>
               <button class="main-header__button"><a href="#">Скачать каталог</a></button>
@@ -63,13 +77,24 @@
       
           <div class="main-header__search">
             <div class="main-header__img main-header__img--search"><img src="img/logo_2.svg" alt="Logo_2"></div>
-            <div class="main-header__search-img"><img src="img/search.svg" alt="Search"></div>
+            <div class="main-header__search-img">
+              <div class="wrap">
+                <form>
+                <input type="text" class="input" placeholder="Поиск по сайту">
+              </form>
+              <button class="icon"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
           </div>
+        </div>
       
          </div>
-      
         </header>
-
+        <div class="desktop_hd">
+            <form action="" method="get">
+                <input name="search" placeholder="Поиск по сайту" type="search">
+                <button class="desktop_hd__button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </form>
+            </div>
   <main class="main">
 
     <div class="about container">

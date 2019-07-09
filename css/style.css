@@ -3737,6 +3737,9 @@ img.thumbnail {
       color: black;
       opacity: 0.75; }
 
+.slick-dots li.slick-active button {
+  background-color: #00d8e4; }
+
 .main__slider .appendDots {
   width: 120px;
   position: absolute;

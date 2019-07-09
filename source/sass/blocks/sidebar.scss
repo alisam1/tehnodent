@@ -82,6 +82,29 @@
   color: #b3b3b3;
 }
 
+.sidebar__submenu--product-promo
+{
+  margin-top: -5px;
+}
+
+.sidebar__submenu--product-promo a
+{
+  font-family: $font-family-medium;
+  font-size: 10px;
+  color: #00abc5;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sidebar__submenu--product-promo a:hover
+{
+  font-family: $font-family-medium;
+  font-size: 10px;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .sidebar__item a:hover
 {
   font-family: $font-family;
@@ -112,6 +135,18 @@
   text-decoration: none;
 }
 
+.sidebar__submenu--promo a {
+	position: relative;
+	display: block;
+	background: #fff;
+  font-family: $font-family-medium;
+  font-size: 12px;
+  line-height: auto;
+  color: #00abc5;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .sidebar__menu--product label, .sidebar-menu--product a {
 	position: relative;
 	display: block;
@@ -135,6 +170,20 @@
 {
   font-family: $font-family-bold;
   color: #00abc5;
+  cursor: pointer;
+}
+
+.sidebar__submenu--promo label:hover
+{
+  font-family: $font-family-bold;
+  color: #4f4f6f;
+  cursor: pointer;
+}
+
+.sidebar__submenu--promo label:active
+{
+  font-family: $font-family-bold;
+  color: #4f4f6f;
   cursor: pointer;
 }
 

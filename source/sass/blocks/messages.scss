@@ -69,6 +69,13 @@
   color: #808899;
 }
 
+.form-messages__form input::placeholder {
+  font-family: $font-family-light;
+  font-size: 12px;
+  line-height: 25px;
+  color: #808899;
+}
+
 .form-messages__form textarea
 {
   width: 210px;
@@ -81,11 +88,19 @@
   padding-right: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 0px;
+  margin-left: auto;
   font-family: $font-family-light;
   font-size: 12px;
   color: #808899;
 }
+
+.form-messages__form textarea::placeholder {
+  font-family: $font-family-light;
+  font-size: 12px;
+  line-height: 25px;
+  color: #808899;
+}
+
 
 .form-messages__form input[type="submit"]
 {

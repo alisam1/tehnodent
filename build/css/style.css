@@ -3765,9 +3765,12 @@ img.thumbnail {
     cursor: pointer; }
     .main__slider .appendDots button:hover, .main__slider .appendDots button:focus {
       outline: none;
-      background: #000; }
+      background: #00d8e4; }
       .main__slider .appendDots button:hover:before, .main__slider .appendDots button:focus:before {
         opacity: 1; }
+
+.main__slider .appendDots .slick-dots li.slick-active button {
+  background-color: #00d8e4; }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .main__slider .appendDots {

@@ -1542,7 +1542,9 @@ template {
     background-image: url("../img/line_prod.png");
     width: 205px;
     height: 1px;
-    top: 10px; }
+    top: 75px; }
+  .sidebar__menu--categories {
+    margin-top: 40px; }
   .sidebar__submenu {
     list-style-type: none;
     padding-bottom: 20px;
@@ -1571,7 +1573,7 @@ template {
 
 .catalog__card {
   width: 265px;
-  height: 320px;
+  height: auto;
   border-radius: 6px;
   margin-right: 30px;
   margin-bottom: 32px; }
@@ -1603,11 +1605,10 @@ template {
 .card {
   border-radius: 6px;
   background-color: #fff;
-  height: 320px;
+  height: 100%;
+  padding-bottom: 20px;
   -webkit-box-shadow: 5.29px 7.281px 14.24px 1.76px rgba(58, 58, 68, 0.21);
           box-shadow: 5.29px 7.281px 14.24px 1.76px rgba(58, 58, 68, 0.21); }
-  .card--categories {
-    height: auto; }
   .card--book {
     height: auto;
     padding-bottom: 10px; }
@@ -1799,14 +1800,17 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+  .card--categories {
+    padding-bottom: 0; }
   .catalog__card {
     width: 250px;
-    height: 320px;
+    height: 100%;
     border-radius: 5px;
     margin-right: 10px;
     margin-bottom: 10px; }
     .catalog__card--categories {
-      height: auto; }
+      height: auto;
+      margin-bottom: 20px; }
   .catalog__card:nth-child(3) {
     margin-right: 10px; }
   .catalog__card:nth-child(6) {
@@ -1829,13 +1833,17 @@ template {
   .catalog {
     width: 80%;
     margin: 0 auto; }
+  .card--categories {
+    padding-bottom: 0; }
   .catalog__card {
     width: 270px;
     margin: 0 auto;
     padding-bottom: 10px;
     margin-bottom: 20px; }
     .catalog__card--categories {
-      height: auto; }
+      height: auto;
+      margin-bottom: 20px;
+      padding-bottom: 0; }
   .catalog__card:nth-child(3) {
     margin: 0 auto;
     margin-bottom: 20px; }

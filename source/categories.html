@@ -113,7 +113,7 @@
     <section class="sidebar">
       <div class="sidebar">
         <h3 class="sidebar__title sidebar__title--categories">Продукция</h3>
-        <ul class="sidebar__menu">
+        <ul class="sidebar__menu sidebar__menu--categories">
         	<li class="sidebar__submenu">
         		<input type="checkbox" name ="group-1" id="group-1" checked>
         		<label for="group-1">Самолигирующие брекеты</label>
@@ -341,6 +341,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/search.js"></script>
   <script src="js/sidebar.js"></script>
+  <script>
+    (function() {
+                /* matchHeight example */
+                $(function() {
+                    // apply your matchHeight on DOM ready (they will be automatically re-applied on load or resize)
+                    // get test settings
+                    var byRow = $('body').hasClass('catalog__card');
+                    // apply matchHeight to each item container's items
+                    $('.catalog__card').each(function() {
+                        $(this).children('.catalog__card--categories').matchHeight({
+                            byRow: byRow
+                        });
+                    });
+                  });
+                });
+
+  </script>
 
   </body>
 </html>

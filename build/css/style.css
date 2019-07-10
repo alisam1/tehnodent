@@ -1810,6 +1810,8 @@ template {
     margin-right: 10px; }
   .catalog__card:nth-child(6) {
     margin-right: 10px; }
+  .promo__catalog .catalog__card:nth-child(4) {
+    margin-right: 20px; }
   .card__img--sale::after {
     content: "";
     position: absolute;

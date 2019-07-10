@@ -144,6 +144,7 @@
   .contacts__title
   {
     margin-left: 80px;
+    position: relative;
   }
 
   .contacts__title::after
@@ -153,8 +154,8 @@
     background-image: url("../img/contacts_bottom.svg");
     width: 600px;
     height: 1px;
-    margin-top: 35px;
-    margin-left: -95px;
+    top: 40px;
+   left: 0px;
   }
 
   .contacts__all
@@ -170,6 +171,7 @@
     margin-bottom: 0px;
     width: 75%;
     margin: 0 auto;
+    margin-top: 30px;
   }
 
   .card-contacts

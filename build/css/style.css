@@ -2101,15 +2101,16 @@ template {
         -ms-flex-direction: column;
             flex-direction: column; }
   .contacts__title {
-    margin-left: 80px; }
+    margin-left: 80px;
+    position: relative; }
   .contacts__title::after {
     content: "";
     position: absolute;
     background-image: url("../img/contacts_bottom.svg");
     width: 600px;
     height: 1px;
-    margin-top: 35px;
-    margin-left: -95px; }
+    top: 40px;
+    left: 0px; }
   .contacts__all {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2128,7 +2129,8 @@ template {
             justify-content: space-between;
     margin-bottom: 0px;
     width: 75%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 30px; }
   .card-contacts {
     height: 270px; }
   .map-img {

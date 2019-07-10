@@ -1323,7 +1323,7 @@ template {
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .breadcrumbs__list {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1528,14 +1528,14 @@ template {
     font-size: 20px;
     line-height: 72px;
     color: #00abc5;
-    margin-left: 20px; }
+    margin-left: 20px;
+    position: relative; }
   .sidebar__title::before {
     content: "";
     position: absolute;
     background-image: url("../img/line_prod.png");
     width: 180px;
-    height: 1px;
-    margin-top: 65px; }
+    height: 1px; }
   .sidebar__title--categories::before {
     content: "";
     position: absolute;
@@ -1552,7 +1552,7 @@ template {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .sidebar {
     display: block;
-    width: 240px;
+    width: 90%;
     margin: 0 auto; } }
 
 .catalog {
@@ -1640,7 +1640,8 @@ template {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   background-color: #f0f5f8;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .card__img--book {
     height: 190px; }
 
@@ -1650,8 +1651,8 @@ template {
   background-image: url("../img/sale_icon.svg");
   width: 32px;
   height: 32px;
-  margin-top: 103px;
-  margin-left: 23px; }
+  right: 20px;
+  top: 110px; }
 
 .card__img--mrx::before {
   content: "";
@@ -1659,8 +1660,8 @@ template {
   background-image: url("../img/mrx.svg");
   width: 43px;
   height: 9px;
-  margin-left: -35px;
-  margin-top: 10px; }
+  top: 15px;
+  left: 30px; }
 
 .card__img--mini::before {
   content: "";
@@ -1668,8 +1669,8 @@ template {
   background-image: url("../img/mini.svg");
   width: 64px;
   height: 24px;
-  margin-left: -65px;
-  margin-top: 10px; }
+  top: 15px;
+  left: 30px; }
 
 .card__img--power::before {
   content: "";
@@ -1677,8 +1678,8 @@ template {
   background-image: url("../img/power.svg");
   width: 43px;
   height: 14px;
-  margin-left: -25px;
-  margin-top: 10px; }
+  top: 15px;
+  left: 30px; }
 
 .card__img--euro::before {
   content: "";
@@ -1686,8 +1687,8 @@ template {
   background-image: url("../img/empower.svg");
   width: 55px;
   height: 14px;
-  margin-left: -40px;
-  margin-top: 10px; }
+  top: 15px;
+  left: 30px; }
 
 .promo__catalog .card__img::before {
   content: "";
@@ -1817,9 +1818,7 @@ template {
     position: absolute;
     background-image: url("../img/sale_icon.svg");
     width: 32px;
-    height: 32px;
-    margin-top: 103px;
-    margin-left: 0px; } }
+    height: 32px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .main__content {
@@ -1833,11 +1832,13 @@ template {
   .catalog__card {
     width: 270px;
     margin: 0 auto;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    margin-bottom: 20px; }
     .catalog__card--categories {
       height: auto; }
   .catalog__card:nth-child(3) {
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-bottom: 20px; }
   .catalog__card:nth-child(6) {
     margin: 0 auto; }
   .promo__catalog .catalog__card {
@@ -1857,9 +1858,7 @@ template {
     position: absolute;
     background-image: url("../img/sale_icon.svg");
     width: 32px;
-    height: 32px;
-    margin-top: 103px;
-    margin-left: 0px; } }
+    height: 32px; } }
 
 .question {
   width: 100%;

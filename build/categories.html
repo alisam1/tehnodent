@@ -341,23 +341,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/search.js"></script>
   <script src="js/sidebar.js"></script>
+  <script src="js/match-height.js"></script>
   <script>
-    (function() {
-                /* matchHeight example */
-                $(function() {
-                    // apply your matchHeight on DOM ready (they will be automatically re-applied on load or resize)
-                    // get test settings
-                    var byRow = $('body').hasClass('catalog__card');
-                    // apply matchHeight to each item container's items
-                    $('.catalog__card').each(function() {
-                        $(this).children('.catalog__card--categories').matchHeight({
-                            byRow: byRow
-                        });
-                    });
-                  });
-                });
-
-  </script>
-
+      $('.card').matchHeight({
+       property: 'height'
+        });
+     </script>
   </body>
 </html>
+
+  
+

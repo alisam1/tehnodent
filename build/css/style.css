@@ -830,7 +830,8 @@ template {
   width: 100%;
   height: auto;
   background-image: url("../img/bg_contacts.png");
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 80px; }
 
 .main-actions {
   width: 100%;
@@ -953,7 +954,8 @@ template {
     width: 100%;
     height: auto;
     background-image: url("../img/bg_contacts.png");
-    background-size: cover; }
+    background-size: cover;
+    padding-bottom: 50px; }
   .main-promo {
     height: auto; }
   .main-contacts .main__content {
@@ -982,7 +984,8 @@ template {
   .main-contacts {
     height: auto; }
   .main-promo {
-    height: auto; }
+    height: auto;
+    padding-bottom: 30px; }
   .main-contacts .main__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1578,7 +1581,7 @@ template {
   width: 265px;
   height: auto;
   border-radius: 6px;
-  margin-right: 30px;
+  margin-right: 20px;
   margin-bottom: 32px; }
   .catalog__card--categories {
     -webkit-box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
@@ -1595,18 +1598,6 @@ template {
 
 .promo__catalog .catalog__card {
   margin-right: 20px; }
-
-.promo__catalog .catalog__card:nth-child(3) {
-  margin-right: 20px; }
-
-.promo__catalog .catalog__card:nth-child(6) {
-  margin-right: 20px; }
-
-.promo__catalog .catalog__card:nth-child(4) {
-  margin-right: 0px; }
-
-.promo__catalog .catalog__card:nth-child(8) {
-  margin-right: 0px; }
 
 .card {
   height: auto;

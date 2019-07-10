@@ -1567,7 +1567,10 @@ template {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   .catalog--categories {
     margin-top: 35px; }
 
@@ -1587,7 +1590,8 @@ template {
     min-height: 250px;
     height: auto;
     -webkit-box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
-            box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53); }
+            box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
+    margin-right: 20px; }
 
 .promo__catalog .catalog__card {
   margin-right: 20px; }
@@ -1618,24 +1622,6 @@ template {
   -webkit-box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
           box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
   border-radius: 6px; }
-
-.catalog__card:nth-child(3) {
-  margin-right: 0px; }
-
-.catalog__card:nth-child(6) {
-  margin-right: 0px; }
-
-.catalog__card--book:nth-child(3) {
-  margin-right: 20px; }
-
-.catalog__card--book:nth-child(6) {
-  margin-right: 20px; }
-
-.catalog__card--book:nth-child(4) {
-  margin-right: 0px; }
-
-.catalog__card--book:nth-child(8) {
-  margin-right: 0px; }
 
 .card__img {
   height: 160px;
@@ -1784,7 +1770,9 @@ template {
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .catalog {
-    width: auto; }
+    width: auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
   .catalog__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1812,12 +1800,6 @@ template {
     .catalog__card--categories {
       height: auto;
       margin-bottom: 20px; }
-  .catalog__card:nth-child(3) {
-    margin-right: 10px; }
-  .catalog__card:nth-child(6) {
-    margin-right: 10px; }
-  .promo__catalog .catalog__card:nth-child(4) {
-    margin-right: 20px; }
   .card__img--sale::after {
     content: "";
     position: absolute;
@@ -1845,23 +1827,12 @@ template {
       height: auto;
       margin-bottom: 20px;
       padding-bottom: 0; }
-  .catalog__card:nth-child(3) {
-    margin: 0 auto;
-    margin-bottom: 20px; }
-  .catalog__card:nth-child(6) {
-    margin: 0 auto; }
+    .catalog__card--book {
+      padding-bottom: 0; }
   .promo__catalog .catalog__card {
     margin-right: 0;
     margin-left: 0;
     padding-bottom: 20px; }
-  .promo__catalog .catalog__card:nth-child(3) {
-    margin: 0 auto;
-    margin-right: 0;
-    margin-left: 0; }
-  .promo__catalog .catalog__card:nth-child(6) {
-    margin: 0 auto;
-    margin-right: 0;
-    margin-left: 0; }
   .card__img--sale::after {
     content: "";
     position: absolute;

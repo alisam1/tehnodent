@@ -256,6 +256,7 @@
     line-height: 72px;
     color: #00abc5;
     margin-left: 20px;
+    position: relative;
 }
 
 .sidebar__title::before
@@ -265,7 +266,6 @@
   background-image: url("../img/line_prod.png");
   width: 180px;
   height: 1px;
-  margin-top: 65px;
 }
 
 
@@ -292,7 +292,7 @@
   .sidebar
   {
     display: block;
-    width: 240px;
+    width: 90%;
     margin: 0 auto;
   }
 }

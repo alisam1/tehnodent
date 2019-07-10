@@ -117,6 +117,7 @@
   border-top-right-radius: 6px;
   background-color: #f0f5f8;
   text-align: center;
+  position: relative;
   &--book
   {
     height: 190px;
@@ -131,8 +132,8 @@
   background-image: url("../img/sale_icon.svg");
   width: 32px;
   height:32px;
-  margin-top: 103px;
-  margin-left: 23px;
+  right: 20px;
+  top: 110px;
 }
 
 .card__img--mrx::before
@@ -142,8 +143,9 @@
   background-image: url("../img/mrx.svg");
   width: 43px;
   height:9px;
-  margin-left: -35px;
-  margin-top: 10px;
+  top: 15px;
+  left: 30px
+  
 }
 
 .card__img--mini::before
@@ -153,8 +155,8 @@
   background-image: url("../img/mini.svg");
   width: 64px;
   height:24px;
-  margin-left: -65px;
-  margin-top: 10px;
+  top: 15px;
+  left: 30px
 }
 
 .card__img--power::before
@@ -164,8 +166,8 @@
   background-image: url("../img/power.svg");
   width: 43px;
   height:14px;
-  margin-left: -25px;
-  margin-top: 10px;
+  top: 15px;
+  left: 30px
 }
 
 
@@ -176,8 +178,8 @@
   background-image: url("../img/empower.svg");
   width: 55px;
   height:14px;
-  margin-left: -40px;
-  margin-top: 10px;
+  top: 15px;
+  left: 30px
 }
 
 .promo__catalog .card__img::before
@@ -351,8 +353,6 @@
   background-image: url("../img/sale_icon.svg");
   width: 32px;
   height:32px;
-  margin-top: 103px;
-  margin-left: 0px;
 }
 }
 
@@ -374,6 +374,7 @@
     width: 270px;
     margin: 0 auto;
     padding-bottom: 10px;
+    margin-bottom: 20px;
     &--categories
     {
       height: auto;
@@ -383,6 +384,7 @@
   .catalog__card:nth-child(3)
   {
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .catalog__card:nth-child(6)
@@ -421,7 +423,5 @@
     background-image: url("../img/sale_icon.svg");
     width: 32px;
     height:32px;
-    margin-top: 103px;
-    margin-left: 0px;
   }
 }

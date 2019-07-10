@@ -2076,16 +2076,15 @@ template {
 .map-img {
   margin-top: 90px; }
 
-#map-spb {
+.maps {
   width: 550px;
   height: 350px;
   margin: 0 auto; }
 
-#map-msk {
+#map {
   width: 550px;
   height: 350px;
-  margin: 0 auto;
-  display: none; }
+  margin: 0 auto; }
 
 .ymaps-layers-pane {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");

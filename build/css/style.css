@@ -3722,6 +3722,8 @@ img.thumbnail {
 
 .main__slider .appendDots {
   width: 120px;
+  height: 20px;
+  background-color: #808899;
   position: absolute;
   bottom: 120px;
   list-style: none;
@@ -3749,7 +3751,7 @@ img.thumbnail {
       .main__slider .appendDots button:hover:before, .main__slider .appendDots button:focus:before {
         opacity: 1; }
 
-.main__slider .appendDots .slick-dots li.slick-active button {
+.main-dots li.slick-active button {
   background-color: #00d8e4; }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {

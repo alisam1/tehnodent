@@ -216,7 +216,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .main__slider .slick-prev
 {
-    left: 25px;
+    left: 50px;
     z-index: 9999;
 }
 
@@ -236,7 +236,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .main__slider .slick-next
 {
-    right: 25px;
+    right: 50px;
     z-index: 9999;
 }
 
@@ -311,18 +311,22 @@ $slick-opacity-not-active: 0.25 !default;
     background-color: #00d8e4;
 }
 
-.main__slider .appendDots
+.main__slider .slick-dots li.slick-active button {
+    background-color: #404040;
+}
+
+
+.main__slider .slick-dots
 {
-    width: 120px;
-    height: 20px;
-    background-color: #808899;
-    position: absolute;
+    position: relative;
     bottom: 120px;
     list-style: none;
-    display: block;
-    text-align: left;
+    display: flex;
+    text-align: center;
     padding: 0;
     margin: 0;
+    max-width: 1140px;
+    margin: 0 auto;
     cursor: pointer;
     button {
         border: 0;
@@ -339,7 +343,7 @@ $slick-opacity-not-active: 0.25 !default;
         cursor: pointer;
         &:hover, &:focus {
             outline: none;
-            background: #00d8e4;
+            background: #4f4f6f;
             &:before {
                 opacity: $slick-opacity-on-hover;
             }
@@ -348,25 +352,54 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .main-dots li.slick-active button {
-    background-color: #00d8e4;
+    background-color: #4f4f6f;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 
-    .main__slider .appendDots{
+    .main__slider .slick-dots
+    {
+        position: relative;
+        bottom: 100px;
+        list-style: none;
+        display: flex;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        max-width: 650px;
+        justify-content: center;
+        margin: 0 auto;
+    }
 
-    text-align: center;
+.main__slider .slick-prev
+{
+    left: 10px;
+    z-index: 9999;
+}
+
+.main__slider .slick-next
+{
+    right: 10px;
+    z-index: 9999;
 }
 }
 
 
 @media screen and (max-width: 767px){	
 	
-    .main__slider  .appendDots{
-    text-align: center;
-    bottom: auto;
-    margin-left: 90px;
-}
+    .main__slider .slick-dots
+    {
+        position: relative;
+        bottom: 50px;
+        list-style: none;
+        display: flex;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        max-width: 320px;
+        justify-content:center;
+        margin: 0 auto;
+    }
 
 .main__slider .slick-next {
     position: absolute;

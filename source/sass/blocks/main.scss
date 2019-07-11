@@ -23,7 +23,6 @@
   background-size: cover;
 }
 
-
 .main__content
 {
   height: auto;
@@ -63,7 +62,7 @@
   text-align: left;
   width: 490px;
   padding-top: 80px;
-  padding-left: 70px;
+  padding-left: 0px;
 }
 
 .slide__img
@@ -77,7 +76,7 @@
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0em;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
 }
 
@@ -186,6 +185,29 @@
     padding-left: 70px;
 
 }
+
+.slider__title {
+  font-family: "Geometria-Bold";
+  font-size: 44px;
+  line-height: 54px;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-top: -10px;
+}
+
+.slider__info {
+  font-family: "Geometria-Medium";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+
+.slide__content
+{
+  width: 70%;
+}
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -243,11 +265,12 @@
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0em;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
   text-align: center;
 
 }
+
 
 .slider__title {
 

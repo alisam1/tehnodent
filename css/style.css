@@ -1581,7 +1581,7 @@ template {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .sidebar {
     display: block;
-    width: 90%;
+    width: 80%;
     margin: 0 auto; } }
 
 .catalog {
@@ -4275,7 +4275,7 @@ img.thumbnail {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 40px; } }
+    padding-bottom: 20px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .about__title {
@@ -4285,14 +4285,22 @@ img.thumbnail {
     display: none; }
   .about__all {
     margin-bottom: 50px; }
-  .about__top, .about__bottom {
+  .about__top {
     width: 80%;
     margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 40px; }
+    padding-bottom: 20px; }
+  .about__bottom {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0px; }
   .about__info {
     padding-bottom: 30px; }
   .about__text {
@@ -4985,7 +4993,9 @@ img.thumbnail {
 
 .actions__block {
   width: 55%;
-  margin-top: 15px; }
+  margin-top: 0px; }
+  .actions__block--lectures {
+    margin-top: 15px; }
 
 .actions__block .news__card {
   margin-right: 0;

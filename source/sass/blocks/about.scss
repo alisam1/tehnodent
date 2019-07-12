@@ -88,7 +88,7 @@
         width: 80%;
         margin: 0 auto;
         flex-direction: column;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
 
  
@@ -117,12 +117,20 @@
     margin-bottom: 50px;
 }
 
-    .about__top, .about__bottom
+    .about__top
     {
         width: 80%;
         margin: 0 auto;
         flex-direction: column;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
+    }
+
+    .about__bottom
+    {
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        padding-bottom: 0px;
     }
 
     .about__info

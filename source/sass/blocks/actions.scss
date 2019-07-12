@@ -1,7 +1,11 @@
 .actions__block
 {
     width: 55%;
+    margin-top: 0px;
+    &--lectures
+{
     margin-top: 15px;
+}
 }
 
 .actions__block .news__card 

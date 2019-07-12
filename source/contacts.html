@@ -173,7 +173,7 @@
           <form>
             <input name="name" placeholder="Ваше имя" class="name" type="text" required />
             <input name="tel" placeholder="Телефон" class="tel" type="tel" required />
-            <textarea placeholder="Сообщение" name="textarea" >
+            <textarea placeholder="Сообщение" name="textarea" class="form-messages__textarea" >
             <input name="submit" class="messages__btn" type="submit" value="Отправить" />
           </form>
           <p class="form-messages__info">Спасибо за сообщение!</p>
@@ -248,6 +248,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 	eventMaps();
+  mapSpb();
 });
 
 function eventMaps() {

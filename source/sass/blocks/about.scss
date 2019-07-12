@@ -8,8 +8,18 @@
     line-height:72px;
     letter-spacing: -0.04em;
     margin-top: -20px;
-    margin-left: -5px;
     letter-spacing: -0.04em;       
+    position: relative;
+}
+
+.about__title::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/contacts_bottom.svg");
+    width: 1140px;
+    height: 1px;
+    top: 60px;
+    left: 0px;
 }
 
 .about__image img
@@ -60,6 +70,19 @@
     margin: 0 auto;
 }
 
+
+.about__title::after
+{
+  content: "";
+  position: absolute;
+  background-image: url("../img/contacts_bottom.svg");
+  width: 570px;
+  height: 1px;
+  top: 60px;
+ left: 0px;
+}
+
+
     .about__top, .about__bottom
     {
         width: 80%;
@@ -80,6 +103,14 @@
     width: 80%;
     margin: 0 auto;
 }
+
+
+
+.about__title::after
+    {
+    display: none;
+    }
+
 
 .about__all
 {

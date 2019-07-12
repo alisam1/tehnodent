@@ -26,6 +26,7 @@
 {
  margin-left: 20px;
  margin-right: 10px;
+ width: 43%;
 }
 
 .study__calendar--actions
@@ -55,6 +56,11 @@
     width: 300px;
     margin-right: 30px;
     }
+
+    .study__card img {
+        border-radius: 6px;
+    }
+
     .study__card:nth-child(1)
     {
         position: relative;
@@ -98,6 +104,12 @@
     border-bottom-right-radius: 6px;
 
     }
+
+    .study__card .study__text a{
+        color:#fff;
+        text-decoration: none;
+    
+        }
 
     .study__card .study__link 
 {

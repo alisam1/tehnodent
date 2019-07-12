@@ -15,6 +15,11 @@
   position: relative;
 }
 
+.image__block img
+{
+ border-radius: 6px;
+}
+
 .image__block:hover
 {
   width: 200px;

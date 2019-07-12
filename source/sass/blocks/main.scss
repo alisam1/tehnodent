@@ -12,7 +12,7 @@
   height: auto;
   background-image: url("../img/bg_contacts.png");
   background-size: cover;
-  padding-bottom: 80px;
+  padding-bottom: 0px;
 }
 
 .main-actions
@@ -23,6 +23,13 @@
   background-size: cover;
 }
 
+.main-product
+{
+  width: 100%;
+  height: auto;
+  background-image: url("../img/bg_contacts.png");
+  background-size: cover;
+}
 .main__content
 {
   height: auto;

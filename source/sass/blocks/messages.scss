@@ -30,6 +30,7 @@
   opacity: 1;
   background-color: #fff;
   margin-top: 35px;
+  box-shadow: 0px 0px 32.8px 7.2px rgba(204, 204, 223, 0.22);
 }
 
 .form-messages__text
@@ -67,6 +68,7 @@
   font-family: $font-family-light;
   font-size: 12px;
   color: #808899;
+  opacity: 1;
 }
 
 .form-messages__form input::placeholder {
@@ -74,6 +76,7 @@
   font-size: 12px;
   line-height: 25px;
   color: #808899;
+  opacity: 1;
 }
 
 .form-messages__form textarea
@@ -84,7 +87,7 @@
   border: none;
   margin-bottom: 20px;
   border-radius: 6px;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-right: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -94,13 +97,13 @@
   color: #808899;
 }
 
-.form-messages__form textarea::placeholder {
+.form-messages__textarea::placeholder {
   font-family: $font-family-light;
   font-size: 12px;
   line-height: 25px;
   color: #808899;
+  opacity: 1;
 }
-
 
 .form-messages__form input[type="submit"]
 {

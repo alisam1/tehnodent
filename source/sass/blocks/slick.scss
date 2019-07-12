@@ -21,6 +21,7 @@
     margin: 0;
     padding: 0;
     padding-left: 5px;
+    margin: 0;
 
     &:focus {
         outline: none;
@@ -30,6 +31,11 @@
         cursor: pointer;
         cursor: hand;
     }
+}
+
+.event__bottom .slick-list
+{
+    margin: 0 -20px;
 }
 .slick-slider .slick-track,
 .slick-slider .slick-list {
@@ -99,6 +105,14 @@
         border: 1px solid transparent;
     }
 }
+
+
+.event__bottom .slick-slide
+{
+    margin: 0 20px;
+    padding: 0;
+}
+
 
 .main__slider .slick-slide
 {

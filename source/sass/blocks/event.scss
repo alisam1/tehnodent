@@ -4,6 +4,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .event__title
@@ -22,14 +23,33 @@
 
 .event__title span
 {
-    font-family: $font-family-bold;
+    font-family: $font-family;
     font-size: 20px;
-    font-family: "Geometria";
     color: #d7d7d7;
-    font-weight: bold;
     line-height:72px;
     letter-spacing: -0.04em;  
     padding-left: 10px;
+}
+
+
+.event__title--news span
+{
+    font-family: $font-family-light;
+    font-size: 10px;
+    color: #d7d7d7;
+    line-height:22px;
+    letter-spacing: -0.04em;  
+    padding-left: 10px;
+}
+
+.event__top::after
+{
+  content: "";
+  position: absolute;
+  background-image: url("../img/product_bottom.svg");
+  width:870px;
+  height: 1px;
+  top: -20px;
 }
 
 .event__info--news
@@ -42,24 +62,48 @@
    width: 520px;
    font-family: $font-family;
    font-size: 12px;
+   letter-spacing: 0.05em;
    line-height: 22px;
    color: #808899;
    margin-top: 0;
    &--news 
    {
        width: 80%;
+       line-height: 26px;
+       
 
    }
 }
 
+.event__img img 
+{
+    border-radius: 6px;
+}
 .event__img--news
 {
     width: 50%;
 }
 
+.event__img--news img:nth-child(1)
+{
+  margin-bottom: 25px;
+}
+
+
 .event__bottom 
 {
     margin-bottom: 80px;
+    position: relative;
+}
+
+.event__bottom::before
+{
+  content: "";
+  position: absolute;
+  background-image: url("../img/product_bottom.svg");
+  width: 1140px;
+  height: 1px;
+  top: -20px;
 }
 
 .multiple-items img
@@ -68,6 +112,7 @@
     height: auto;
     text-align: center;
     display: inline-block;
+    border-radius: 6px;
 }
 
 
@@ -84,6 +129,26 @@
 {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+
+.event__top::after
+{
+  content: "";
+  position: absolute;
+  background-image: url("../img/product_bottom.svg");
+  width: 470px;
+  height: 1px;
+}
+
+.event__bottom::before
+{
+  content: "";
+  position: absolute;
+  background-image: url("../img/product_bottom.svg");
+  width:770px;
+  height: 1px;
 }
 
   }
@@ -139,4 +204,14 @@
     width: 80%;
     margin: 0 auto;
    }
+
+   .event__bottom::before
+{
+  display: none;
+}
+
+.event__top::after
+{
+    display: none;
+}
 }

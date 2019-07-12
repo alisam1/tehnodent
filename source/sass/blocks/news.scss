@@ -25,8 +25,6 @@
     display: block;
     font-family: $font-family-medium;
     font-size: 11px;
-    line-height: 22px;
-    letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #7d7d7d;
     text-align: center;
@@ -111,8 +109,8 @@
 
 .actions__block .news__img 
 {
-    flex: 0 0 35%;
-    max-width: 35%;
+    flex: 0 0 30%;
+    max-width: 30%;
     background-repeat: no-repeat;
     background-position: 72% 50%;
     background-size: cover;
@@ -125,18 +123,17 @@
 {
     flex: 0 0 65%;
     max-width: 65%;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-bottom: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
 }
 
 .actions__block .news__info
 {
     flex: 0 0 60%;
     max-width: 60%;
-    padding-left: 20px;
-    padding-bottom: 30px;
 }
-
 .news__lead
 {
     font-family: $font-family-bold;
@@ -144,6 +141,7 @@
     line-height: 34px;
     letter-spacing: -0.04em;
     color: #4f4f6f;
+    margin-top: 0;
 }
 
 .news__data
@@ -200,8 +198,8 @@
 .news__text
 {
     font-family: $font-family;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 22px;
     letter-spacing: 0em;
     color: #9fa4af;
     margin-top: 40px;

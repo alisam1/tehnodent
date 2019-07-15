@@ -8,9 +8,10 @@
   .main-header__tablet
   {
     display: flex;
-    flex-grow: 1;
     justify-content: center;
-}
+    width: 15%;
+    border-left: 1px solid #00abc5;
+  }
 
 .header {
   height: 55px;
@@ -106,7 +107,7 @@
   background: url("../img/icon-menu.png") no-repeat;
   position: absolute;
   top: 26px;
-  right: 30px;
+  right: 0px;
   z-index: 1;
 }
 .nav-burger__checkbox {
@@ -263,8 +264,8 @@
   font-size: 0;
   background: url("../img/icon-menu.png") no-repeat;
   position: absolute;
-  top: 26px;
-  right: 30px;
+  top: 22px;
+  right: 45px;
   z-index: 1;
   }
   .nav-burger__checkbox {

@@ -78,18 +78,17 @@
       
           <div class="main-header__search">
             <div class="main-header__img main-header__img--search"><img src="img/logo_2.svg" alt="Logo_2"></div>
-            <div class="main-header__search-img">
-              <div class="wrap">
-                <form>
-                <input type="text" class="input" placeholder="Поиск по сайту">
-              </form>
-              <button class="icon"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </div>
-          </div>
-        </div>
+            <div class="main-header__search-img"><a href="#hidden2" onclick="view('hidden2'); return false"><img src="img/search.svg" alt="Search"></a><div>
       
          </div>
-        </header>
+        </div></div></div></header>
+
+
+        <div id="hidden2" style="display: none;" class="search">
+            <form>
+                <input type="text" class="input" placeholder="Поиск по сайту">
+              </form>
+        </div>
 
   <main class="main main-index">
    <div class="main__slider">
@@ -330,6 +329,10 @@
           adaptiveHeight: true,
           
     });
+    function view(n) {
+    style = document.getElementById(n).style;
+    style.display = (style.display == 'block') ? 'none' : 'block';
+}
     </script>
   </body>
 </html>

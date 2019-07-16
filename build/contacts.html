@@ -12,12 +12,12 @@
       <header class="main-header">
 
           <div class="main-header__all">
-      
+
           <div class="main-header__logo">
             <div class="main-header__img"><img src="img/logo_main.svg" alt="Logo"></div>
             <div class="main-header__text"><b>Техно</b>дент</div>
           </div>
-      
+
           <div class="main-header__menu">
             <nav class="menu">
               <ul class="menu__list">
@@ -31,13 +31,13 @@
               </ul>
             </nav>
           </div>
-      
+
           <div class="main-header__tablet">
             <nav class="menu__tablet">
               <div class="header">
               <input class="nav-burger__checkbox" type="checkbox" id="burger">
               <label class="nav-burger" for="burger">Меню</label>
-      
+
               <nav class="nav">
                 <ul class="menu__list menu__list--tablet">
                   <li class="menu__item menu__item--tablet"><a href="./" title="Главная">Главная</a></li>
@@ -51,10 +51,10 @@
               </nav>
           </div>
             </nav>
-      
+
             </div>
-      
-      
+
+
             <div class="main-header__info">
               <p class="main-header__city">
                 	<select class="select__city" name="example" size="1">
@@ -66,16 +66,15 @@
               <p class="main-header__phone main-header__phone--desktop"><a href="tel:8800600500"><img src="img/phone_icon.png" alt="Phone"></a></p>
               <button class="main-header__button"><a href="#">Скачать каталог</a></button>
             </div>
-      
+
           <div class="main-header__search">
             <div class="main-header__img main-header__img--search"><img src="img/ao.svg" alt="Logo_2"></div>
-            <div class="main-header__search-img"><a href="#hidden2" onclick="view('hidden2'); return false"><img src="img/search.svg" alt="Search"></a><div>
-      
+            <div class="main-header__search-img"><a class="content_toggle"><img src="img/search.svg" alt="Search"></a><div>
          </div>
         </div></div></div></header>
 
 
-        <div class="search" id="hidden2" style="display: none;">
+        <div class="search content_more" style="display: none;">
           <div class="container">
           <form class="search__form" action="" method="get">
             <input name="s" placeholder="Поиск по сайту" type="search">
@@ -83,6 +82,7 @@
           </form>
           </div>
         </div>
+
 
   <main class="main main-contacts">
 
@@ -182,7 +182,7 @@
   <footer class="main-footer">
 
       <div class="container">
-  
+
         <div class="main-footer__info">
           <div class="footer">
           <ul class="footer__list footer__list--mobile">
@@ -190,49 +190,49 @@
             <li class="footer__item footer__item--text">AMERICAN ORTHODONTICS</li>
             <li class="footer__item">© ООО "Технодент" 2013-2019</li>
           </ul>
-  
+
          <div class="footer__main">
-          
+
             <ul class="footer__list footer__list--main">
                 <li class="footer__item footer__item--title"><b>Техно</b>дент</li>
                 <li class="footer__item footer__item--text">AMERICAN ORTHODONTICS</li>
                 <li class="footer__item">© ООО "Технодент" 2013-2019</li>
               </ul>
-  
+
           <ul class="footer__list footer__list--second">
             <li class="footer__item"><a href="#" title="О нас">О нас</a></li>
             <li class="footer__item"><a href="#" title="Галерея">Галерея</a></li>
             <li class="footer__item"><a href="#" title="Новости">Новости</a></li>
             <li class="footer__item"><a href="#" title="Контакты">Контакты</a></li>
           </ul>
-  
+
           <ul class="footer__list footer__list--nolink">
             <li class="footer__item">Санкт-Петербург,</li>
             <li class="footer__item">Набережная канала</li>
             <li class="footer__item">Грибоедова,</li>
             <li class="footer__item">д.5, оф. 414</li>
           </ul>
-  
+
           <ul class="footer__list">
             <li class="footer__item"><a href="tel:88123143578" title="8(812)314-35-78">8(812)314-35-78</a></li>
             <li class="footer__item"><a href="tel:88123143176" title="8(812)314-31-76">8(812)314-31-76</a></li>
             <li class="footer__item"><a href="tel:88123145268" title="8(812)314-52-68">8(812)314-52-68</a></li>
             <li class="footer__item"><a href="mailto:technodentspb@mail.ru" title="technodentspb@mail.ru">technodentspb@mail.ru</a></li>
           </ul>
-  
+
           <ul class="footer__list footer__list--mobile">
             <li class="footer__item"><a href="#" title="Статьи">Статьи</a></li>
             <li class="footer__item"><a href="#" title="Реквизиты">Реквизиты</a></li>
           </ul>
-  
+
         </div>
-  
+
           </div>
-  
+
         </div>
-  
+
       </div>
-  
+
     </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -246,11 +246,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function eventMaps() {
-	 
+
 	var card = document.querySelectorAll(".card");
 	var spb = card[0];
 	var msk = card[1];
-	
+
 	if(spb) {
 		spb.addEventListener("click", mapSpb, false);
 	}
@@ -266,14 +266,14 @@ var mapInit = {
 	newMap: function(id,coordinates) {
 		var map = new ymaps.Map(id, {
 			center: mapInit[coordinates],
-			zoom: 16,	
+			zoom: 16,
 		});
-		
+
 		return map;
 	},
 	createPlacemark: function(map,coordinates) {
 		var placemark = new ymaps.Placemark(
-			mapInit[coordinates], 
+			mapInit[coordinates],
 			{
 				hintContent: 'Филиал в г.Санкт-Петербурге'
 			},
@@ -282,7 +282,7 @@ var mapInit = {
 				iconImageSize: [30, 30],
 				iconImageOffset: [-6, -10]
 			}
-		
+
 		);
 		map.geoObjects.add(placemark);
 	},
@@ -296,8 +296,8 @@ function mapSpb(){
 	if(wrapMap) {
 		ymaps.ready(init.bind(null, "map", "spb"));
 	}
-	
-	function init(id, coordinates){ 
+
+	function init(id, coordinates){
 		var map = mapInit.newMap(id, coordinates);
 		mapInit.createPlacemark(map, coordinates);
 	}
@@ -307,8 +307,8 @@ function mapMsk(){
 	if(wrapMap) {
 		ymaps.ready(init.bind(null, "map", "msk"));
 	}
-	
-	function init(id, coordinates){ 
+
+	function init(id, coordinates){
 		mapInit.removeMap("#map");
 		var map = mapInit.newMap(id, coordinates);
 		mapInit.createPlacemark(map, coordinates);

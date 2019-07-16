@@ -1,7 +1,6 @@
 .news
 {
     height:auto;
-    border-bottom: 13px solid #00ccdb;
 }
 
 .news__title
@@ -28,6 +27,10 @@
     text-transform: uppercase;
     color: #7d7d7d;
     text-align: center;
+    position: relative;
+    max-width: 100px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .news__title span::before
@@ -37,8 +40,8 @@
     background-image: url("../img/ad_line.png");
     width:24px;
     height: 1px;
-    margin-top: 10px;
-    margin-left: -35px;
+    top: 22px;
+    left: 75px;
 }
 
 .news__title span::after
@@ -48,8 +51,8 @@
     background-image: url("../img/ad_line.png");
     width:24px;
     height: 1px;
-    margin-top: 10px;
-    margin-left: 10px; 
+    top: 22px;
+    left: 0px; 
 }
 
 .news__block
@@ -77,8 +80,9 @@
 
 .news__card--main
 {
-    width: 45%;
+    width: 47%;
     margin-bottom: 20px;
+    flex-wrap: nowrap;
 }
 
 
@@ -118,7 +122,6 @@
     border-bottom-left-radius: 10px;
 }
 
-
 .news__info
 {
     flex: 0 0 65%;
@@ -128,6 +131,12 @@
     padding-right: 30px;
     padding-top: 20px;
 }
+
+.news__card--main .news__info
+{
+    flex: auto;
+}
+
 
 .actions__block .news__info
 {
@@ -314,6 +323,11 @@
         margin-bottom: 20px;
     }
 
+    .news__card--main
+{
+    flex-wrap: wrap;
+}
+
     .news__card:nth-child(2) {
         margin-right: auto;
     }
@@ -354,6 +368,11 @@
     {
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    .news__card--main .news__img {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
     }
 
   }

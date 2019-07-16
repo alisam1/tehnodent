@@ -4369,7 +4369,8 @@ img.thumbnail {
   letter-spacing: -0.04em;
   margin-top: -20px;
   letter-spacing: -0.04em;
-  position: relative; }
+  position: relative;
+  padding-bottom: 20px; }
 
 .about__title::after {
   content: "";
@@ -4377,7 +4378,7 @@ img.thumbnail {
   background-image: url("../img/contacts_bottom.svg");
   width: 1140px;
   height: 1px;
-  top: 60px;
+  top: 70px;
   left: 0px; }
 
 .about__image img {

@@ -89,6 +89,11 @@
   padding-bottom: 0;
 }
 
+.footer__list--main
+{
+  display: none;
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 
@@ -110,6 +115,11 @@
   width: auto;
 }
 
+.footer__list--main
+{
+  display: none;
+}
+
 
 }
 
@@ -129,9 +139,30 @@
   }
 
   .footer__main{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer__list--main
+{
+  display: block;
+}
+
+.footer__list--main li
+{
+  padding-bottom: 15px;
+}
+
+.footer__item--text
+{
+  padding-top: 0;
+}
+
+  .footer__list
+  {
+    width: 50%;
   }
 
   .footer__list--mobile

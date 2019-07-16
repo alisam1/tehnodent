@@ -48,14 +48,6 @@
                   <li class="menu__item menu__item--tablet"><a href="./study.html" title="Обучение">Обучение</a></li>
                   <li class="menu__item menu__item--tablet"><a href="./news.html" title="Новости">Новости</a></li>
                   <li class="menu__item menu__item--tablet"><a href="./contacts.html" title="Контакты">Контакты</a></li>
-                  <li class="menu__item menu__item--tablet">
-                    <div class="search-tablet">
-                      <form action="" method="get">
-                          <input name="search" placeholder="Поиск по сайту" type="search">
-                          <button class="search-tablet__button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                      </form>
-                    </div>
-                  </li>
                 </ul>
               </nav>
           </div>
@@ -84,10 +76,13 @@
         </div></div></div></header>
 
 
-        <div id="hidden2" style="display: none;" class="search">
-            <form>
-                <input type="text" class="input" placeholder="Поиск по сайту">
-              </form>
+        <div class="search" id="hidden2" style="display: none;">
+          <div class="container">
+          <form class="search__form" action="" method="get">
+            <input name="s" placeholder="Поиск по сайту" type="search">
+            <button class="search__button" type="submit">Искать</button>
+          </form>
+          </div>
         </div>
 
   <main class="main main-index">

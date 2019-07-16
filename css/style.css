@@ -4229,6 +4229,9 @@ img.thumbnail {
   letter-spacing: -0.04em;
   padding-left: 10px; }
 
+.event__top--lecture {
+  padding-top: 10px; }
+
 .event__top::after {
   content: "";
   position: absolute;
@@ -4262,7 +4265,7 @@ img.thumbnail {
   margin-bottom: 25px; }
 
 .event__bottom {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   position: relative; }
 
 .event__bottom::before {
@@ -5048,7 +5051,8 @@ img.thumbnail {
   font-size: 20px;
   line-height: 30px;
   color: #55c4da;
-  margin-top: -5px; }
+  margin-top: -5px;
+  padding-bottom: 15px; }
 
 .articles__block {
   display: -webkit-box;

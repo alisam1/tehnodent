@@ -1464,7 +1464,7 @@ template {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .breadcrumbs__list {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1688,7 +1688,11 @@ template {
   .sidebar {
     display: block;
     width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .sidebar-mainproduct {
+    width: 87%; }
+  .sidebar-product {
+    width: 87%; } }
 
 .catalog {
   width: 100%;
@@ -3172,7 +3176,7 @@ img.thumbnail {
     overflow: hidden;
     background-color: #fff;
     background-image: url("../img/video_mobile.png");
-    margin-left: -10px; }
+    margin-left: 0px; }
   div.thumbnail__clip {
     width: 100%;
     max-width: 180px;
@@ -5612,6 +5616,9 @@ img.mfp-img {
   height: 285px;
   background-color: #000;
   border-top: 13px solid #00ccdb; }
+
+.main-footer__border {
+  border-top: none; }
 
 .footer {
   width: 100%;

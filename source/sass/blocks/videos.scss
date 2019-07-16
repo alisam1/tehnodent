@@ -47,7 +47,7 @@
 .start-clip
 {
   margin-top: -220px;
-  margin-left: 320px; 
+  margin-left: 320px;
 }
 
 div.thumbnail_container
@@ -245,10 +245,10 @@ div.thumbnail__clip
       overflow: hidden;
       background-color: #fff;
       background-image: url("../img/video_mobile.png");
-      margin-left: -10px;
+      margin-left: 0px;
       }
 
-      
+
 div.thumbnail__clip
 {
   width: 100%;
@@ -274,7 +274,7 @@ div.thumbnail__clip
       margin-left: 60px;
   }
 
-  .start-clip img 
+  .start-clip img
   {
     width: 30px;
   }

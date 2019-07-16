@@ -124,6 +124,20 @@
             </div>
     </div>
 
+    <div class="lecture__buttons">
+      <button class="lecture__buy"><a class="popup-with-form" href="#test-form">Регистрация</a></button>
+      <form id="test-form" class="product__form white-popup-block mfp-hide">
+        <h4 class="product__form-title">Оставить заявку</h4>
+        <p class="product__form-description">Заполните форму и наш специалист перезвонит вам</p>
+        <fieldset style="border:0; display: flex; flex-direction: column;">
+          <input name="name" placeholder="Ваше имя" class="name" type="text" required="">
+          <input name="tel" placeholder="Ваш телефон" class="tel" type="tel" required="">
+          <input name="submit" class="btn" type="submit" value="Отправить">
+          
+        </fieldset>
+      </form>
+    </div>
+
     </div>
 
   </main>
@@ -250,6 +264,21 @@
 
     $('.test-popup-link').magnificPopup({
       type: 'image'
+    });
+
+    $('.popup-with-form').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#name',
+        callbacks: {
+            beforeOpen: function() {
+                if($(window).width() < 700) {
+                    this.st.focus = false;
+                } else {
+                    this.st.focus = '#name';
+                }
+            }
+        }
     });
 
     </script>

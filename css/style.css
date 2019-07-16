@@ -452,8 +452,6 @@ template {
 
 .search {
   background: #fff;
-  position: relative;
-  z-index: 9999;
   height: 50px;
   -webkit-animation: changebackground 0.3s linear;
           animation: changebackground 0.3s linear; }
@@ -5291,7 +5289,7 @@ img.thumbnail {
   display: none; }
 
 .mfp-hide {
-  display: none !important; }
+  display: none; }
 
 .mfp-preloader {
   color: #CCC;

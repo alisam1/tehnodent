@@ -2886,12 +2886,17 @@ template {
     max-width: 300px;
     height: 1px; }
   .characteristic__all {
-    width: auto; }
+    width: 100%;
+    max-width: 210px; }
+  .characteristic-advantages .characteristic__all {
+    width: 100%;
+    max-width: 210px; }
   .characteristic__card {
     width: auto;
     margin: 0 auto; }
   .characteristic__description {
-    width: 200px; } }
+    width: 100%;
+    max-width: 200px; } }
 
 .images {
   width: 870px;
@@ -3249,6 +3254,9 @@ img.thumbnail {
   height: 1px;
   top: -30px; }
 
+.promo__catalog--campaigns::before {
+  display: none; }
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .promo {
     display: -webkit-box;
@@ -3273,6 +3281,8 @@ img.thumbnail {
     width: 725px;
     height: 1px;
     top: -30px; }
+  .promo__catalog--campaigns::before {
+    display: none; }
   .promo__title {
     margin-left: 20px; } }
 
@@ -3301,6 +3311,8 @@ img.thumbnail {
     width: 300px;
     height: 1px;
     top: -35px; }
+  .promo__catalog--campaigns::before {
+    display: none; }
   .promo__title {
     width: 85%;
     margin: 0 auto;
@@ -4036,7 +4048,7 @@ img.thumbnail {
 
 .main__slider .slick-dots {
   position: relative;
-  bottom: 120px;
+  bottom: 90px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4455,18 +4467,19 @@ img.thumbnail {
   color: #4f4f6f;
   text-transform: capitalize;
   text-align: center;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #ebebeb; }
+  padding-bottom: 0px; }
 
 .advantages__title span {
   display: block;
   font-family: "Geometria-Medium";
   font-size: 11px;
-  line-height: 22px;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #7d7d7d;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto; }
 
 .advantages__title span::before {
   content: "";
@@ -4474,8 +4487,8 @@ img.thumbnail {
   background-image: url("../img/ad_line.png");
   width: 24px;
   height: 1px;
-  margin-top: 10px;
-  margin-left: -35px; }
+  top: 22px;
+  left: 75px; }
 
 .advantages__title span::after {
   content: "";
@@ -4483,8 +4496,8 @@ img.thumbnail {
   background-image: url("../img/ad_line.png");
   width: 24px;
   height: 1px;
-  margin-top: 10px;
-  margin-left: 10px; }
+  top: 22px;
+  left: 0px; }
 
 .notes {
   width: 100%;
@@ -4575,8 +4588,7 @@ img.thumbnail {
     width: 60%; } }
 
 .news {
-  height: auto;
-  border-bottom: 13px solid #00ccdb; }
+  height: auto; }
 
 .news__title {
   font-family: "Geometria-Bold";
@@ -4596,7 +4608,11 @@ img.thumbnail {
   font-size: 11px;
   text-transform: uppercase;
   color: #7d7d7d;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto; }
 
 .news__title span::before {
   content: "";
@@ -4604,8 +4620,8 @@ img.thumbnail {
   background-image: url("../img/ad_line.png");
   width: 24px;
   height: 1px;
-  margin-top: 10px;
-  margin-left: -35px; }
+  top: 22px;
+  left: 75px; }
 
 .news__title span::after {
   content: "";
@@ -4613,8 +4629,8 @@ img.thumbnail {
   background-image: url("../img/ad_line.png");
   width: 24px;
   height: 1px;
-  margin-top: 10px;
-  margin-left: 10px; }
+  top: 22px;
+  left: 0px; }
 
 .news__block {
   display: -webkit-box;
@@ -4656,8 +4672,10 @@ img.thumbnail {
   margin-right: 0px; }
 
 .news__card--main {
-  width: 45%;
-  margin-bottom: 20px; }
+  width: 47%;
+  margin-bottom: 20px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
 
 .news__card--main .news__img {
   border-top-left-radius: 10px;
@@ -4700,6 +4718,11 @@ img.thumbnail {
   padding-bottom: 30px;
   padding-right: 30px;
   padding-top: 20px; }
+
+.news__card--main .news__info {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto; }
 
 .actions__block .news__info {
   -webkit-box-flex: 0;
@@ -4838,6 +4861,9 @@ img.thumbnail {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 20px; }
+  .news__card--main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .news__card:nth-child(2) {
     margin-right: auto; }
   .news__img {
@@ -4863,7 +4889,10 @@ img.thumbnail {
     margin-bottom: 30px; }
   .news__button:hover {
     margin-top: 30px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .news__card--main .news__img {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px; } }
 
 .campaigns {
   width: 100%;
@@ -5559,7 +5588,8 @@ img.mfp-img {
 .main-footer {
   width: 100%;
   height: 285px;
-  background-color: #000; }
+  background-color: #000;
+  border-top: 13px solid #00ccdb; }
 
 .footer {
   width: 100%;

@@ -97,30 +97,35 @@
                       <li class="breadcrumbs__item"><a href="#">Лекция</a></li>
                     </ul>
                   </div>
+
     <h3 class="articles__title">Название лекции</h3>
-    <div class="study__all">
-        <div class="articles__block">
-                <div class="articles__card articles__card--article">
-                        <div class="articles__info">
-                          <p class="news__data news__data--lecture">on Mar 21, 2017 9:58 AM</p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
-                          <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
-                        </div>
-                </div>
+    <div class="event__top">
+
+        <div class="event__info">
+            <p class="event__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p class="event__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cil lum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis istena tus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque i psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam </p>
         </div>
+
+        <div class="event__img">
+            <img src="img/event_img.png" alt="Event">
+        </div>
+        
     </div>
+
+    <div class="event__bottom">
+
+            <div class="multiple-items">
+                    <div><a class="test-popup-link" href="img/event_1.png"><img src="img/event_1.png" alt=""></a></div>
+                    <div><a class="test-popup-link" href="img/event_2.png"><img src="img/event_2.png" alt=""></a></div>
+                    <div><a class="test-popup-link" href="img/event_3.png"><img src="img/event_3.png" alt=""></a></div>
+                    <div><a class="test-popup-link" href="img/event_4.png"><img src="img/event_4.png" alt=""></a></div>
+                    <div><a class="test-popup-link" href="img/event_1.png"><img src="img/event_1.png" alt=""></a></div>
+                    <div><a class="test-popup-link" href="img/event_2.png"><img src="img/event_2.png" alt=""></a></div>
+            </div>
     </div>
+
+    </div>
+    
   </main>
 
 
@@ -182,6 +187,72 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/slick.min.js"></script>
+    <script src="js/magnific.js"></script>
+    <script>
+        $('.multiple-items').slick({
+          slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows:true,
+        dots: false,
+        adaptiveHeight: true,
+        
+      
+       // slider responsivo 
+        responsive: [
+        {
+          breakpoint: 1279,
+            settings: {
+                slidesToShow: 3,
+                arrows:true,
+                centerPadding: '20px',
+                autoplay: false,
+                adaptiveHeight: true,
+                dots: false,
+            }
+        },
+        {
+            breakpoint: 1121,
+            settings: {
+                slidesToShow: 3,
+                arrows:false,
+                autoplay: false,
+                adaptiveHeight: true,
+                dots: true,
+            }
+        },
+
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
+                arrows:false,
+                autoplay:false,
+                adaptiveHeight: true,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
+                arrows:false,
+                autoplay:false,
+                adaptiveHeight: true,
+
+            }
+        }
+        ]  
+         
+    });
+
+    $('.test-popup-link').magnificPopup({
+      type: 'image'
+    });
+
+    </script>
   
   </body>
 </html>

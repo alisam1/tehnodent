@@ -1111,7 +1111,7 @@ template {
     height: auto; }
   .main-promo {
     height: auto;
-    padding-bottom: 30px; }
+    padding-bottom: 0px; }
   .main-contacts .main__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1454,7 +1454,7 @@ template {
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .breadcrumbs__list {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -3277,7 +3277,9 @@ img.thumbnail {
   .promo__catalog--campaigns::before {
     display: none; }
   .promo__title {
-    margin-left: 20px; } }
+    margin-left: 20px;
+    padding-bottom: 35px;
+    line-height: 30px; } }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .promo {
@@ -3415,6 +3417,8 @@ img.thumbnail {
   position: relative;
   left: 30px;
   margin-top: -40px; }
+  .study__block--low {
+    margin-top: 10px; }
 
 .study__card {
   display: inline-block;
@@ -3552,13 +3556,14 @@ img.thumbnail {
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .study__title {
-    width: 80%;
+    width: 75%;
     margin: 0 auto; }
   .study__all {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin-top: 30px; }
     .study__all--perform {
       margin-top: 25px; }
   .study__calendar {
@@ -4321,7 +4326,8 @@ img.thumbnail {
     position: absolute;
     background-image: url("../img/product_bottom.svg");
     width: 470px;
-    height: 1px; }
+    height: 1px;
+    top: -10px; }
   .event__bottom::before {
     content: "";
     position: absolute;
@@ -4336,7 +4342,7 @@ img.thumbnail {
         -ms-flex-direction: column;
             flex-direction: column; }
   .event__title {
-    width: 80%;
+    width: 75%;
     margin: 0 auto; }
   .event__title--news {
     font-size: 18px;
@@ -4345,7 +4351,7 @@ img.thumbnail {
     font-size: 14px;
     line-height: 24px; }
   .event__info {
-    width: 80%;
+    width: 75%;
     margin: 0 auto; }
   .event__description {
     width: 100%;
@@ -4356,7 +4362,7 @@ img.thumbnail {
     margin: 0 auto;
     text-align: center; }
   .event__img img {
-    width: 80%;
+    width: 75%;
     margin: 0 auto; }
   .event__bottom::before {
     display: none; }
@@ -4915,7 +4921,7 @@ img.thumbnail {
     margin-top: 30px;
     margin-bottom: 30px; }
   .news__card--main .news__img {
-    border-top-left-radius: 0px;
+    border-top-left-radius: 10px;
     border-bottom-left-radius: 0px; } }
 
 .campaigns {
@@ -4978,6 +4984,8 @@ img.thumbnail {
 .actions__block {
   width: 55%;
   margin-top: 0px; }
+  .actions__block--low {
+    margin-top: 15px; }
   .actions__block--lectures {
     margin-top: 15px; }
 
@@ -5074,6 +5082,8 @@ img.thumbnail {
   color: #55c4da;
   margin-top: -5px;
   padding-bottom: 15px; }
+  .articles__title--nobottom {
+    padding-bottom: 0; }
 
 .articles__block {
   display: -webkit-box;
@@ -5185,6 +5195,8 @@ img.thumbnail {
   .articles__title {
     width: 80%;
     margin: 0 auto; }
+    .articles__title--nobottom {
+      padding-bottom: 0; }
   .articles__block {
     margin: 0 auto;
     width: 80%;
@@ -5196,10 +5208,12 @@ img.thumbnail {
     margin: 0 auto;
     margin-bottom: 30px; } }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .articles__title {
-    width: 80%;
+    width: 75%;
     margin: 0 auto; }
+    .articles__title--nobottom {
+      padding-bottom: 0; }
   .articles__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5212,10 +5226,10 @@ img.thumbnail {
     margin: 0 auto;
     margin-bottom: 20px; }
   .articles__block .news__img {
-    border-top-left-radius: 0;
+    border-top-left-radius: 10px;
     border-bottom-left-radius: 0; }
   .articles__card {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     margin-bottom: 20px; }
   .articles__info {
@@ -5227,7 +5241,7 @@ img.thumbnail {
     padding: 0;
     padding-top: 10px; }
   .articles__lead {
-    margin-top: 20px; } }
+    margin-top: 0px; } }
 
 /* Magnific Popup CSS */
 .mfp-bg {

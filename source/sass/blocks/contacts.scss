@@ -191,7 +191,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
 
   .contacts
   {
@@ -233,14 +233,16 @@
   
 .maps 
 {
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   height: 260px;
   margin: 0 auto;
 }
 
   #map
   {
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     height: 260px;
     margin: 0 auto;
   }

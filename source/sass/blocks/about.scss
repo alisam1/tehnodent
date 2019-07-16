@@ -95,7 +95,7 @@
    }
  
    
- @media screen and (min-width: 320px) and (max-width: 767px) {
+ @media screen and (min-width: 0px) and (max-width: 767px) {
 
   
     .about__title
@@ -139,8 +139,9 @@
     }
 
     .about__text
-{
-   width: 280px;
+{  
+    width: 100%;
+   max-width: 280px;
 }
 
 

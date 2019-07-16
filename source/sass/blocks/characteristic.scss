@@ -131,7 +131,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .characteristic
   {
     width:80%;
@@ -143,7 +143,8 @@
     content: "";
     position: absolute;
     background-image: url("../img/product_bottom.svg");
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 1px;
   }
 

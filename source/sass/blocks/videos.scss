@@ -213,11 +213,12 @@ div.thumbnail__clip
   width: 230px;
 }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .videos
   {
     flex-direction: column;
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -225,18 +226,21 @@ div.thumbnail__clip
 
   .videos__block
   {
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     margin: 0 auto;
   }
 
   #player
   {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
   }
 
   div.thumbnail_container
   {
-      width: 280px;
+    width: 100%;
+    max-width: 280px;
       height: 122px;
       overflow: hidden;
       background-color: #fff;
@@ -247,7 +251,8 @@ div.thumbnail__clip
       
 div.thumbnail__clip
 {
-    width: 180px;
+  width: 100%;
+  max-width: 180px;
     height:78px;
     overflow: hidden;
     background-color: #fff;

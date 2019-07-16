@@ -200,7 +200,7 @@
     }
 
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media screen and (min-width: 0px) and (max-width: 767px) {
 
     .study__title
         {
@@ -233,7 +233,8 @@
 
     .study__calendar img 
         {
-        width: 280px;
+        width: 100%;
+        max-width: 280px;
         margin: 0 auto;
         }
 

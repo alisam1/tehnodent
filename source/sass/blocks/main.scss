@@ -223,7 +223,7 @@
 }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
 
   .main-contacts
   {
@@ -253,7 +253,8 @@
 .slider__all
 {
   text-align: left;
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   padding-top: 10px;
   padding-left: 0px;
   margin: 0 auto;
@@ -266,7 +267,8 @@
 
 .slide__img img 
 {
-   width: 280px;
+  width: 100%;
+  max-width: 280px;
    text-align: center;
    padding-top: 20px;
    margin: 0 auto;

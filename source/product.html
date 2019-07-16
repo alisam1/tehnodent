@@ -360,5 +360,24 @@
   <script src="js/sidebar.js"></script>
   <script src="js/videos.js"></script>
   <script src="js/magnific.js"></script>
+  <script> 
+$('.test-popup-link').magnificPopup({
+    type: 'image'
+  });
+  $('.popup-with-form').magnificPopup({
+      type: 'inline',
+      preloader: false,
+      focus: '#name',
+      callbacks: {
+          beforeOpen: function() {
+              if($(window).width() < 700) {
+                  this.st.focus = false;
+              } else {
+                  this.st.focus = '#name';
+              }
+          }
+      }
+  });
+  </script>
   </body>
 </html>

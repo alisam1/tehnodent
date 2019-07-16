@@ -1,7 +1,5 @@
 /* Search */
-
-function view(n) {
-    style = document.getElementById(n).style;
-    style.display = (style.display == 'block') ? 'none' : 'block';
-}
-
+$(".content_toggle").click(function(){
+    $('.content_more').slideToggle(300);      
+    return false;
+});

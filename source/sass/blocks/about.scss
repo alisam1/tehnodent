@@ -8,8 +8,9 @@
     line-height:72px;
     letter-spacing: -0.04em;
     margin-top: -20px;
-    letter-spacing: -0.04em;       
+    letter-spacing: -0.04em;
     position: relative;
+    padding-bottom: 20px;
 }
 
 .about__title::after {
@@ -18,7 +19,7 @@
     background-image: url("../img/contacts_bottom.svg");
     width: 1140px;
     height: 1px;
-    top: 60px;
+    top: 70px;
     left: 0px;
 }
 
@@ -91,13 +92,13 @@
         padding-bottom: 20px;
     }
 
- 
+
    }
- 
-   
+
+
  @media screen and (min-width: 0px) and (max-width: 767px) {
 
-  
+
     .about__title
 {
     width: 80%;
@@ -139,11 +140,10 @@
     }
 
     .about__text
-{  
+{
     width: 100%;
    max-width: 280px;
 }
 
 
  }
-

@@ -13,7 +13,7 @@
     margin-top: 10px;
     padding-bottom: 50px;
     position: relative;
-    &--campaigns 
+    &--campaigns
     {
         padding-bottom: 40px;
     }
@@ -30,7 +30,7 @@
     letter-spacing: -0.04em;
     margin-top: -20px;
     margin-left: -5px;
-    position: relative;      
+    position: relative;
 }
 
 .promo__catalog::before
@@ -83,6 +83,8 @@ display: none;
     .promo__title
     {
         margin-left: 20px;
+        padding-bottom: 35px;
+        line-height:30px;
     }
 
 }

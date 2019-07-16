@@ -176,6 +176,7 @@
   background-image: url("../img/product_bottom.svg");
   width: 470px;
   height: 1px;
+  top:-10px;
 }
 
 .event__bottom::before
@@ -198,7 +199,7 @@
 
    .event__title
 {
-    width:80%;
+    width:75%;
     margin: 0 auto;
 }
 
@@ -217,7 +218,7 @@
 
    .event__info
    {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
    }
 
@@ -237,7 +238,7 @@
 
    .event__img img
    {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
    }
 

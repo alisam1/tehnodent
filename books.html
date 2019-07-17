@@ -9,69 +9,71 @@
   </head>
   <body>
 
-      <header class="main-header">
+    <header class="main-header">
 
-          <div class="main-header__all">
+        <div class="main-header__all">
 
-          <div class="main-header__logo">
+        <div class="main-header__logo main-header__logo--desktop">
+          <div class="main-header__img"><img src="img/logo_main.svg" alt="Logo"></div>
+          <div class="main-header__text"><b>Техно</b>дент</div>
+        </div>
+
+        <div class="main-header__menu">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="./" title="Главная">Главная</a></li>
+              <li class="menu__item"><a href="./catalog.html" title="Продукция">Продукция</a></li>
+              <li class="menu__item"><a href="./promo.html" title="Акции">Акции</a></li>
+              <li class="menu__item"><a href="./books.html" title="Каталоги">Каталоги</a></li>
+              <li class="menu__item"><a href="./study.html" title="Обучение">Обучение</a></li>
+              <li class="menu__item"><a href="./news.html" title="Новости">Новости</a></li>
+              <li class="menu__item"><a href="./contacts.html" title="Контакты">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="main-header__tablet">
+
+          <nav class="mobile_menu">
+            <input class="nav__check" type="checkbox" id="showmenu">
+             <label class="nav__showmenu" for="showmenu"><img src="img/icon-menu.png" alt="Мобильное меню"></label>
+             <label class="nav__back" for="showmenu"></label>
+             <ul class="menu menu__list menu__list--tablet">
+               <li class="menu__item menu__item--tablet"><a href="./" title="Главная">Главная</a></li>
+               <li class="menu__item menu__item--tablet"><a href="./catalog.html" title="Продукция">Продукция</a></li>
+               <li class="menu__item menu__item--tablet"><a href="./promo.html" title="Акции">Акции</a></li>
+               <li class="menu__item menu__item--tablet"><a href="./books.html" title="Каталоги">Каталоги</a></li>
+               <li class="menu__item menu__item--tablet"><a href="./study.html" title="Обучение">Обучение</a></li>
+               <li class="menu__item menu__item--tablet"><a href="./news.html" title="Новости">Новости</a></li>
+               <li class="menu__item menu__item--tablet"><a href="./contacts.html" title="Контакты">Контакты</a></li>
+             </ul>
+          </nav>
+
+          </div>
+
+          <div class="main-header__logo main-header__logo--mobile">
             <div class="main-header__img"><img src="img/logo_main.svg" alt="Logo"></div>
             <div class="main-header__text"><b>Техно</b>дент</div>
           </div>
 
-          <div class="main-header__menu">
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item"><a href="./" title="Главная">Главная</a></li>
-                <li class="menu__item"><a href="./catalog.html" title="Продукция">Продукция</a></li>
-                <li class="menu__item"><a href="./promo.html" title="Акции">Акции</a></li>
-                <li class="menu__item"><a href="./books.html" title="Каталоги">Каталоги</a></li>
-                <li class="menu__item"><a href="./study.html" title="Обучение">Обучение</a></li>
-                <li class="menu__item"><a href="./news.html" title="Новости">Новости</a></li>
-                <li class="menu__item"><a href="./contacts.html" title="Контакты">Контакты</a></li>
-              </ul>
-            </nav>
+
+          <div class="main-header__info">
+            <p class="main-header__city">
+                <select class="select__city" name="example" size="1">
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Москва">Москва</option>
+                  </select>
+            </p>
+            <p class="main-header__phone"><a href="tel:8800600500">8 800 600 500</a></p>
+            <p class="main-header__phone main-header__phone--desktop"><a href="tel:8800600500"><img src="img/phone_icon.png" alt="Phone"></a></p>
+            <button class="main-header__button"><a href="#">Скачать каталог</a></button>
           </div>
 
-          <div class="main-header__tablet">
-            <nav class="menu__tablet">
-              <div class="header">
-              <input class="nav-burger__checkbox" type="checkbox" id="burger">
-              <label class="nav-burger" for="burger">Меню</label>
-
-              <nav class="nav">
-                <ul class="menu__list menu__list--tablet">
-                  <li class="menu__item menu__item--tablet"><a href="./" title="Главная">Главная</a></li>
-                  <li class="menu__item menu__item--tablet"><a href="./catalog.html" title="Продукция">Продукция</a></li>
-                  <li class="menu__item menu__item--tablet"><a href="./promo.html" title="Акции">Акции</a></li>
-                  <li class="menu__item menu__item--tablet"><a href="./books.html" title="Каталоги">Каталоги</a></li>
-                  <li class="menu__item menu__item--tablet"><a href="./study.html" title="Обучение">Обучение</a></li>
-                  <li class="menu__item menu__item--tablet"><a href="./news.html" title="Новости">Новости</a></li>
-                  <li class="menu__item menu__item--tablet"><a href="./contacts.html" title="Контакты">Контакты</a></li>
-                </ul>
-              </nav>
-          </div>
-            </nav>
-
-            </div>
-
-
-            <div class="main-header__info">
-              <p class="main-header__city">
-                	<select class="select__city" name="example" size="1">
-                      <option value="Санкт-Петербург">Санкт-Петербург</option>
-                      <option value="Москва">Москва</option>
-                    </select>
-              </p>
-              <p class="main-header__phone"><a href="tel:8800600500">8 800 600 500</a></p>
-              <p class="main-header__phone main-header__phone--desktop"><a href="tel:8800600500"><img src="img/phone_icon.png" alt="Phone"></a></p>
-              <button class="main-header__button"><a href="#">Скачать каталог</a></button>
-            </div>
-
-          <div class="main-header__search">
-            <div class="main-header__img main-header__img--search"><img src="img/ao.svg" alt="Logo_2"></div>
-            <div class="main-header__search-img"><a class="content_toggle"><img src="img/search.svg" alt="Search"></a><div>
-         </div>
-        </div></div></div></header>
+        <div class="main-header__search">
+          <div class="main-header__img main-header__img--search"><img src="img/ao.svg" alt="Logo_2"></div>
+          <div class="main-header__search-img"><a class="content_toggle"><img src="img/search.svg" alt="Search"></a><div>
+       </div>
+      </div></div></div></header>
 
 
         <div class="search content_more" style="display: none;">

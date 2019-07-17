@@ -790,6 +790,8 @@ template {
     padding-top: 0px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
+  .menu__item a::after {
+    display: none; }
   .menu__item:hover {
     display: inline-block;
     padding-right: 15px;
@@ -906,12 +908,14 @@ template {
     padding-bottom: 5px;
     letter-spacing: -0.05em; }
   .main-header__img {
-    padding-left: 20px; }
+    padding-left: 0px;
+    text-align: center; }
   .main-header__text {
     margin-left: 0;
     font-size: 10px;
     line-height: 20px;
-    padding-left: 10px; }
+    padding-left: 0px;
+    text-align: center; }
   .menu {
     display: none; }
   .main-header__tablet {
@@ -921,6 +925,8 @@ template {
     height: 50px; }
   .menu__tablet {
     display: block; }
+  .menu__item a::after {
+    display: none; }
   .main-header__search-img {
     display: none; }
   .main-header__city {
@@ -1272,6 +1278,13 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 5px; }
+  .menu__item {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Geometria-Bold";
+    font-size: 18px;
+    margin-top: 30px; }
   .menu__item--tablet {
     width: 100%;
     padding-right: 0;
@@ -1279,25 +1292,26 @@ template {
   .menu__item--tablet a {
     display: block;
     height: auto;
-    font-weight: bold;
     color: #fff;
-    font-size: 12px;
+    font-family: "Geometria-Bold";
+    font-size: 16px;
     line-height: 26px;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #4ad0e4;
+    background-color: rgba(3, 103, 179, 0.8);
     opacity: 1;
     -webkit-transition: background-color 0.1s linear, color 0.1s linear;
     transition: background-color 0.1s linear, color 0.1s linear;
-    margin-top: -12px;
+    margin-top: -30px;
     padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px; }
   .menu__item--tablet a:hover {
-    color: #fff;
-    font-size: 12px;
+    font-family: "Geometria-Bold";
+    font-size: 16px;
     line-height: 26px;
+    color: #fff;
     padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -1313,47 +1327,7 @@ template {
     background-color: #4ad0e4; }
   .menu__item--tablet:active {
     background-color: #4ad0e4;
-    color: #fff; }
-  .nav-burger {
-    display: block;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    color: transparent;
-    font-size: 0;
-    background: url("../img/icon-menu.png") no-repeat;
-    position: absolute;
-    top: 26px;
-    right: 0px;
-    z-index: 1; }
-  .nav-burger__checkbox {
-    display: none; }
-  .nav-burger__checkbox:checked + .nav-burger {
-    background: url("../img/icon-cross.png") no-repeat; }
-  .nav-burger__checkbox:checked ~ .nav {
-    display: block; }
-  .search-tablet {
-    background-color: #4ad0e4; }
-  .search-tablet form {
-    width: 90%;
-    margin: 0 auto; }
-  .search-tablet input {
-    border: 1px solid #dcdce2;
-    border-radius: 3px;
-    font-family: "Geometria";
-    font-size: 12px;
-    line-height: 25px;
-    color: #4f4f6f;
-    -webkit-box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
-            box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
-    margin-bottom: 10px;
-    padding-left: 20px; }
-  .search-tablet__button {
-    background: inherit;
-    border: none;
-    color: #dcdce2; }
-  .search-tablet__button:hover {
-    color: #00abc5; } }
+    color: #fff; } }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .main-header__menu {
@@ -1401,14 +1375,13 @@ template {
   .menu__item--tablet a {
     display: block;
     height: auto;
-    font-weight: bold;
+    font-family: "Geometria-Bold";
     color: #fff;
     font-size: 12px;
     line-height: 26px;
-    text-align: left;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #4ad0e4;
+    background-color: rgba(3, 103, 179, 0.9);
     opacity: 1;
     -webkit-transition: background-color 0.1s linear, color 0.1s linear;
     transition: background-color 0.1s linear, color 0.1s linear;
@@ -1417,13 +1390,14 @@ template {
     padding-top: 5px;
     padding-bottom: 5px; }
   .menu__item--tablet a:hover {
+    font-family: "Geometria-Bold";
     color: #fff;
     font-size: 12px;
     line-height: 26px;
     padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #00dde7; }
+    background-color: #0367b3; }
   .menu__item--tablet:not(:first-of-type) {
     border-top: none; }
   .menu__item--tablet:not(:last-of-type) {
@@ -1435,50 +1409,7 @@ template {
     background-color: #4ad0e4; }
   .menu__item--tablet:active {
     background-color: #4ad0e4;
-    color: #fff; }
-  .nav-burger {
-    display: block;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    color: transparent;
-    font-size: 0;
-    background: url("../img/icon-menu.png") no-repeat;
-    position: absolute;
-    top: 22px;
-    right: 25px;
-    z-index: 1; }
-  .nav-burger__checkbox {
-    display: none; }
-  .nav-burger__checkbox:checked + .nav-burger {
-    background: url("../img/icon-cross.png") no-repeat; }
-  .nav-burger__checkbox:checked ~ .nav {
-    display: block; }
-  .search-tablet {
-    background-color: #4ad0e4; }
-  .search-tablet form {
-    width: 90%;
-    margin: 0 auto; }
-  .search-tablet input {
-    border: 1px solid #dcdce2;
-    border-radius: 3px;
-    font-family: "Geometria";
-    font-size: 12px;
-    line-height: 25px;
-    color: #4f4f6f;
-    -webkit-box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
-            box-shadow: 0px 0px 50px 11px rgba(204, 204, 223, 0.53);
-    margin-bottom: 10px;
-    padding-left: 20px; }
-  .search-tablet__button {
-    background: inherit;
-    border: none;
-    color: #dcdce2;
-    position: relative;
-    top: -35px;
-    left: 150px; }
-  .search-tablet__button:hover {
-    color: #00abc5; } }
+    color: #fff; } }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .mobile_menu input {
@@ -1542,7 +1473,7 @@ template {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     z-index: 999;
-    padding-top: 60px; }
+    padding-top: 80px; }
   .menu__submenu {
     font-size: .8em;
     background-color: #ddd;
@@ -1555,14 +1486,6 @@ template {
     margin-top: -34px;
     padding: 10px;
     line-height: normal; }
-  .menu__item {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    font-family: "Geometria-Medium";
-    font-size: 18px;
-    margin-top: 40px; }
   .menu__submenu .menu__item {
     color: #000; }
   .nav__check:checked ~ .nav__back {
@@ -1594,14 +1517,15 @@ template {
         -ms-user-select: none;
             user-select: none;
     position: relative;
-    z-index: 996; }
+    z-index: 996;
+    margin: 0 auto;
+    width: 50px; }
   .nav__showmenu {
     position: relative;
     z-index: 3;
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 10px;
     padding: 5px 10px 10px;
-    padding-top: 5px;
     padding-top: 10px;
     top: 2px;
     font-size: 23px;
@@ -1642,7 +1566,7 @@ template {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     z-index: 999;
-    padding-top: 60px; }
+    padding-top: 80px; }
   .menu__submenu {
     font-size: .8em;
     background-color: #ddd;
@@ -1659,10 +1583,7 @@ template {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: #000;
-    font-family: "Geometria-Medium";
-    font-size: 18px;
-    margin-top: 40px; }
+    margin-top: 20px; }
   .menu__submenu .menu__item {
     color: #000; }
   .nav__check:checked ~ .nav__back {
@@ -3994,7 +3915,8 @@ img.thumbnail {
   user-select: none;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent;
+  z-index: 1; }
 
 .slick-list {
   position: relative;

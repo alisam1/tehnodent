@@ -1,0 +1,208 @@
+
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+.mobile_menu input {display: none;}
+.mobile_menu label {cursor: pointer;}
+
+.mobile_menu {user-select: none;
+position: relative;
+z-index: 996;}
+
+.nav__showmenu {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    margin-left: 0px;
+    padding: 5px 10px 10px;
+        padding-top: 5px;
+    padding-top: 5px;
+    padding-top: 20px;
+    top: 2px;
+    font-size: 23px;
+    z-index: 9999;
+}
+
+
+.nav__back {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+}
+
+.menu, .menu__submenu{
+    list-style: none;
+    padding: 0;
+    color: #fff;
+    overflow: hidden;
+  }
+
+.menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width:100%;
+    margin: 0;
+    padding: 17px 0;
+    text-transform: uppercase;
+    line-height: 2em;
+    background-color: inherit;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transform: translateX(-100%);
+    transition: transform .3s;
+    will-change: transform;
+    backface-visibility: hidden;
+    z-index: 999;
+    padding-top: 60px;
+}
+
+.menu__submenu {
+    font-size: .8em;
+    background-color: #ddd;
+    max-height: 0;
+    transition: max-height .3s ease-in-out;
+}
+
+.menu__showsub {
+    position: absolute;
+    right: 0;
+    margin-top: -34px;
+    padding: 10px;
+    line-height: normal;
+}
+
+.menu__item {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-family: $font-family-medium;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.menu__submenu .menu__item {color: #000;}
+
+.nav__check:checked~.nav__back {
+    bottom: 0;
+}
+
+.menu__item:hover,.nav__showmenu:hover,.menu__showsub:hover
+{opacity: 0.9;
+color: #D62323;
+}
+.menu::-webkit-scrollbar {display: none;}
+.nav__check:checked+.nav__showmenu {color:#fff;}
+.menu__check:checked~.menu__submenu {max-height: 100vh;}
+.menu__check:checked+.menu__showsub {transform: rotate(180deg);}
+.nav__check:checked~.menu {transform: translateX(0);}
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+.mobile_menu input {display: none;}
+.mobile_menu label {cursor: pointer;}
+
+.mobile_menu {user-select: none;
+position: relative;
+z-index: 996;}
+
+.nav__showmenu {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  margin-left: 25px;
+  padding: 5px 10px 10px;
+    padding-top: 5px;
+  padding-top: 10px;
+  top: 2px;
+  font-size: 23px;
+  z-index: 9999;
+}
+
+.nav__back {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+}
+
+.menu, .menu__submenu{
+    list-style: none;
+    padding: 0;
+    color: #fff;
+    overflow: hidden;
+  }
+
+.menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width:100%;
+    margin: 0;
+    padding: 17px 0;
+    text-transform: uppercase;
+    line-height: 2em;
+    background-color: inherit;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transform: translateX(-100%);
+    transition: transform .3s;
+    will-change: transform;
+    backface-visibility: hidden;
+    z-index: 999;
+    padding-top: 60px;
+}
+
+.menu__submenu {
+    font-size: .8em;
+    background-color: #ddd;
+    max-height: 0;
+    transition: max-height .3s ease-in-out;
+}
+
+.menu__showsub {
+    position: absolute;
+    right: 0;
+    margin-top: -34px;
+    padding: 10px;
+    line-height: normal;
+}
+
+.menu__item {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-family: $font-family-medium;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.menu__submenu .menu__item {color: #000;}
+
+.nav__check:checked~.nav__back {
+    bottom: 0;
+}
+
+.menu__item:hover,.nav__showmenu:hover,.menu__showsub:hover
+{opacity: 0.9;
+color: #D62323;
+}
+.menu::-webkit-scrollbar {display: none;}
+.nav__check:checked+.nav__showmenu {color:#fff;}
+.menu__check:checked~.menu__submenu {max-height: 100vh;}
+.menu__check:checked+.menu__showsub {transform: rotate(180deg);}
+.nav__check:checked~.menu {transform: translateX(0);}
+}

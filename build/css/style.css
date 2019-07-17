@@ -1510,7 +1510,9 @@ template {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 95%; }
+    width: 95%;
+    position: relative;
+    z-index: 997; }
   .menu, .menu__submenu {
     list-style: none;
     padding: 0;

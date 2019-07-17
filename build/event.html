@@ -186,72 +186,8 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/magnific.js"></script>
-    <script>
-        $('.multiple-items').slick({
-          slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: false,
-        arrows:true,
-        dots: false,
-        adaptiveHeight: true,
-
-
-       // slider responsivo
-        responsive: [
-        {
-          breakpoint: 1279,
-            settings: {
-                slidesToShow: 3,
-                arrows:true,
-                centerPadding: '20px',
-                autoplay: false,
-                adaptiveHeight: true,
-                dots: false,
-            }
-        },
-        {
-            breakpoint: 1121,
-            settings: {
-                slidesToShow: 3,
-                arrows:false,
-                autoplay: false,
-                adaptiveHeight: true,
-                dots: true,
-            }
-        },
-
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                dots: true,
-                arrows:false,
-                autoplay:false,
-                adaptiveHeight: true,
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                dots: true,
-                arrows:false,
-                autoplay:false,
-                adaptiveHeight: true,
-
-            }
-        }
-        ]
-
-    });
-
-    $('.test-popup-link').magnificPopup({
-      type: 'image'
-    });
-
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -652,7 +652,6 @@
 }
 
 
-
 .main-header__logo
 {
   display: flex;
@@ -684,6 +683,7 @@
 display: none;
 }
 
+
 .menu__list
 {
 margin-left: -25px;
@@ -695,6 +695,10 @@ margin-left: -25px;
   padding-right: 15px;
   padding-top: 0px;
   box-sizing: border-box;
+}
+
+.menu__item a::after {
+display: none;
 }
 
 .menu__item:hover
@@ -872,7 +876,8 @@ margin-left: -25px;
 
 .main-header__img
 {
-  padding-left: 20px;
+  padding-left: 0px;
+  text-align: center;
 }
 
   .main-header__text
@@ -880,7 +885,8 @@ margin-left: -25px;
     margin-left: 0;
     font-size: 10px;
     line-height: 20px;
-    padding-left: 10px;
+    padding-left: 0px;
+    text-align: center;
   }
 
   .menu
@@ -896,6 +902,10 @@ margin-left: -25px;
 
 .menu__tablet {
   display: block;
+}
+
+.menu__item a::after {
+  display: none;
 }
 
   .main-header__search-img

@@ -391,13 +391,13 @@ $slick-opacity-not-active: 0 !default;
 .main__slider .slick-prev
 {
     left: 10px;
-    z-index: 9999;
+    z-index: 1;
 }
 
 .main__slider .slick-next
 {
     right: 10px;
-    z-index: 9999;
+    z-index: 1;
 }
 
 .event__bottom .slick-dots
@@ -440,6 +440,7 @@ $slick-opacity-not-active: 0 !default;
     padding: 0;
     border: none;
     outline: none;
+    z-index: 1;
     &:hover, &:focus {
         outline: none;
         background-image: url("../img/white_next.png");
@@ -479,6 +480,7 @@ $slick-opacity-not-active: 0 !default;
     padding: 0;
     border: none;
     outline: none;
+    z-index: 1;
     &:hover, &:focus {
         outline: none;
         background-image: url("../img/prev_arrow.png");

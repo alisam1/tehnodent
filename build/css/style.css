@@ -1355,7 +1355,7 @@ template {
     text-transform: uppercase;
     text-decoration: none;
     margin-top: -20px;
-    padding-left: 15px;
+    padding-left: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
     width: 80%;
@@ -1365,7 +1365,7 @@ template {
     font-family: "Geometria-Bold";
     font-size: 20px;
     line-height: 30px;
-    padding-left: 15px;
+    padding-left: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
     color: #404040; }
@@ -1384,7 +1384,7 @@ template {
   left: -100%;
   top: 0;
   z-index: 1;
-  background: rgba(0, 171, 197, 0.8);
+  background: rgba(0, 171, 197, 0.9);
   -webkit-transition: left 0.5s 0.5s;
   transition: left 0.5s 0.5s; }
 

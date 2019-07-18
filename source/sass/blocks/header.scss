@@ -7,7 +7,7 @@
   box-shadow: 0 5px 35px -5px rgba(4,91,141,0.11);
   margin-bottom: 20px;
   position: relative;
-  z-index: 9999;
+  z-index: 1040;
 }
 
 .main-header__all
@@ -676,6 +676,11 @@
  .main-header__logo--mobile
 {
   display:none;
+}
+
+.main-header__tablet
+{
+  z-index: 1041;
 }
 
 .main-header__menu

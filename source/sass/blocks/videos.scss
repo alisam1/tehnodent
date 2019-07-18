@@ -7,6 +7,11 @@
   margin-bottom: 110px;
 }
 
+.videos__block
+{
+  position: relative;
+}
+
 #player
 {
   width: 646px;
@@ -22,8 +27,8 @@
 .start-video {
     position: absolute;
     padding: 12px;
-    margin-top: -180px;
-    margin-left: 280px;
+    top: 35%;
+    left: 45%;
     opacity: 1;
     border-radius: 50%;
     background-image:( 90deg, rgb(0,171,197) 0%, rgb(0,226,234) 100%);
@@ -40,14 +45,14 @@
 
 .start-webinar
 {
-  margin-top: -270px;
-  margin-left: 400px;
+  top: 35%;
+  left: 45%;
 }
 
 .start-clip
 {
-  margin-top: -220px;
-  margin-left: 320px;
+  top:0;
+  left: 0;
 }
 
 div.thumbnail_container
@@ -196,8 +201,8 @@ div.thumbnail__clip
 .start-video {
     position: absolute;
     padding: 12px;
-    margin-top: -160px;
-    margin-left: 250px;
+    top:30%;
+    left: 40%;
   }
 
   .videos__info
@@ -262,16 +267,16 @@ div.thumbnail__clip
   .start-video {
       position: absolute;
       padding: 12px;
-      margin-top: -110px;
-      margin-left: 90px;
+      top:10%;
+      left: 35%;
     }
 
     .start-clip
     {
       position: absolute;
       padding: 12px;
-      margin-top: -65px;
-      margin-left: 60px;
+      top:0;
+      left: 0;
   }
 
   .start-clip img

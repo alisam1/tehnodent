@@ -44,7 +44,13 @@
     padding-left: 10px;
 }
 
-.webinar__description
+.webinar__text
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.webinar__text p
 {
     width: 205px;
     font-family: $font-family;
@@ -64,6 +70,7 @@
 .webinar__block
 {
     margin-top: 10px;
+    position: relative;
 }
 
 
@@ -85,7 +92,7 @@
     padding-bottom: 20px;
 }
 
-.webinar__description
+.webinar__text p
 {
     width: 80%;
     font-family: $font-family;
@@ -126,8 +133,7 @@
     margin: 0 auto;
 }
 
-.webinar__description
-{
+.webinar__text p{
     width: 80%;
     font-family: $font-family;
     font-size: 12px;

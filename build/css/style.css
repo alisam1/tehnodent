@@ -207,7 +207,7 @@ template {
           box-shadow: 0 5px 35px -5px rgba(4, 91, 141, 0.11);
   margin-bottom: 20px;
   position: relative;
-  z-index: 9999; }
+  z-index: 1040; }
 
 .main-header__all {
   width: 100%;
@@ -780,6 +780,8 @@ template {
     display: block; }
   .main-header__logo--mobile {
     display: none; }
+  .main-header__tablet {
+    z-index: 1041; }
   .main-header__menu {
     display: none; }
   .menu__list {
@@ -2977,6 +2979,9 @@ template {
   margin-top: 60px;
   margin-bottom: 110px; }
 
+.videos__block {
+  position: relative; }
+
 #player {
   width: 646px;
   height: 281px; }
@@ -2988,8 +2993,8 @@ template {
 .start-video {
   position: absolute;
   padding: 12px;
-  margin-top: -180px;
-  margin-left: 280px;
+  top: 35%;
+  left: 45%;
   opacity: 1;
   border-radius: 50%;
   background-image: 90deg, #00abc5 0%, #00e2ea 100%;
@@ -3004,12 +3009,12 @@ template {
   opacity: 1; }
 
 .start-webinar {
-  margin-top: -270px;
-  margin-left: 400px; }
+  top: 35%;
+  left: 45%; }
 
 .start-clip {
-  margin-top: -220px;
-  margin-left: 320px; }
+  top: 0;
+  left: 0; }
 
 div.thumbnail_container {
   width: 646px;
@@ -3133,8 +3138,8 @@ img.thumbnail {
   .start-video {
     position: absolute;
     padding: 12px;
-    margin-top: -160px;
-    margin-left: 250px; }
+    top: 30%;
+    left: 40%; }
   .videos__info {
     width: 90%;
     display: -webkit-box;
@@ -3187,13 +3192,13 @@ img.thumbnail {
   .start-video {
     position: absolute;
     padding: 12px;
-    margin-top: -110px;
-    margin-left: 90px; }
+    top: 10%;
+    left: 35%; }
   .start-clip {
     position: absolute;
     padding: 12px;
-    margin-top: -65px;
-    margin-left: 60px; }
+    top: 0;
+    left: 0; }
   .start-clip img {
     width: 30px; }
   .videos__info {
@@ -3655,7 +3660,16 @@ img.thumbnail {
   letter-spacing: -0.04em;
   padding-left: 10px; }
 
-.webinar__description {
+.webinar__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.webinar__text p {
   width: 205px;
   font-family: "Geometria";
   font-size: 12px;
@@ -3668,7 +3682,8 @@ img.thumbnail {
   padding-left: 0px; }
 
 .webinar__block {
-  margin-top: 10px; }
+  margin-top: 10px;
+  position: relative; }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .webinar__info {
@@ -3683,7 +3698,7 @@ img.thumbnail {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 20px; }
-  .webinar__description {
+  .webinar__text p {
     width: 80%;
     font-family: "Geometria";
     font-size: 12px;
@@ -3709,7 +3724,7 @@ img.thumbnail {
   .webinar__title {
     width: 80%;
     margin: 0 auto; }
-  .webinar__description {
+  .webinar__text p {
     width: 80%;
     font-family: "Geometria";
     font-size: 12px;
@@ -4244,7 +4259,16 @@ img.thumbnail {
 .event__info--news {
   width: 50%; }
 
-.event__description {
+.event__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.event__text p {
   width: 520px;
   font-family: "Geometria";
   font-size: 12px;
@@ -4252,7 +4276,7 @@ img.thumbnail {
   line-height: 22px;
   color: #808899;
   margin-top: 0; }
-  .event__description--news {
+  .event__text p--news {
     width: 80%;
     line-height: 26px; }
 
@@ -4292,8 +4316,8 @@ img.thumbnail {
   border-radius: 30px;
   border: none;
   margin: 0 auto;
-  margin-top: 0px;
-  margin-bottom: 70px; }
+  margin-top: 20px;
+  margin-bottom: 0px; }
 
 .lecture__buy a {
   font-family: "Geometria-Bold";
@@ -4335,7 +4359,10 @@ img.thumbnail {
     position: absolute;
     background-image: url("../img/product_bottom.svg");
     width: 770px;
-    height: 1px; } }
+    height: 1px; }
+  .lecture__buy {
+    margin-top: 10px;
+    margin-bottom: 30px; } }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .event__top {
@@ -4355,7 +4382,7 @@ img.thumbnail {
   .event__info {
     width: 75%;
     margin: 0 auto; }
-  .event__description {
+  .event__text p {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 30px; }
@@ -4369,7 +4396,10 @@ img.thumbnail {
   .event__bottom::before {
     display: none; }
   .event__top::after {
-    display: none; } }
+    display: none; }
+  .lecture__buy {
+    margin-top: 0px;
+    margin-bottom: 30px; } }
 
 .about__title {
   font-family: "Geometria-Bold";
@@ -5162,7 +5192,7 @@ img.thumbnail {
 .articles__video {
   margin-bottom: 30px; }
 
-.articles__text {
+.articles__info p {
   font-family: "Geometria";
   font-size: 16px;
   line-height: 24px;

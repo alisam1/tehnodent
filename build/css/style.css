@@ -2550,7 +2550,7 @@ template {
   text-transform: uppercase;
   display: block; }
 
-.product__text {
+.product__info p {
   width: 420px;
   font-family: "Geometria-Light";
   font-size: 12px;

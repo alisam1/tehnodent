@@ -57,7 +57,7 @@ $('.card').matchHeight({
 
   /* Map */
 
-  document.addEventListener("DOMContentLoaded", function() {
+ document.addEventListener("DOMContentLoaded", function() {
   	eventMaps();
     mapSpb();
   });
@@ -132,7 +132,6 @@ $('.card').matchHeight({
   	}
   }
 
-
 /* Slider */
 
 $(document).ready(function ($) {
@@ -146,7 +145,7 @@ dots: false,
 adaptiveHeight: true,
 
 
-// slider responsivo
+// slider responsive
 responsive: [
 {
   breakpoint: 1279,

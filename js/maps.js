@@ -6,21 +6,42 @@ $(document).ready(function () {
         var json_path = 'js/data.json';
         var result = document.getElementById('result');
 
-        var destinations = {
-            'Москва': [55.755814, 37.617635],
-            'Санкт-Петербург': [59.939762, 30.327654],
-            'Екатеринбург': [56.836671, 60.595612]
-        };
+        var destinations = {};
+
+        var getContacts = $(function(){
+            $.getJSON('js/data.json', function(data) {
+                    for(var i=0; i<data.regions.length; i++){
+                        var card_titles = document.querySelectorAll(".card__item--title .goto");
+                        card_titles[i].innerHTML =data.regions[i].town;
+                        var card_address = document.querySelectorAll(".card__item--address");
+                        card_address[i].innerHTML =data.regions[i].address;
+                    };
+            });
+        });
+
+
+        var getDestinations = $(function(){
+            $.getJSON('js/data.json', function(data) {
+                    for(var i=0; i<data.regions.length; i++){
+                        destinations[data.regions[i].town] =  [data.regions[i].lat, data.regions[i].lon];
+                    };
+            });
+        });
 
         var map = new ymaps.Map("map", {
-            center: [55.755814, 37.617635],
-            zoom: 16,
-            controls: []
+            center: [59.939762, 30.327654],
+            zoom: 16
         });
 
 
         $.getJSON(json_path, function (json_arr) {
-            var myGeoObjects = json_arr.map(item => {
+            var json_array = [];
+            for (i=0; i<json_arr.regions.length; i++)
+            {
+                json_array.push(json_arr.regions[i]);
+            }
+            console.log(json_array);
+            var myGeoObjects = json_array.map(item => { 
                 return new ymaps.GeoObject({
                     geometry: {
                         type: "Point",
@@ -29,11 +50,11 @@ $(document).ready(function () {
                     properties: {
                         clusterCaption: item.address,
                         balloonContentBody: [
-                            '<address style="font-style: normal">',
-                            '<h3>Данные</h3>',
-                            '<b>Город: </b> ' + item.town + '<br>',
-                            '<b>Адрес: </b> ' + item.address + '<br>',
-                            '<b>Часы работы: </b> ' + item.work + '<br>',
+                            '<address class = "adress" style="font-style: normal">',
+                            '<h3 class = "adress__title">Наш адрес:</h3>',
+                            '<p class = "adress__description"><span>Город:</span>' + ' ' + item.town + ' ',
+                            '<p class = "adress__description"><span>Адрес: </span>' + ' ' + item.address + ' ',
+                            '<p class = "adress__description"><span>Часы работы:</span> ' + ' ' + item.work + ' ',
                             '</address>'
                         ].join('')
                     }
@@ -42,7 +63,8 @@ $(document).ready(function () {
                     iconImageHref: '../img/pins.svg',
                     iconImageSize: [20, 32],
                 });
-        })
+        });
+
             var clusterIcons = [
                 {
                     href: '../img/pins.svg',
@@ -52,22 +74,21 @@ $(document).ready(function () {
                 }
                 ];
 
-
+    
             // Создадим кластеризатор после получения и добавления точек
             var clusterer = new ymaps.Clusterer({
+                clusterize: false,
                 preset: 'islands#invertedDarkGreenClusterIcons',
                 clusterIcons: clusterIcons,
+                groupByCoordinates: false,
             });
             clusterer.add(myGeoObjects);
             map.geoObjects.add(clusterer);
-            map.setBounds(clusterer.getBounds(), {
-                checkZoomRange: true
-            });
         });
     
 
     // куда скакать
-    function clickGoto() {
+         function clickGoto() {
 
         // город
         var pos = this.textContent;
@@ -85,6 +106,5 @@ $(document).ready(function () {
         col[i].onclick = clickGoto;
         result.textContent = result.textContent + ' ' + i;
     }
-
     }
 });

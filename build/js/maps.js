@@ -60,16 +60,15 @@ $(document).ready(function () {
                     }
                 }, {
                     iconLayout: 'default#image',
-                    iconImageHref: '../img/pins.svg',
+                    iconImageHref: '/img/pins.svg',
                     iconImageSize: [20, 32],
                 });
         });
 
             var clusterIcons = [
                 {
-                    href: '../img/pins.svg',
+                    href: '/img/pins.svg',
                     size: [50, 50],
-                    // Отступ, чтобы центр картинки совпадал с центром кластера.
                     offset: [-25, -25]
                 }
                 ];

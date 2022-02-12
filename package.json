@@ -53,7 +53,7 @@
     "node": "11.0.0"
   },
   "dependencies": {
-    "ajv": "^6.5.0",
+    "ajv": "^6.12.3",
     "font-awesome-sass": "^4.7.0",
     "gulp-4.0.build": "^4.0.0-build.a271520",
     "jquery": "^3.3.1",
